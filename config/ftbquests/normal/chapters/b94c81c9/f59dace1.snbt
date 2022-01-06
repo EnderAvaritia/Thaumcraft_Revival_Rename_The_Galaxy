@@ -1,0 +1,20 @@
+{
+	title: "末地冒险",
+	icon: "minecraft:end_stone",
+	x: -23.5d,
+	y: -12.5d,
+	dependencies: [
+		"c71621fc"
+	],
+	tasks: [{
+		uid: "4a574855",
+		type: "kill",
+		entity: "minecraft:enderman",
+		value: 20L
+	}],
+	rewards: [{
+		uid: "02890cc4",
+		type: "ftbmoney:money",
+		ftb_money: 5L
+	}]
+}

@@ -1,0 +1,25 @@
+{
+	title: "百夫长",
+	icon: "minecraft:wooden_sword",
+	x: 0.0d,
+	y: 9.5d,
+	description: "宁为百夫长，胜做一书生",
+	text: [
+		""
+	],
+	dependencies: [
+		"46554c96"
+	],
+	hide: true,
+	tasks: [{
+		uid: "a2ee2724",
+		type: "stat",
+		stat: "stat.mobKills",
+		value: 100
+	}],
+	rewards: [{
+		uid: "a6b229a6",
+		type: "ftbmoney:money",
+		ftb_money: 5L
+	}]
+}

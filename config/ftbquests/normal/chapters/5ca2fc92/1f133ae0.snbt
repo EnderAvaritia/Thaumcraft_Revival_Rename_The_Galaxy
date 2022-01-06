@@ -1,0 +1,57 @@
+{
+	title: "炫酷的装备",
+	icon: "ebwizardry:wizard_hat",
+	x: 0.0d,
+	y: -1.5d,
+	description: "合成全套巫师护甲",
+	dependencies: [
+		"7732f69f"
+	],
+	dependency_requirement: "one_started",
+	tasks: [{
+		uid: "33f5140a",
+		type: "item",
+		items: [{
+			item: "ebwizardry:wizard_hat"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "cfa24daf",
+		type: "item",
+		items: [{
+			item: "ebwizardry:wizard_robe"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "121ad587",
+		type: "item",
+		items: [{
+			item: "ebwizardry:wizard_leggings"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "330fdc37",
+		type: "item",
+		items: [{
+			item: "ebwizardry:wizard_boots"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "6d0c1ee0",
+		type: "ftbmoney:money",
+		ftb_money: 3L
+	},
+	{
+		uid: "164587a8",
+		type: "xp",
+		xp: 30
+	}]
+}

@@ -1,0 +1,43 @@
+{
+	title: "神秘炼金",
+	x: -0.5d,
+	y: -1.5d,
+	dependencies: [
+		"cd032e57"
+	],
+	hide: true,
+	tasks: [{
+		uid: "0c51b013",
+		type: "item",
+		items: [{
+			item: "thaumcraft:metal_alchemical"
+		}],
+		count: 4L
+	},
+	{
+		uid: "6bba9800",
+		type: "item",
+		items: [{
+			item: "thaumcraft:tube"
+		}],
+		count: 16L
+	},
+	{
+		uid: "323e94b1",
+		type: "item",
+		items: [{
+			item: "thaumcraft:tube_buffer"
+		}],
+		count: 4L
+	}],
+	rewards: [{
+		uid: "e5e80db1",
+		type: "ftbmoney:money",
+		ftb_money: 6L
+	},
+	{
+		uid: "274533e8",
+		type: "random",
+		table: 5
+	}]
+}

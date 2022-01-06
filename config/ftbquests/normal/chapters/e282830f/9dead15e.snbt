@@ -1,0 +1,15 @@
+{
+	x: 7.5d,
+	y: 1.0d,
+	dependencies: [
+		"411d2251"
+	],
+	hide: true,
+	tasks: [{
+		uid: "97875df8",
+		type: "item",
+		items: [{
+			item: "botania:spawnerclaw"
+		}]
+	}]
+}

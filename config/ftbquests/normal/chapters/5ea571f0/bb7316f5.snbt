@@ -1,0 +1,35 @@
+{
+	title: "奥术编码",
+	x: -3.5d,
+	y: -1.5d,
+	description: "制作奥术样板终端，奥术装配室，知识核心（暂未汉化）以实现奥术合成自动化",
+	text: [
+		"将知识核心放入奥术样板终端添加合成，再放入奥术装配室，无需ME接口，即可在终端中请求奥术合成"
+	],
+	dependencies: [
+		"bbeb6224"
+	],
+	tasks: [{
+		uid: "75fc5269",
+		type: "item",
+		items: [{
+			item: "thaumicenergistics:blank_knowledge_core"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "22befde5",
+		type: "item",
+		items: [{
+			item: "thaumicenergistics:arcane_assembler"
+		}]
+	},
+	{
+		uid: "48c50715",
+		type: "item",
+		items: [{
+			item: "thaumicenergistics:arcane_inscriber"
+		}]
+	}]
+}

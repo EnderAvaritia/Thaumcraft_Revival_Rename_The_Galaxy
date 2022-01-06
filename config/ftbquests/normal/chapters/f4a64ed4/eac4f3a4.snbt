@@ -1,0 +1,20 @@
+{
+	x: -3.0d,
+	y: 4.0d,
+	description: "把它在装罐机灌入建筑泡沫枪里",
+	dependencies: [
+		"083fae46"
+	],
+	tasks: [{
+		uid: "c4084e30",
+		type: "item",
+		items: [{
+			item: "ic2:crafting 1 25"
+		}]
+	}],
+	rewards: [{
+		uid: "1d60e08a",
+		type: "random",
+		table: 13
+	}]
+}

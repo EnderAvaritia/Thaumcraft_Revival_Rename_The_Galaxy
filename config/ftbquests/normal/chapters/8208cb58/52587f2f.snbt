@@ -1,0 +1,16 @@
+{
+	x: 13.0d,
+	y: -15.5d,
+	dependencies: [
+		"2f457f7d"
+	],
+	tasks: [{
+		uid: "8f9a1d82",
+		type: "item",
+		items: [{
+			item: "forestry:frame_untreated"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

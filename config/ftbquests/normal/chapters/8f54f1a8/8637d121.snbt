@@ -1,0 +1,21 @@
+{
+	title: "给裂缝投食",
+	x: 13.0d,
+	y: -5.5d,
+	description: "制作裂缝饲养机来使裂缝变得更大",
+	dependencies: [
+		"cdd78115"
+	],
+	tasks: [{
+		uid: "8cb30e6f",
+		type: "item",
+		items: [{
+			item: "thaumicaugmentation:rift_feeder"
+		}]
+	}],
+	rewards: [{
+		uid: "19228ffa",
+		type: "ftbmoney:money",
+		ftb_money: 4L
+	}]
+}

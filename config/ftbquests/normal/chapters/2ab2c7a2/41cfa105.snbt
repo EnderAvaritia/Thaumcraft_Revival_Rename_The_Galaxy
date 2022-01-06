@@ -1,0 +1,27 @@
+{
+	title: "更方便的远距离传输",
+	x: -4.5d,
+	y: 3.0d,
+	dependencies: [
+		"fa604c65"
+	],
+	tasks: [{
+		uid: "7d00d5df",
+		type: "item",
+		items: [{
+			item: "thaumcraft:hand_mirror"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "52dd8612",
+		type: "ftbmoney:money",
+		ftb_money: 1L
+	},
+	{
+		uid: "c247baaa",
+		type: "xp",
+		xp: 10
+	}]
+}

@@ -1,0 +1,33 @@
+{
+	title: "刨根问题",
+	x: -2.5d,
+	y: -1.0d,
+	description: "制作求知发带,使玩家在获取经验的同时得到研究",
+	text: [
+		"想要制作此物品,需要解锁位于\"奥术注魔\"的研究\"云霄之戒\"",
+		"",
+		"其实,它的效率很低..."
+	],
+	dependencies: [
+		"3c6b6382"
+	],
+	tasks: [{
+		uid: "73b6a631",
+		type: "item",
+		items: [{
+			item: "thaumcraft:curiosity_band"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "8c9406bc",
+		type: "ftbmoney:money",
+		ftb_money: 2L
+	},
+	{
+		uid: "af99e701",
+		type: "xp",
+		xp: 20
+	}]
+}

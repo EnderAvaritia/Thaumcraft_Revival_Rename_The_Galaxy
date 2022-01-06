@@ -1,0 +1,24 @@
+{
+	title: "寻找虚空之物",
+	x: 2.0d,
+	y: -6.0d,
+	description: "我相信我已经快要理解这本书的含义了...",
+	text: [
+		"寻找\"虚空之物\"并扫描它,打开邪术学的大门"
+	],
+	dependencies: [
+		"a671b477"
+	],
+	tasks: [{
+		uid: "1d995800",
+		type: "item",
+		items: [{
+			item: "thaumcraft:void_seed"
+		}]
+	}],
+	rewards: [{
+		uid: "dc11239f",
+		type: "ftbmoney:money",
+		ftb_money: 2L
+	}]
+}

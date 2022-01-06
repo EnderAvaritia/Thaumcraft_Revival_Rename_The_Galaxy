@@ -1,0 +1,21 @@
+{
+	title: "传说级别的武器",
+	x: 5.0d,
+	y: 0.0d,
+	description: "得到一颗完整的元始珍珠",
+	dependencies: [
+		"1fed748e"
+	],
+	tasks: [{
+		uid: "21fa8c0f",
+		type: "item",
+		items: [{
+			item: "thaumcraft:primordial_pearl"
+		}]
+	}],
+	rewards: [{
+		uid: "f6240229",
+		type: "ftbmoney:money",
+		ftb_money: 3L
+	}]
+}

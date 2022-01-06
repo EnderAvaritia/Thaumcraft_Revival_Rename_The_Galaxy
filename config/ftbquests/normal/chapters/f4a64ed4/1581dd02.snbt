@@ -1,0 +1,29 @@
+{
+	x: -3.0d,
+	y: 6.0d,
+	description: "我变强了也变硬了",
+	dependencies: [
+		"eac4f3a4",
+		"a9a45a5d",
+		"2dfcf11e"
+	],
+	tasks: [{
+		uid: "f8540dab",
+		type: "item",
+		items: [{
+			item: "ic2:resource 1 11"
+		}]
+	},
+	{
+		uid: "f782c487",
+		type: "item",
+		items: [{
+			item: "thaumcraft:salis_mundus"
+		}]
+	}],
+	rewards: [{
+		uid: "ebca5f28",
+		type: "random",
+		table: 13
+	}]
+}

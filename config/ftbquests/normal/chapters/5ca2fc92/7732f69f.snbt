@@ -1,0 +1,25 @@
+{
+	x: 1.5d,
+	y: -1.5d,
+	dependencies: [
+		"b2d8e986"
+	],
+	tasks: [{
+		uid: "65f50457",
+		type: "item",
+		items: [{
+			item: "ebwizardry:magic_silk"
+		}],
+		count: 24L
+	}],
+	rewards: [{
+		uid: "01a9596d",
+		type: "xp_levels",
+		xp_levels: 1
+	},
+	{
+		uid: "93e9fddc",
+		type: "ftbmoney:money",
+		ftb_money: 3L
+	}]
+}

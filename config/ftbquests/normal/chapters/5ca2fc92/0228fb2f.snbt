@@ -1,0 +1,10 @@
+{
+	title: "世界探索",
+	icon: "ebwizardry:crystal_flower",
+	x: 3.0d,
+	y: 0.0d,
+	description: "寻找世界中巫术学的建筑",
+	dependencies: [
+		"b2d8e986"
+	]
+}

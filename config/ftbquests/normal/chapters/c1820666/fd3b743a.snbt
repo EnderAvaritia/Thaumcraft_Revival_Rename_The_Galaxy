@@ -1,0 +1,53 @@
+{
+	title: "钻石vs液压机",
+	x: 0.0d,
+	y: -6.0d,
+	description: "合成压印器以制作三种处理器",
+	text: [
+		"五个压印器对应四种模板及最终成型，可放入加速卡提高压印效率",
+		"不占用频道，可接其他模组的能源"
+	],
+	dependencies: [
+		"a6eb96aa"
+	],
+	tasks: [{
+		uid: "abd11903",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:inscriber"
+		}],
+		count: 5L
+	},
+	{
+		uid: "c510b50f",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 23"
+		}]
+	},
+	{
+		uid: "8d6e9a9a",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 22"
+		}]
+	},
+	{
+		uid: "333e6c19",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 24"
+		}]
+	}],
+	rewards: [{
+		uid: "0cf771a6",
+		type: "item",
+		item: "appliedenergistics2:material 1 5",
+		count: 8
+	},
+	{
+		uid: "a4e59a34",
+		type: "ftbmoney:money",
+		ftb_money: 5L
+	}]
+}

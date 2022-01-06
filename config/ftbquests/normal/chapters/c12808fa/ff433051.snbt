@@ -1,0 +1,33 @@
+{
+	title: "恶魔契约",
+	x: -3.5d,
+	y: 0.0d,
+	description: "制作恶魔之心,以减少生命为代价增强攻击伤害",
+	text: [
+		"其前置研究为\"翠心指环\"与\"不死护符\"",
+		"",
+		"然而,这两个研究之间并没有必然联系..."
+	],
+	dependencies: [
+		"3c6b6382"
+	],
+	tasks: [{
+		uid: "b907e934",
+		type: "item",
+		items: [{
+			item: "thaumicperiphery:malignant_heart"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "860dcf47",
+		type: "ftbmoney:money",
+		ftb_money: 4L
+	},
+	{
+		uid: "b1db5f48",
+		type: "xp",
+		xp: 30
+	}]
+}

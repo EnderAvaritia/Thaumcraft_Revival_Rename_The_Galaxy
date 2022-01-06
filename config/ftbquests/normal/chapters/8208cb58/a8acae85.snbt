@@ -1,0 +1,32 @@
+{
+	title: "破坏迷宫",
+	x: 0.5d,
+	y: -9.5d,
+	dependencies: [
+		"05220b35"
+	],
+	hide: true,
+	tasks: [{
+		uid: "2442b505",
+		type: "item",
+		items: [{
+			id: "twilightforest:mazebreaker_pickaxe",
+			tag: {
+				ench: [{
+					lvl: 4s,
+					id: 32s
+				},
+				{
+					lvl: 3s,
+					id: 34s
+				},
+				{
+					lvl: 2s,
+					id: 35s
+				}]
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

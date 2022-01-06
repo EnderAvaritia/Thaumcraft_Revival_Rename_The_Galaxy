@@ -1,0 +1,19 @@
+{
+	x: 9.5d,
+	y: -2.0d,
+	dependencies: [
+		"d28d300c"
+	],
+	tasks: [{
+		uid: "a372198d",
+		type: "item",
+		items: [{
+			item: "thaumicaugmentation:material 1 5"
+		}]
+	}],
+	rewards: [{
+		uid: "4c5aead4",
+		type: "ftbmoney:money",
+		ftb_money: 5L
+	}]
+}

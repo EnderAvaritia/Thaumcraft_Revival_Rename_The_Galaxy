@@ -1,0 +1,30 @@
+{
+	title: "好像有什么奇怪的东西",
+	icon: "thaumcraft:crystal_aer",
+	x: 3.5d,
+	y: -4.5d,
+	description: "挖掘一块魔力水晶碎片",
+	dependencies: [
+		"8896725b"
+	],
+	tasks: [{
+		uid: "1698536c",
+		type: "item",
+		title: "任意水晶碎片",
+		items: [{
+			id: "thaumcraft:crystal_essence",
+			tag: {
+				Aspects: [{
+					amount: 1,
+					key: "ordo"
+				}]
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "063914e7",
+		type: "xp",
+		xp: 10
+	}]
+}

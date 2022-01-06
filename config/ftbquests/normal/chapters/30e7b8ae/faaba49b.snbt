@@ -1,0 +1,27 @@
+{
+	title: "步入炼金术",
+	x: 8.5d,
+	y: 1.0d,
+	shape: "hexagon",
+	dependencies: [
+		"89a9c7ed"
+	],
+	tasks: [{
+		uid: "37769d3c",
+		type: "item",
+		items: [{
+			item: "thaumcraft:crucible"
+		}]
+	}],
+	rewards: [{
+		uid: "6b31e805",
+		type: "item",
+		item: "thaumcraft:curio 1 1",
+		count: 3
+	},
+	{
+		uid: "30f3d7e4",
+		type: "random",
+		table: 3
+	}]
+}

@@ -1,0 +1,32 @@
+{
+	title: "源质储存第二步",
+	icon: "thaumcraft:jar_normal",
+	x: 0.0d,
+	y: 3.0d,
+	description: "你有很多条路可以走",
+	dependencies: [
+		"31fa5170"
+	],
+	hide: true,
+	tasks: [{
+		uid: "0f1b7f52",
+		type: "item",
+		items: [{
+			item: "thaumcraft:label"
+		}],
+		count: 15L
+	},
+	{
+		uid: "13417818",
+		type: "item",
+		items: [{
+			item: "thaumcraft:jar_brace"
+		}],
+		count: 4L
+	}],
+	rewards: [{
+		uid: "1037ae7d",
+		type: "ftbmoney:money",
+		ftb_money: 4L
+	}]
+}

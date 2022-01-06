@@ -1,0 +1,29 @@
+{
+	title: "比金苹果更好",
+	x: 1.0d,
+	y: 1.0d,
+	description: "制作圣洁之果",
+	text: [
+		"想要制作此物品,需解锁位于\"神秘奇境\"的研究\"圣洁之果\"",
+		"该研究前置研究为\"异域嬗变冶金\"",
+		"",
+		"其实这个物品和末地没有任何关联",
+		"但它的前置研究决定了它必须在前往末地之后才能制作"
+	],
+	dependencies: [
+		"088add2a"
+	],
+	hide: true,
+	tasks: [{
+		uid: "02a7b5c0",
+		type: "item",
+		items: [{
+			item: "thaumicwonders:panacea"
+		}]
+	}],
+	rewards: [{
+		uid: "ca2970c2",
+		type: "ftbmoney:money",
+		ftb_money: 3L
+	}]
+}

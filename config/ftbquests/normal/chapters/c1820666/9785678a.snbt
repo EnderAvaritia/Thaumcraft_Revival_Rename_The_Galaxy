@@ -1,0 +1,30 @@
+{
+	title: "无限潜能",
+	x: 2.0d,
+	y: 8.0d,
+	description: "制作存储总线以将其他容器连入ME网络",
+	text: [
+		"配合ME接口可实现“子网络”的构建，具体可参阅mcmod百科",
+		"占用一个频道"
+	],
+	dependencies: [
+		"7bc1fc16"
+	],
+	tasks: [{
+		uid: "b9b66de7",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:part 1 220"
+		}]
+	}],
+	rewards: [{
+		uid: "0fe633b4",
+		type: "item",
+		item: "appliedenergistics2:interface"
+	},
+	{
+		uid: "ec152ebb",
+		type: "ftbmoney:money",
+		ftb_money: 5L
+	}]
+}

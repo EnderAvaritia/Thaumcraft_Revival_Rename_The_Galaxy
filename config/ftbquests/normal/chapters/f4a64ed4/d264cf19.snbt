@@ -1,0 +1,51 @@
+{
+	title: "搭建符文矩阵",
+	icon: "thaumcraft:infusion_matrix",
+	x: 6.0d,
+	y: 0.0d,
+	description: "注魔的基础",
+	dependencies: [
+		"8ee05b96"
+	],
+	tasks: [{
+		uid: "2df85487",
+		type: "item",
+		items: [{
+			item: "thaumcraft:infusion_matrix"
+		}],
+		only_from_crafting: false
+	},
+	{
+		uid: "e7e7ad89",
+		type: "item",
+		items: [{
+			item: "thaumcraft:stone_arcane"
+		}],
+		count: 8L
+	},
+	{
+		uid: "3ba912e1",
+		type: "item",
+		items: [{
+			item: "thaumcraft:pedestal_arcane"
+		}],
+		count: 3L
+	},
+	{
+		uid: "d9dc9faf",
+		type: "item",
+		items: [{
+			item: "thaumcraft:salis_mundus"
+		}]
+	}],
+	rewards: [{
+		uid: "f86d0c20",
+		type: "ftbmoney:money",
+		ftb_money: 3L
+	},
+	{
+		uid: "0dcc1a78",
+		type: "random",
+		table: 4
+	}]
+}

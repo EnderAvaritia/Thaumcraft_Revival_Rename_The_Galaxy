@@ -1,0 +1,21 @@
+{
+	x: -4.5d,
+	y: -0.5d,
+	dependencies: [
+		"49f1bed0"
+	],
+	tasks: [{
+		uid: "62422b07",
+		type: "item",
+		items: [{
+			item: "ic2:forge_hammer"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "8319e96f",
+		type: "xp",
+		xp: 10
+	}]
+}

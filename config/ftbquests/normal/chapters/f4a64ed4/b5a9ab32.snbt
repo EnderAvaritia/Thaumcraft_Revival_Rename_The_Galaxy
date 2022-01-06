@@ -1,0 +1,21 @@
+{
+	title: "Where are my hammer?",
+	x: 3.5d,
+	y: 1.5d,
+	description: "制作金属成型机，更便捷的制作金属元件",
+	dependencies: [
+		"ecf68fdb"
+	],
+	tasks: [{
+		uid: "340138b2",
+		type: "item",
+		items: [{
+			item: "ic2:te 1 55"
+		}]
+	}],
+	rewards: [{
+		uid: "cbab8b1f",
+		type: "random",
+		table: 13
+	}]
+}

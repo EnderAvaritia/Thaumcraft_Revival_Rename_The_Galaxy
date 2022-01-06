@@ -1,0 +1,19 @@
+{
+	title: "走火入魔",
+	icon: "cqrepoured:cursed_bone",
+	x: 3.0d,
+	y: -7.0d,
+	description: "击杀亡灵巫师, 居住在各种城堡中的邪恶法师",
+	tasks: [{
+		uid: "72b88b92",
+		type: "kill",
+		icon: "minecraft:diamond_sword",
+		entity: "cqrepoured:necromancer",
+		value: 1L
+	}],
+	rewards: [{
+		uid: "501cd0d8",
+		type: "ftbmoney:money",
+		ftb_money: 5L
+	}]
+}

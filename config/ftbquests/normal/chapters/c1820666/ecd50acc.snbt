@@ -1,0 +1,25 @@
+{
+	title: "接化发",
+	x: -4.0d,
+	y: 0.0d,
+	description: "制作能源接收器以将其他能源转化为AE能源",
+	text: [
+		"输入能源可接工业2或末影接口的导线，输出可使用AE线缆连接AE各部件以供能"
+	],
+	dependencies: [
+		"f306bffb",
+		"59c8fc33"
+	],
+	tasks: [{
+		uid: "ecf31a19",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:energy_acceptor"
+		}]
+	}],
+	rewards: [{
+		uid: "fd492fab",
+		type: "ftbmoney:money",
+		ftb_money: 5L
+	}]
+}

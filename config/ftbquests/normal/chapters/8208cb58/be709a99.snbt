@@ -1,0 +1,24 @@
+{
+	x: -3.0d,
+	y: -6.0d,
+	description: "这是什么?",
+	text: [
+		"得到血腥崇拜指南,并且扫描血腥使徒们,我相信我可以\"读懂\"他们的思想"
+	],
+	dependencies: [
+		"975acc14"
+	],
+	dependency_requirement: "one_started",
+	tasks: [{
+		uid: "eb4bda13",
+		type: "item",
+		items: [{
+			item: "thaumcraft:curio 1 6"
+		}]
+	}],
+	rewards: [{
+		uid: "98261f44",
+		type: "ftbmoney:money",
+		ftb_money: 3L
+	}]
+}

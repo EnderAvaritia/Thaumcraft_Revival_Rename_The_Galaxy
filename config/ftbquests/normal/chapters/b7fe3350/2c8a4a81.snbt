@@ -1,0 +1,35 @@
+{
+	title: "摘夺桂冠",
+	icon: {
+		ForgeCaps: {
+			Parent: {}
+		},
+		id: "cqrepoured:king_crown"
+	},
+	x: 1.5d,
+	y: -7.5d,
+	description: "击杀漫步者之王, 隐匿于雪原城堡中的统帅",
+	can_repeat: true,
+	tasks: [{
+		uid: "05d71ee6",
+		type: "kill",
+		icon: "cqrepoured:sword_walker",
+		entity: "cqrepoured:walker_king",
+		value: 1L
+	}],
+	rewards: [{
+		uid: "b750ad5e",
+		type: "ftbmoney:money",
+		ftb_money: 50L
+	},
+	{
+		uid: "033c851a",
+		type: "item",
+		item: {
+			ForgeCaps: {
+				Parent: {}
+			},
+			id: "cqrepoured:king_crown"
+		}
+	}]
+}

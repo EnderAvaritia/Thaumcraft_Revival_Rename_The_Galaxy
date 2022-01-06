@@ -1,0 +1,24 @@
+{
+	title: "像风一样轻盈",
+	x: -6.5d,
+	y: -10.0d,
+	description: "在箱子中找到孔雀羽毛扇",
+	dependencies: [
+		"b6f0da98"
+	],
+	hide: true,
+	tasks: [{
+		uid: "af6ae7f2",
+		type: "item",
+		items: [{
+			item: "twilightforest:peacock_fan"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "bfee2600",
+		type: "ftbmoney:money",
+		ftb_money: 5L
+	}]
+}

@@ -1,0 +1,17 @@
+{
+	title: "可持续发展战略",
+	x: -7.5d,
+	y: 2.5d,
+	description: "制作回收机，把你不需要的东西转化为有用的东西",
+	dependencies: [
+		"ccf33753"
+	],
+	hide: true,
+	tasks: [{
+		uid: "306624e3",
+		type: "item",
+		items: [{
+			item: "ic2:te 1 48"
+		}]
+	}]
+}

@@ -1,0 +1,21 @@
+{
+	title: "无中生有",
+	x: 7.5d,
+	y: -5.5d,
+	description: "制作元动能量发电机,把\"虚无\"转化为\"现实\"",
+	dependencies: [
+		"8feb76e4"
+	],
+	tasks: [{
+		uid: "13c43af5",
+		type: "item",
+		items: [{
+			item: "thaumicaugmentation:impetus_generator"
+		}]
+	}],
+	rewards: [{
+		uid: "adea0640",
+		type: "ftbmoney:money",
+		ftb_money: 4L
+	}]
+}

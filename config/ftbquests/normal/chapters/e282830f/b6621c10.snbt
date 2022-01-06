@@ -1,0 +1,22 @@
+{
+	title: "有这谁还用林业树场啊？",
+	x: -4.0d,
+	y: -2.0d,
+	description: "（叉腰( •̀ ω •́ )✧",
+	dependencies: [
+		"8be8483d"
+	],
+	hide: true,
+	tasks: [{
+		uid: "4309a576",
+		type: "item",
+		items: [{
+			item: "enderio:block_farm_station"
+		}]
+	}],
+	rewards: [{
+		uid: "91ae93c2",
+		type: "ftbmoney:money",
+		ftb_money: 100L
+	}]
+}

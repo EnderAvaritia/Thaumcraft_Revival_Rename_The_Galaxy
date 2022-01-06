@@ -1,0 +1,33 @@
+{
+	title: "反馈调节",
+	x: -2.0d,
+	y: 6.0d,
+	description: "制作ME标准发信器与触发总线以实现反馈操控",
+	text: [
+		"ME标准发信器会在标记的物品数量或者网络中能量满足所设条件时发出红石信号，占用一个频道",
+		"触发总线会阻断线缆间的能量和频道传输，当接受到红石信号时恢复通路，可合成为反相触发总线",
+		"两者配合可依据网络中物品/能量情况改变机器的工作情况"
+	],
+	dependencies: [
+		"7bc1fc16"
+	],
+	tasks: [{
+		uid: "9b5ca6ae",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:part 1 80"
+		}]
+	},
+	{
+		uid: "0959e495",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:part 1 280"
+		}]
+	}],
+	rewards: [{
+		uid: "09fe2810",
+		type: "ftbmoney:money",
+		ftb_money: 10L
+	}]
+}

@@ -1,0 +1,27 @@
+{
+	title: "无底壶",
+	x: -3.0d,
+	y: -2.0d,
+	description: "为你的坩埚自动添加水",
+	dependencies: [
+		"cd032e57"
+	],
+	hide: true,
+	tasks: [{
+		uid: "51765dee",
+		type: "item",
+		items: [{
+			item: "thaumcraft:everfull_urn"
+		}]
+	}],
+	rewards: [{
+		uid: "31bf8ce1",
+		type: "ftbmoney:money",
+		ftb_money: 2L
+	},
+	{
+		uid: "780eb85e",
+		type: "xp",
+		xp: 20
+	}]
+}

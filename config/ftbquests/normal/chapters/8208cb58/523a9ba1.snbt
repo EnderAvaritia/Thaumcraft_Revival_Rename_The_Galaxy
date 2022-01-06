@@ -1,0 +1,43 @@
+{
+	title: "巫妖猎人",
+	icon: "twilightforest:miniature_structure 1 6",
+	x: -3.5d,
+	y: -12.5d,
+	description: "击败巫妖,并获取他的权杖",
+	dependencies: [
+		"3fd1dbc0"
+	],
+	tasks: [{
+		uid: "6e749705",
+		type: "kill",
+		icon: "twilightforest:trophy 1 1",
+		disable_toast: true,
+		entity: "twilightforest:lich",
+		value: 1L
+	},
+	{
+		uid: "d6033970",
+		type: "item",
+		title: "任一巫妖权杖",
+		disable_toast: true,
+		items: [{
+			item: "twilightforest:twilight_scepter"
+		},
+		{
+			item: "twilightforest:lifedrain_scepter"
+		},
+		{
+			item: "twilightforest:zombie_scepter"
+		},
+		{
+			item: "twilightforest:shield_scepter"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "73cfe3b2",
+		type: "ftbmoney:money",
+		ftb_money: 3L
+	}]
+}

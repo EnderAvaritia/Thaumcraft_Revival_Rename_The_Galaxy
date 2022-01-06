@@ -1,0 +1,21 @@
+{
+	title: "脑力",
+	icon: "minecraft:ender_eye",
+	x: -22.0d,
+	y: -21.0d,
+	dependencies: [
+		"64d36bc7"
+	],
+	tasks: [{
+		uid: "61f3fecb",
+		type: "kill",
+		icon: "thaumcraft:void_sword",
+		entity: "thaumcraft:eldritchcrab",
+		value: 20L
+	}],
+	rewards: [{
+		uid: "5ce6195e",
+		type: "ftbmoney:money",
+		ftb_money: 3L
+	}]
+}

@@ -1,0 +1,22 @@
+{
+	title: "基础材料",
+	x: -4.5d,
+	y: -4.5d,
+	description: "发现,挖掘铁矿石",
+	dependencies: [
+		"8896725b"
+	],
+	tasks: [{
+		uid: "2015d571",
+		type: "item",
+		items: [{
+			item: "minecraft:iron_ore"
+		}],
+		count: 3L
+	}],
+	rewards: [{
+		uid: "04fa6cbe",
+		type: "xp",
+		xp: 5
+	}]
+}

@@ -1,0 +1,20 @@
+{
+	x: -0.5d,
+	y: 0.0d,
+	description: "注入红石能量",
+	dependencies: [
+		"5b62d06b"
+	],
+	tasks: [{
+		uid: "736430c1",
+		type: "item",
+		items: [{
+			item: "draconicevolution:wyvern_energy_core"
+		}]
+	}],
+	rewards: [{
+		uid: "025d1fb5",
+		type: "ftbmoney:money",
+		ftb_money: 20L
+	}]
+}

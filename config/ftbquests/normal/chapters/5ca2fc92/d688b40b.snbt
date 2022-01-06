@@ -1,0 +1,47 @@
+{
+	title: "升级法杖",
+	x: 5.5d,
+	y: -3.0d,
+	description: "寻找卷轴，并在奥术工作台内升级它",
+	dependencies: [
+		"6d80c560"
+	],
+	tasks: [{
+		uid: "87de82e5",
+		type: "item",
+		title: "任意升级卷轴",
+		icon: "ebwizardry:melee_upgrade",
+		items: [{
+			item: "ebwizardry:storage_upgrade"
+		},
+		{
+			item: "ebwizardry:siphon_upgrade"
+		},
+		{
+			item: "ebwizardry:condenser_upgrade"
+		},
+		{
+			item: "ebwizardry:range_upgrade"
+		},
+		{
+			item: "ebwizardry:duration_upgrade"
+		},
+		{
+			item: "ebwizardry:cooldown_upgrade"
+		},
+		{
+			item: "ebwizardry:blast_upgrade"
+		},
+		{
+			item: "ebwizardry:attunement_upgrade"
+		},
+		{
+			item: "ebwizardry:melee_upgrade"
+		}]
+	}],
+	rewards: [{
+		uid: "d21c5cb0",
+		type: "ftbmoney:money",
+		ftb_money: 3L
+	}]
+}

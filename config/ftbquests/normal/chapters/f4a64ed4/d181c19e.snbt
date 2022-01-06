@@ -1,0 +1,30 @@
+{
+	title: "六兆年と一夜物语",
+	x: 9.0d,
+	y: 3.0d,
+	description: "用泰拉镐挖穿世界吧",
+	text: [
+		""
+	],
+	dependencies: [
+		"8f22aec3"
+	],
+	hide: true,
+	tasks: [{
+		uid: "ab0b625c",
+		type: "item",
+		items: [{
+			id: "botania:terrapick",
+			tag: {
+				mana: 9999
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "20aab5a1",
+		type: "ftbmoney:money",
+		ftb_money: 5L
+	}]
+}

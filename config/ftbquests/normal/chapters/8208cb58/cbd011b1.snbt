@@ -1,0 +1,16 @@
+{
+	x: 13.0d,
+	y: -17.0d,
+	dependencies: [
+		"3ad9d057"
+	],
+	tasks: [{
+		uid: "f0a5ee2b",
+		type: "item",
+		items: [{
+			item: "magicbees:frames.necrotic"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

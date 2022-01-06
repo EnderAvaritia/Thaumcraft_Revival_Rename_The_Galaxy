@@ -1,0 +1,44 @@
+{
+	title: "音游爱好者",
+	icon: {
+		id: "botania:cacophonium",
+		tag: {}
+	},
+	x: 1.5d,
+	y: 5.5d,
+	description: "O-oooooooooo AAAAE-A-A-I-A-U- JO-oooooooooooo AAE-O-A-A-U-U-A- E-eee-ee-eee AAAAE-A-E-I-E-A- JO-ooo-oo-oo-oo EEEEO-A-AAA-AAAA",
+	text: [
+		""
+	],
+	dependencies: [
+		"46554c96"
+	],
+	hide: true,
+	tasks: [{
+		uid: "7d598d59",
+		type: "stat",
+		icon: "minecraft:noteblock",
+		stat: "stat.noteblockPlayed",
+		value: 100
+	}],
+	rewards: [{
+		uid: "85af69d3",
+		type: "random",
+		table: 12
+	},
+	{
+		uid: "454d1021",
+		type: "random",
+		table: 12
+	},
+	{
+		uid: "a7f3e9d4",
+		type: "random",
+		table: 12
+	},
+	{
+		uid: "1472ca7e",
+		type: "ftbmoney:money",
+		ftb_money: 20L
+	}]
+}

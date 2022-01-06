@@ -1,0 +1,16 @@
+{
+	x: 14.5d,
+	y: -11.0d,
+	dependencies: [
+		"96e57b8c"
+	],
+	tasks: [{
+		uid: "44887f13",
+		type: "item",
+		items: [{
+			item: "extrabees:hive_frame.cage"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

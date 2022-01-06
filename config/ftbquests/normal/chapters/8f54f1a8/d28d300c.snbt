@@ -1,0 +1,23 @@
+{
+	title: "奇异装置",
+	x: 9.5d,
+	y: 0.0d,
+	dependencies: [
+		"1fed748e"
+	],
+	hide: true,
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "2e421116",
+		type: "item",
+		items: [{
+			item: "thaumicaugmentation:research_notes"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "c0160d95",
+		type: "ftbmoney:money",
+		ftb_money: 4L
+	}]
+}

@@ -1,0 +1,51 @@
+{
+	title: "王牌盔甲",
+	icon: "thaumadditions:adaminite_hood",
+	x: 3.0d,
+	y: -8.0d,
+	description: "制作精金套装来...接近超神",
+	dependencies: [
+		"2e0aba41"
+	],
+	tasks: [{
+		uid: "9888b485",
+		type: "item",
+		items: [{
+			item: "thaumadditions:adaminite_hood"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "4edfc7e5",
+		type: "item",
+		items: [{
+			item: "thaumadditions:adaminite_robe"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "5d377bc0",
+		type: "item",
+		items: [{
+			item: "thaumadditions:adaminite_belt"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "b725b243",
+		type: "item",
+		items: [{
+			item: "thaumadditions:adaminite_boots"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "8571c277",
+		type: "ftbmoney:money",
+		ftb_money: 200L
+	}]
+}

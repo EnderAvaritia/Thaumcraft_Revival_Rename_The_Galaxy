@@ -1,0 +1,30 @@
+{
+	title: "这儿信号不好",
+	x: 8.0d,
+	y: -8.0d,
+	description: "制作无线信号增幅器以扩大无线信号范围",
+	text: [
+		"增幅器需放入无线访问点",
+		"增幅范围及额外耗能呈加速型增长"
+	],
+	dependencies: [
+		"dc51092a"
+	],
+	tasks: [{
+		uid: "008aa0f7",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 42"
+		}]
+	}],
+	rewards: [{
+		uid: "00d58be2",
+		type: "item",
+		item: "appliedenergistics2:material 1 42"
+	},
+	{
+		uid: "65454723",
+		type: "ftbmoney:money",
+		ftb_money: 10L
+	}]
+}

@@ -1,0 +1,21 @@
+{
+	title: "顶级灵气回复",
+	x: 1.5d,
+	y: -5.5d,
+	dependencies: [
+		"58bc6736",
+		"2e0aba41"
+	],
+	tasks: [{
+		uid: "03590ed3",
+		type: "item",
+		items: [{
+			item: "thaumadditions:aura_charger"
+		}]
+	}],
+	rewards: [{
+		uid: "1fffdac6",
+		type: "ftbmoney:money",
+		ftb_money: 4L
+	}]
+}

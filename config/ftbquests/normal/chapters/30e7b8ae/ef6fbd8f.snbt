@@ -1,0 +1,23 @@
+{
+	title: "盾牌战术",
+	x: -6.0d,
+	y: -1.5d,
+	description: "下矿利器",
+	dependencies: [
+		"60c31607"
+	],
+	tasks: [{
+		uid: "c00c7f06",
+		type: "item",
+		items: [{
+			item: "minecraft:shield"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a724b095",
+		type: "xp",
+		xp: 10
+	}]
+}

@@ -1,0 +1,47 @@
+{
+	title: "神秘要塞套！",
+	x: 6.0d,
+	y: -5.5d,
+	description: "制作神秘要塞套装来更好地保护自己",
+	dependencies: [
+		"80698ec1"
+	],
+	hide: true,
+	tasks: [{
+		uid: "0cd3488d",
+		type: "item",
+		items: [{
+			item: "thaumcraft:fortress_helm"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "e6d18724",
+		type: "item",
+		items: [{
+			item: "thaumcraft:fortress_chest"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "303ecd53",
+		type: "item",
+		items: [{
+			item: "thaumcraft:fortress_legs"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "ea463e69",
+		type: "ftbmoney:money",
+		ftb_money: 10L
+	},
+	{
+		uid: "a29c77a1",
+		type: "xp_levels",
+		xp_levels: 5
+	}]
+}

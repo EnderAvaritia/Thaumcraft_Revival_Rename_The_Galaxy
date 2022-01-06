@@ -1,0 +1,20 @@
+{
+	title: "金子, 银子和裤子",
+	icon: "minecraft:gold_ingot",
+	x: 1.5d,
+	y: -3.5d,
+	description: "击杀海盗船长",
+	can_repeat: true,
+	tasks: [{
+		uid: "39baffb6",
+		type: "kill",
+		icon: "cqrepoured:sword_walker",
+		entity: "cqrepoured:pirate_captain",
+		value: 1L
+	}],
+	rewards: [{
+		uid: "4e9fba5d",
+		type: "ftbmoney:money",
+		ftb_money: 10L
+	}]
+}

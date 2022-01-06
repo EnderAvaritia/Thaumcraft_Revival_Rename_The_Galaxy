@@ -1,0 +1,33 @@
+{
+	title: "Creeper?",
+	x: 3.5d,
+	y: 0.0d,
+	shape: "pentagon",
+	text: [
+		""
+	],
+	can_repeat: true,
+	dependencies: [
+		"6e344c07"
+	],
+	tasks: [{
+		uid: "3adb52a2",
+		type: "item",
+		items: [{
+			id: "thaumadditions:dna_sample",
+			tag: {
+				Entity: {
+					Id: "minecraft:creeper"
+				}
+			}
+		}],
+		consume_items: true,
+		ignore_damage: true,
+		ignore_nbt: 2b
+	}],
+	rewards: [{
+		uid: "8f298e02",
+		type: "ftbmoney:money",
+		ftb_money: 50L
+	}]
+}

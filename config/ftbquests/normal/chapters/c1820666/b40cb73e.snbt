@@ -1,0 +1,29 @@
+{
+	title: "轻松拆卸",
+	x: -6.0d,
+	y: -6.0d,
+	description: "制作扳手以快速拆除AE部件",
+	text: [
+		"Shift右击拆除，右击旋转"
+	],
+	dependencies: [
+		"33cb68f3"
+	],
+	tasks: [{
+		uid: "3aa42c84",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:certus_quartz_wrench"
+		},
+		{
+			item: "appliedenergistics2:nether_quartz_wrench"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f3018e60",
+		type: "ftbmoney:money",
+		ftb_money: 3L
+	}]
+}

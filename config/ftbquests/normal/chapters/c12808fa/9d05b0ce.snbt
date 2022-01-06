@@ -1,0 +1,31 @@
+{
+	title: "注魔台加强",
+	x: 0.0d,
+	y: -3.0d,
+	description: "制作加速石或效能石为提升注魔台的效果",
+	dependencies: [
+		"2efda47a"
+	],
+	tasks: [{
+		uid: "e3a13aac",
+		type: "item",
+		items: [{
+			item: "thaumcraft:matrix_speed"
+		},
+		{
+			item: "thaumcraft:matrix_cost"
+		}],
+		count: 4L,
+		only_from_crafting: true
+	}],
+	rewards: [{
+		uid: "5d6fe20d",
+		type: "ftbmoney:money",
+		ftb_money: 3L
+	},
+	{
+		uid: "e6428bbb",
+		type: "xp",
+		xp: 50
+	}]
+}

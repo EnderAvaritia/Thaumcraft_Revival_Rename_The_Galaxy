@@ -1,0 +1,35 @@
+{
+	title: "建网配电",
+	x: 0.0d,
+	y: 0.0d,
+	description: "合成ME控制器以正式开始应用应用能源2",
+	text: [
+		"没有控制器的ME网络只提供8个可用的频道，ME控制器每个面都可提供32个频道",
+		"一个网络中至多含有一个ME控制器多方块结构",
+		"兼具能源接收器的功能",
+		"关于ME控制器及ME网络频道的详细介绍可前往mcmod百科自行查询"
+	],
+	dependencies: [
+		"fd3b743a",
+		"9e4c541a"
+	],
+	size: 1.75d,
+	tasks: [{
+		uid: "37f83390",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:controller"
+		}]
+	}],
+	rewards: [{
+		uid: "3794dbfb",
+		type: "item",
+		item: "appliedenergistics2:material",
+		count: 16
+	},
+	{
+		uid: "39703bbe",
+		type: "ftbmoney:money",
+		ftb_money: 10L
+	}]
+}

@@ -1,0 +1,28 @@
+{
+	title: "袪魔之布(经验型)",
+	x: 11.5d,
+	y: 0.0d,
+	text: [
+		"saohua",
+		"",
+		"想要制作此物品需解锁位于神秘领域的研究\"袪魔布匹\"",
+		"该研究前置研究为\"神秘领域\""
+	],
+	dependencies: [
+		"1f70ee04"
+	],
+	tasks: [{
+		uid: "7d6a3107",
+		type: "item",
+		items: [{
+			item: "thaumadditions:disenchant_fabric"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "be8f5a3b",
+		type: "ftbmoney:money",
+		ftb_money: 3L
+	}]
+}

@@ -1,0 +1,22 @@
+{
+	title: "击杀恶贼",
+	icon: "ebwizardry:wizard_hat",
+	x: 10.0d,
+	y: 0.5d,
+	description: "打败一个邪恶巫师",
+	dependencies: [
+		"845207a1"
+	],
+	tasks: [{
+		uid: "5b908c9c",
+		type: "kill",
+		icon: "minecraft:stone_sword",
+		entity: "ebwizardry:evil_wizard",
+		value: 1L
+	}],
+	rewards: [{
+		uid: "d9d3cf97",
+		type: "ftbmoney:money",
+		ftb_money: 1L
+	}]
+}

@@ -1,0 +1,21 @@
+{
+	title: "珍品获取",
+	icon: "thaumadditions:blue_bone",
+	x: -1.0d,
+	y: -7.0d,
+	dependencies: [
+		"f234f798"
+	],
+	tasks: [{
+		uid: "245de9d3",
+		type: "kill",
+		icon: "minecraft:diamond_sword",
+		entity: "thaumadditions:blue_wolf",
+		value: 1L
+	}],
+	rewards: [{
+		uid: "70bab7db",
+		type: "ftbmoney:money",
+		ftb_money: 1L
+	}]
+}

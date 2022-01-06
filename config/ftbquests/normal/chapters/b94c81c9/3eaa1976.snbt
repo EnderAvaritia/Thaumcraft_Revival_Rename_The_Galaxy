@@ -1,0 +1,31 @@
+{
+	title: "墙壁清洁工",
+	icon: "thaumicaugmentation:autocaster_placer 1 1",
+	x: -24.0d,
+	y: -22.0d,
+	shape: "pentagon",
+	can_repeat: true,
+	dependencies: [
+		"5b1e999e"
+	],
+	tasks: [{
+		uid: "483b9168",
+		type: "kill",
+		icon: {
+			id: "thaumcraft:elemental_sword",
+			tag: {
+				infench: [{
+					lvl: 2s,
+					id: 5s
+				}]
+			}
+		},
+		entity: "thaumicaugmentation:autocaster_eldritch",
+		value: 50L
+	}],
+	rewards: [{
+		uid: "e27bea59",
+		type: "ftbmoney:money",
+		ftb_money: 30L
+	}]
+}

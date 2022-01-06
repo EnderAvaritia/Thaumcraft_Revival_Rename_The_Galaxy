@@ -1,0 +1,21 @@
+{
+	title: "轻松搭配",
+	x: 0.0d,
+	y: -5.5d,
+	description: "制作暗影附魔台,为你的武器挑选喜欢的附魔",
+	dependencies: [
+		"63b0b9d6"
+	],
+	tasks: [{
+		uid: "53fa6ec8",
+		type: "item",
+		items: [{
+			item: "thaumadditions:shadow_enchanter"
+		}]
+	}],
+	rewards: [{
+		uid: "c3464c41",
+		type: "ftbmoney:money",
+		ftb_money: 7L
+	}]
+}

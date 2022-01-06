@@ -1,0 +1,10 @@
+{
+	title: "应用能源",
+	icon: "appliedenergistics2:controller",
+	description: [
+		"Matter Energy"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: "circle"
+}

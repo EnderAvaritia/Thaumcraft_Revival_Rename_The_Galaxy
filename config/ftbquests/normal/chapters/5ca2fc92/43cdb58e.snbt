@@ -1,0 +1,50 @@
+{
+	title: "登峰造极",
+	x: 7.5d,
+	y: -1.5d,
+	dependencies: [
+		"e1ed6ac8"
+	],
+	tasks: [{
+		uid: "bc63a935",
+		type: "item",
+		title: "大师魔杖",
+		icon: "ebwizardry:master_healing_wand",
+		items: [{
+			item: "ebwizardry:master_wand"
+		},
+		{
+			item: "ebwizardry:master_ice_wand"
+		},
+		{
+			item: "ebwizardry:master_fire_wand"
+		},
+		{
+			item: "ebwizardry:master_lightning_wand"
+		},
+		{
+			item: "ebwizardry:master_necromancy_wand"
+		},
+		{
+			item: "ebwizardry:master_earth_wand"
+		},
+		{
+			item: "ebwizardry:master_healing_wand"
+		},
+		{
+			item: "ebwizardry:master_sorcery_wand"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "85df5ce5",
+		type: "ftbmoney:money",
+		ftb_money: 20L
+	},
+	{
+		uid: "f29efba1",
+		type: "xp_levels",
+		xp_levels: 1
+	}]
+}

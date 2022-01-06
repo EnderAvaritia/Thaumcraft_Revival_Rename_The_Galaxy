@@ -1,0 +1,23 @@
+{
+	title: "元动能量之镜",
+	x: 10.5d,
+	y: -8.5d,
+	description: "制作元动能量之镜来远距离传输元动能量",
+	dependencies: [
+		"54198107"
+	],
+	tasks: [{
+		uid: "05ddbc5a",
+		type: "item",
+		items: [{
+			item: "thaumicaugmentation:impetus_mirror"
+		}],
+		count: 2L,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "4bad971b",
+		type: "ftbmoney:money",
+		ftb_money: 4L
+	}]
+}

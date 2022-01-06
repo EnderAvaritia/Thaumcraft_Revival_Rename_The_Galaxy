@@ -1,0 +1,21 @@
+{
+	x: -1.0d,
+	y: 4.5d,
+	shape: "diamond",
+	description: "注入寰宇之力！",
+	dependencies: [
+		"f8388d59"
+	],
+	tasks: [{
+		uid: "12ec0394",
+		type: "item",
+		items: [{
+			item: "avaritia:resource 1 6"
+		}]
+	}],
+	rewards: [{
+		uid: "c4132b43",
+		type: "xp_levels",
+		xp_levels: 500
+	}]
+}

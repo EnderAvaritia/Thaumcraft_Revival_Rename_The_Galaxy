@@ -1,0 +1,46 @@
+{
+	title: "神秘花园",
+	x: 0.0d,
+	y: 2.0d,
+	description: "制作三种元素果,使得三种神秘植物可再生",
+	text: [
+		"想要制作此物品,需解锁位于\"神秘奇境\"的隐藏研究\"魔法植物种植\"",
+		"想要发现该研究,需要扫描烈焰花,水银花,纤毛菇",
+		"",
+		"keletu：我办到了!自定义物品!"
+	],
+	dependencies: [
+		"2efda47a"
+	],
+	tasks: [{
+		uid: "b34629cb",
+		type: "item",
+		items: [{
+			item: "contenttweaker:shimmer_fruit"
+		}]
+	},
+	{
+		uid: "c2b37c35",
+		type: "item",
+		items: [{
+			item: "contenttweaker:cinder_fruit"
+		}]
+	},
+	{
+		uid: "aa7f8804",
+		type: "item",
+		items: [{
+			item: "contenttweaker:vishroom_fruit"
+		}]
+	}],
+	rewards: [{
+		uid: "e4aea739",
+		type: "random",
+		table: 5
+	},
+	{
+		uid: "4dd79ad4",
+		type: "ftbmoney:money",
+		ftb_money: 1L
+	}]
+}

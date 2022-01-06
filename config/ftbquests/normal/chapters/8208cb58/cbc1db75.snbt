@@ -1,0 +1,22 @@
+{
+	title: "虚域土特产",
+	x: 11.0d,
+	y: -2.5d,
+	dependencies: [
+		"b4e85bf5"
+	],
+	hide: true,
+	tasks: [{
+		uid: "4badfeca",
+		type: "item",
+		items: [{
+			item: "thaumicaugmentation:stone"
+		}],
+		count: 52L
+	}],
+	rewards: [{
+		uid: "5bf14094",
+		type: "ftbmoney:money",
+		ftb_money: 3L
+	}]
+}

@@ -1,0 +1,63 @@
+{
+	title: "像乌龟一样",
+	icon: "cqrepoured:shield_turtle",
+	x: -1.0d,
+	y: -6.0d,
+	text: [
+		"用龟甲兑换全套乌龟套装"
+	],
+	dependencies: [
+		"001d8586"
+	],
+	tasks: [{
+		uid: "f1416036",
+		type: "item",
+		items: [{
+			item: "cqrepoured:chestplate_turtle"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "e243acec",
+		type: "item",
+		items: [{
+			item: "cqrepoured:boots_turtle"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "f72c2c93",
+		type: "item",
+		items: [{
+			item: "cqrepoured:helmet_turtle"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "5326f922",
+		type: "item",
+		items: [{
+			item: "cqrepoured:leggings_turtle"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "d76cdea8",
+		type: "item",
+		item: "cqrepoured:scale_turtle"
+	},
+	{
+		uid: "a69b01f1",
+		type: "item",
+		item: "cqrepoured:shield_turtle"
+	},
+	{
+		uid: "64887b86",
+		type: "ftbmoney:money",
+		ftb_money: 20L
+	}]
+}

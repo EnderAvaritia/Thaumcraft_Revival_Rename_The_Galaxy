@@ -1,0 +1,21 @@
+{
+	title: "铁桶",
+	x: -6.5d,
+	y: -2.5d,
+	description: "你不能把它戴在头上",
+	dependencies: [
+		"60c31607"
+	],
+	tasks: [{
+		uid: "74cd9163",
+		type: "item",
+		items: [{
+			item: "minecraft:bucket"
+		}]
+	}],
+	rewards: [{
+		uid: "7b476612",
+		type: "xp",
+		xp: 20
+	}]
+}

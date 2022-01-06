@@ -1,0 +1,20 @@
+{
+	icon: "minecraft:ender_eye",
+	x: 16.0d,
+	y: -7.0d,
+	dependencies: [
+		"319831fe"
+	],
+	tasks: [{
+		uid: "1fc99026",
+		type: "kill",
+		icon: "thaumcraft:crimson_blade",
+		entity: "thaumicaugmentation:eldritch_golem",
+		value: 1L
+	}],
+	rewards: [{
+		uid: "89152940",
+		type: "ftbmoney:money",
+		ftb_money: 7L
+	}]
+}

@@ -1,0 +1,37 @@
+[
+    {
+        "key": "TWOND_MYSTIC_GARDENING",
+        "ops": [
+               {
+                   "op": "add",
+                   "path": "stages/1/recipes/-",
+                   "value": "thaumcraft:tets"
+               },
+               {
+                   "op": "add",
+                   "path": "stages/1/recipes/-",
+                   "value": "thaumcraft:test"
+               },
+               {
+                   "op": "add",
+                   "path": "stages/1/recipes/-",
+                   "value": "thaumcraft:tests"
+               },
+               {
+                   "op": "add",
+                   "path": "stages/1/recipes/-",
+                   "value": "thaumcraft:22123"
+               },
+               {
+                   "op": "add",
+                   "path": "stages/1/recipes/-",
+                   "value": "thaumcraft:22233"
+               },
+               {
+                   "op": "add",
+                   "path": "stages/1/recipes/-",
+                   "value": "thaumcraft:22212"
+               }
+        ]
+    }
+]

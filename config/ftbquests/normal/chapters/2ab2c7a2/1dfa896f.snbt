@@ -1,0 +1,63 @@
+{
+	title: "炼狱熔炉",
+	icon: "thaumcraft:infernal_furnace",
+	x: 0.5d,
+	y: -0.5d,
+	description: "搭建炼狱熔炉,使熔炼物品不再需要消耗燃料",
+	text: [
+		""
+	],
+	dependencies: [
+		"87d8f849"
+	],
+	dependency_requirement: "one_started",
+	tasks: [{
+		uid: "0a5389a3",
+		type: "item",
+		items: [{
+			item: "minecraft:obsidian"
+		}],
+		count: 12L
+	},
+	{
+		uid: "5f3f2d04",
+		type: "item",
+		items: [{
+			item: "minecraft:nether_brick"
+		}],
+		count: 12L
+	},
+	{
+		uid: "3d6868f2",
+		type: "item",
+		items: [{
+			item: "minecraft:iron_bars"
+		}]
+	},
+	{
+		uid: "c1c4b09c",
+		type: "item",
+		items: [{
+			item: "minecraft:lava_bucket"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "1ba7a107",
+		type: "item",
+		items: [{
+			item: "thaumcraft:salis_mundus"
+		}]
+	}],
+	rewards: [{
+		uid: "d7dca876",
+		type: "ftbmoney:money",
+		ftb_money: 5L
+	},
+	{
+		uid: "5ade6ef3",
+		type: "xp",
+		xp: 50
+	}]
+}

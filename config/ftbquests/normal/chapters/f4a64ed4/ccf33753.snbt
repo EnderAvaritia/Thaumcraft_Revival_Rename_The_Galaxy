@@ -1,0 +1,14 @@
+{
+	title: "压缩机改造计划",
+	icon: "ic2:te 1 43",
+	x: -6.0d,
+	y: 2.5d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"7d8704b3"
+	],
+	tasks: [{
+		uid: "44e2a1a2",
+		type: "checkmark"
+	}]
+}

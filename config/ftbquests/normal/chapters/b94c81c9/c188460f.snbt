@@ -1,0 +1,23 @@
+{
+	title: "隔墙有眼",
+	icon: "minecraft:end_portal_frame",
+	x: -22.0d,
+	y: -14.0d,
+	description: "制作末影之眼,开启末地之门",
+	dependencies: [
+		"3c874779",
+		"bb809c8f"
+	],
+	tasks: [{
+		uid: "0ff8af4f",
+		type: "item",
+		items: [{
+			item: "minecraft:ender_eye"
+		}]
+	}],
+	rewards: [{
+		uid: "195e230c",
+		type: "ftbmoney:money",
+		ftb_money: 1L
+	}]
+}

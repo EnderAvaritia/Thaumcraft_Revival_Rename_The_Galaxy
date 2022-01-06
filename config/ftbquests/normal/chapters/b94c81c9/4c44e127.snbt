@@ -1,0 +1,23 @@
+{
+	title: "异界入侵",
+	icon: "minecraft:ender_eye",
+	x: -21.0d,
+	y: -16.0d,
+	shape: "pentagon",
+	can_repeat: true,
+	dependencies: [
+		"3c874779"
+	],
+	tasks: [{
+		uid: "f07f0575",
+		type: "kill",
+		icon: "minecraft:stone_sword",
+		entity: "minecraft:enderman",
+		value: 25L
+	}],
+	rewards: [{
+		uid: "60c109e3",
+		type: "ftbmoney:money",
+		ftb_money: 1L
+	}]
+}

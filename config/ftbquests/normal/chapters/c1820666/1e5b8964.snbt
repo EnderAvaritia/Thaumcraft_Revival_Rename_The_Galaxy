@@ -1,0 +1,36 @@
+{
+	title: "无穷密度",
+	x: 6.0d,
+	y: 8.0d,
+	description: "获得奇点，为量子环的搭建做准备",
+	text: [
+		"聚合奇点需大量物品，常见方法是破坏面板配合雪傀儡快速产雪球，不过会造成一定卡顿"
+	],
+	dependencies: [
+		"95ac4e5a"
+	],
+	tasks: [{
+		uid: "8a8caa49",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 38"
+		}]
+	},
+	{
+		uid: "ec364021",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 47"
+		}]
+	}],
+	rewards: [{
+		uid: "e24152c6",
+		type: "item",
+		item: "appliedenergistics2:tiny_tnt"
+	},
+	{
+		uid: "4b42087d",
+		type: "ftbmoney:money",
+		ftb_money: 100L
+	}]
+}

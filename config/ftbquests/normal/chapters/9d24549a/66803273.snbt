@@ -1,0 +1,21 @@
+{
+	x: -1.0d,
+	y: 0.5d,
+	shape: "heart",
+	description: "一切物质的聚合",
+	dependencies: [
+		"d70fdc96"
+	],
+	tasks: [{
+		uid: "32d7db67",
+		type: "item",
+		items: [{
+			item: "eternalsingularity:eternal_singularity"
+		}]
+	}],
+	rewards: [{
+		uid: "61836659",
+		type: "xp_levels",
+		xp_levels: 200
+	}]
+}

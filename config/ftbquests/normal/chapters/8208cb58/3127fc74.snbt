@@ -1,0 +1,22 @@
+{
+	title: "进入哥布林要塞",
+	icon: "twilightforest:trophy_pedestal",
+	x: -2.5d,
+	y: -14.0d,
+	description: "前往哥布林地牢,在战利品王座上放上战利品,打开迷宫大门",
+	dependencies: [
+		"bf3a7885"
+	],
+	tasks: [{
+		uid: "f38080bd",
+		type: "item",
+		items: [{
+			item: "twilightforest:armor_shard"
+		}]
+	}],
+	rewards: [{
+		uid: "bcbede80",
+		type: "ftbmoney:money",
+		ftb_money: 1L
+	}]
+}

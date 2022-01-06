@@ -1,0 +1,21 @@
+{
+	x: -4.5d,
+	y: 6.0d,
+	description: "在装罐机里被注满建筑泡沫",
+	dependencies: [
+		"45669532"
+	],
+	tasks: [{
+		uid: "729f29e9",
+		type: "item",
+		items: [{
+			item: "ic2:foam_sprayer"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "8b39bdab",
+		type: "random",
+		table: 13
+	}]
+}

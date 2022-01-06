@@ -1,0 +1,59 @@
+{
+	title: "双倍快乐",
+	icon: {
+		id: "thaumcraft:phial",
+		tag: {
+			Aspects: [{
+				amount: 10,
+				key: "caeles"
+			}]
+		},
+		Damage: 1s
+	},
+	x: 12.5d,
+	y: -6.5d,
+	description: "把一个罐装裂缝通过漏斗扔进另一个罐装裂缝,准备一场恶战",
+	dependencies: [
+		"bfc02db9"
+	],
+	tasks: [{
+		uid: "2a91ae5e",
+		type: "kill",
+		icon: {
+			id: "thaumcraft:elemental_sword",
+			tag: {
+				infench: [{
+					lvl: 2s,
+					id: 5s
+				}]
+			}
+		},
+		entity: "thaumicaugmentation:primal_wisp",
+		value: 2L
+	},
+	{
+		uid: "45547d3d",
+		type: "item",
+		items: [{
+			id: "thaumicaugmentation:rift_jar",
+			tag: {
+				seed: 1337,
+				size: 100
+			}
+		}],
+		count: 2L,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "92973efb",
+		type: "item",
+		items: [{
+			item: "minecraft:hopper"
+		}]
+	}],
+	rewards: [{
+		uid: "afd7bd17",
+		type: "ftbmoney:money",
+		ftb_money: 6L
+	}]
+}

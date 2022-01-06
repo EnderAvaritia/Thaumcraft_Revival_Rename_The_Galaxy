@@ -1,0 +1,24 @@
+{
+	title: "第一场战斗",
+	x: -5.5d,
+	y: -12.5d,
+	description: "击败娜迦,在古老庭院中栖息的神蛇",
+	text: [
+		"tips：你知道吗，娜迦在冲撞举盾的人后会陷入眩晕"
+	],
+	dependencies: [
+		"b6f0da98"
+	],
+	tasks: [{
+		uid: "99817bdb",
+		type: "kill",
+		icon: "twilightforest:naga_scale",
+		entity: "twilightforest:naga",
+		value: 1L
+	}],
+	rewards: [{
+		uid: "a74a0bb7",
+		type: "ftbmoney:money",
+		ftb_money: 3L
+	}]
+}

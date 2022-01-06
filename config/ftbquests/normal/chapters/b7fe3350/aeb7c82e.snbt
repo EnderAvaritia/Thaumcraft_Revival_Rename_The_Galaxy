@@ -1,0 +1,22 @@
+{
+	title: "生而复死",
+	icon: "minecraft:skull 1 1",
+	x: 4.0d,
+	y: -4.0d,
+	description: "击杀10只亡灵巫师",
+	dependencies: [
+		"901d8738"
+	],
+	tasks: [{
+		uid: "60bcccba",
+		type: "kill",
+		icon: "minecraft:diamond_sword",
+		entity: "cqrepoured:necromancer",
+		value: 10L
+	}],
+	rewards: [{
+		uid: "321e6ede",
+		type: "ftbmoney:money",
+		ftb_money: 30L
+	}]
+}

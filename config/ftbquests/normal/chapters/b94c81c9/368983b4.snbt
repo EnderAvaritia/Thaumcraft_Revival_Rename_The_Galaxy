@@ -1,0 +1,23 @@
+{
+	title: "化石展览",
+	icon: "minecraft:bone_block",
+	x: -25.0d,
+	y: -17.5d,
+	shape: "pentagon",
+	can_repeat: true,
+	dependencies: [
+		"74e9ee9b"
+	],
+	tasks: [{
+		uid: "c81bad6a",
+		type: "kill",
+		icon: "minecraft:wooden_sword",
+		entity: "minecraft:skeleton",
+		value: 100L
+	}],
+	rewards: [{
+		uid: "c1feb475",
+		type: "ftbmoney:money",
+		ftb_money: 1L
+	}]
+}

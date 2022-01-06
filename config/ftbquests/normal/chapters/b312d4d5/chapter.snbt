@@ -1,0 +1,10 @@
+{
+	title: "魔法之旅",
+	icon: "botania:rainbowrod",
+	description: [
+		"学习更多的魔法"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

@@ -1,0 +1,27 @@
+{
+	title: "裂缝定位",
+	x: 11.0d,
+	y: -7.0d,
+	description: "制作裂缝定位器来寻找维度裂缝",
+	text: [
+		"想要制作此物品,需解锁位于\"神秘进阶\"的研究\"踏入虚域\"",
+		"",
+		"如果你的运气足够好,那么不必要制作此物品"
+	],
+	dependencies: [
+		"862ade61"
+	],
+	tasks: [{
+		uid: "736928ba",
+		type: "item",
+		items: [{
+			item: "thaumicaugmentation:fracture_locator"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "0fa079be",
+		type: "ftbmoney:money",
+		ftb_money: 4L
+	}]
+}

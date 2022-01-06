@@ -1,0 +1,26 @@
+{
+	title: "早睡早起身体好",
+	icon: "minecraft:bed 1 14",
+	x: -2.5d,
+	y: 7.0d,
+	description: "晚睡晚起我心情好",
+	text: [
+		""
+	],
+	dependencies: [
+		"46554c96"
+	],
+	hide: true,
+	tasks: [{
+		uid: "62db9be1",
+		type: "stat",
+		icon: "minecraft:bed 1 14",
+		stat: "stat.sleepInBed",
+		value: 30
+	}],
+	rewards: [{
+		uid: "dec87b8c",
+		type: "ftbmoney:money",
+		ftb_money: 20L
+	}]
+}

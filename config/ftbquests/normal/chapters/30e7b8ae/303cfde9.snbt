@@ -1,0 +1,15 @@
+{
+	title: "热加工",
+	x: -4.5d,
+	y: 1.0d,
+	dependencies: [
+		"77f01151"
+	],
+	tasks: [{
+		uid: "96fdde2c",
+		type: "item",
+		items: [{
+			item: "ic2:te 1 46"
+		}]
+	}]
+}

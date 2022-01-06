@@ -1,0 +1,37 @@
+{
+	title: "金属炼成",
+	icon: "thaumcraft:crucible",
+	x: 6.0d,
+	y: 3.0d,
+	description: "制作大量神秘金属来方便玩家发展",
+	dependencies: [
+		"36d3d9ed",
+		"6344e6b7"
+	],
+	tasks: [{
+		uid: "2abfddf1",
+		type: "item",
+		items: [{
+			item: "thaumcraft:ingot 1 2"
+		}],
+		count: 6L
+	},
+	{
+		uid: "5428e713",
+		type: "item",
+		items: [{
+			item: "thaumcraft:ingot"
+		}],
+		count: 6L
+	}],
+	rewards: [{
+		uid: "c56cd720",
+		type: "ftbmoney:money",
+		ftb_money: 4L
+	},
+	{
+		uid: "05331db4",
+		type: "random",
+		table: 4
+	}]
+}

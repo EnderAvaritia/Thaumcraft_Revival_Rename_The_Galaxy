@@ -1,0 +1,22 @@
+{
+	x: 1.5d,
+	y: -2.0d,
+	description: "制作扭时之钟来调整星辰变换",
+	dependencies: [
+		"85da3181"
+	],
+	tasks: [{
+		uid: "92be5882",
+		type: "item",
+		items: [{
+			item: "thaumicwonders:timewinder"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a311cdc2",
+		type: "ftbmoney:money",
+		ftb_money: 10L
+	}]
+}

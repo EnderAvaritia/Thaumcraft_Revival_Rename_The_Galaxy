@@ -1,0 +1,10 @@
+{
+	title: "应用能源",
+	icon: "appliedenergistics2:creative_energy_cell",
+	description: [
+		"应用能源基础教程"
+	],
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

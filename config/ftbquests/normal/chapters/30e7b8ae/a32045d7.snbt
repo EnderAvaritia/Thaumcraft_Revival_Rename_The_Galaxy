@@ -1,0 +1,27 @@
+{
+	x: 8.0d,
+	y: 4.0d,
+	text: [
+		"制作骨弓来提高玩家的远程进攻能力",
+		"",
+		"想要制作骨弓需要解锁神秘奇境的\"骨弓\"研究",
+		"其前置研究为\"充能基座\"与\"飞毯\""
+	],
+	dependencies: [
+		"3d123587"
+	],
+	tasks: [{
+		uid: "8feded86",
+		type: "item",
+		items: [{
+			item: "thaumicwonders:bone_bow"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "91457ce7",
+		type: "ftbmoney:money",
+		ftb_money: 3L
+	}]
+}

@@ -1,0 +1,19 @@
+{
+	x: -25.0d,
+	y: -15.0d,
+	dependencies: [
+		"9f76ae44"
+	],
+	tasks: [{
+		uid: "3c29e13a",
+		type: "item",
+		items: [{
+			item: "minecraft:dragon_breath"
+		}]
+	}],
+	rewards: [{
+		uid: "8ff877d8",
+		type: "xp_levels",
+		xp_levels: 1
+	}]
+}

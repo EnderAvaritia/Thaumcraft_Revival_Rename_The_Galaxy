@@ -1,0 +1,26 @@
+{
+	title: "给你的弩加一个脑子",
+	x: 7.0d,
+	y: 1.0d,
+	description: "制作高级自动弩，调整更多的配置",
+	dependencies: [
+		"0947fc70"
+	],
+	tasks: [{
+		uid: "7a73a7f2",
+		type: "item",
+		items: [{
+			item: "thaumcraft:turret 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "33f7785c",
+		type: "ftbmoney:money",
+		ftb_money: 2L
+	},
+	{
+		uid: "37b6ed8b",
+		type: "xp",
+		xp: 20
+	}]
+}

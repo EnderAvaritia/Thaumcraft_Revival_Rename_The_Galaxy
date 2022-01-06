@@ -1,0 +1,26 @@
+{
+	title: "数字回收站",
+	x: 4.0d,
+	y: 6.0d,
+	description: "制作物质聚合器以回收不必要的物品",
+	text: [
+		"第一种模式,所有输入的物品直接销毁，不会储存",
+		"第二种模式需插入任意存储组件，每输入256个物品产生一个物质球",
+		"第三种模式需插入64k存储组件，每输入256000个物品产生一个奇点"
+	],
+	dependencies: [
+		"35ba60f5"
+	],
+	tasks: [{
+		uid: "febca9ca",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:condenser"
+		}]
+	}],
+	rewards: [{
+		uid: "27201d2f",
+		type: "ftbmoney:money",
+		ftb_money: 10L
+	}]
+}

@@ -1,0 +1,68 @@
+{
+	title: "结晶农场",
+	x: 8.0d,
+	y: -3.5d,
+	description: "制作元素结晶来使水晶再生",
+	text: [
+		"想要制作此物品需解锁位于基础学的隐藏研究\"水晶农场\"",
+		"发现该研究需要玩家使用魔导透镜扫描自然生成的魔力水晶"
+	],
+	dependencies: [
+		"80698ec1"
+	],
+	hide: true,
+	tasks: [{
+		uid: "8301b327",
+		type: "item",
+		items: [{
+			item: "thaumcraft:crystal_aer"
+		}]
+	},
+	{
+		uid: "fbb3050b",
+		type: "item",
+		items: [{
+			item: "thaumcraft:crystal_terra"
+		}]
+	},
+	{
+		uid: "c9cc4a08",
+		type: "item",
+		items: [{
+			item: "thaumcraft:crystal_ignis"
+		}]
+	},
+	{
+		uid: "f5a0a856",
+		type: "item",
+		items: [{
+			item: "thaumcraft:crystal_aqua"
+		}]
+	},
+	{
+		uid: "d28dd9f5",
+		type: "item",
+		items: [{
+			item: "thaumcraft:crystal_ordo"
+		}]
+	},
+	{
+		uid: "60e0e9f1",
+		type: "item",
+		items: [{
+			item: "thaumcraft:crystal_perditio"
+		}]
+	},
+	{
+		uid: "c4683ea0",
+		type: "item",
+		items: [{
+			item: "thaumcraft:crystal_vitium"
+		}]
+	}],
+	rewards: [{
+		uid: "0264ee20",
+		type: "ftbmoney:money",
+		ftb_money: 7L
+	}]
+}

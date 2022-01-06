@@ -1,0 +1,40 @@
+{
+	title: "ALIVE",
+	x: 2.0d,
+	y: 6.0d,
+	description: "以充斥着灵气的木材与石材净化为活木与活石",
+	text: [
+		""
+	],
+	dependencies: [
+		"3c127b4f"
+	],
+	tasks: [{
+		uid: "ebe80d10",
+		type: "item",
+		items: [{
+			item: "thaumcraft:log_greatwood"
+		}],
+		count: 8L,
+		consume_items: false
+	},
+	{
+		uid: "2a800fc2",
+		type: "item",
+		items: [{
+			item: "thaumcraft:stone_arcane"
+		}],
+		count: 8L,
+		consume_items: false
+	}],
+	rewards: [{
+		uid: "60c22e68",
+		type: "ftbmoney:money",
+		ftb_money: 2L
+	},
+	{
+		uid: "59b4b2e9",
+		type: "xp",
+		xp: 20
+	}]
+}

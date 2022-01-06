@@ -1,0 +1,35 @@
+{
+	title: "近乎疯狂",
+	icon: "minecraft:beacon",
+	x: 5.0d,
+	y: -4.5d,
+	shape: "octagon",
+	description: "准备大量材料来迎接下面的挑战",
+	dependencies: [
+		"6ab7b835"
+	],
+	dependency_requirement: "one_started",
+	tasks: [{
+		uid: "fe61890d",
+		type: "item",
+		items: [{
+			item: "thaumcraft:primordial_pearl"
+		}],
+		count: 5L,
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "7e6791eb",
+		type: "item",
+		items: [{
+			item: "minecraft:nether_star"
+		}],
+		count: 5L
+	}],
+	rewards: [{
+		uid: "8c227336",
+		type: "xp_levels",
+		xp_levels: 6
+	}]
+}

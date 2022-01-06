@@ -1,0 +1,22 @@
+{
+	title: "电热加工",
+	x: -4.5d,
+	y: 2.5d,
+	description: "制作电炉，更好燃烧物品",
+	dependencies: [
+		"303cfde9"
+	],
+	hide: true,
+	tasks: [{
+		uid: "24ce49fa",
+		type: "item",
+		items: [{
+			item: "ic2:te 1 44"
+		}]
+	}],
+	rewards: [{
+		uid: "5a224b2b",
+		type: "random",
+		table: 13
+	}]
+}

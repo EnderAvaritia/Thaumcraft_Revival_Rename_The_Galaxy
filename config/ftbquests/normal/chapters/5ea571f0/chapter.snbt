@@ -1,0 +1,12 @@
+{
+	title: "神秘能源",
+	icon: {
+		id: "thaumicenergistics:essentia_cell_1k",
+		tag: {
+			filter: {}
+		}
+	},
+	always_invisible: false,
+	group: -1048443290,
+	default_quest_shape: ""
+}

@@ -1,0 +1,24 @@
+{
+	title: "drop pop candy",
+	x: 5.5d,
+	y: 2.5d,
+	description: "制作符文祭坛",
+	text: [
+		""
+	],
+	dependencies: [
+		"8b80339b"
+	],
+	tasks: [{
+		uid: "af329d74",
+		type: "item",
+		items: [{
+			item: "botania:runealtar"
+		}]
+	}],
+	rewards: [{
+		uid: "d714fd1b",
+		type: "xp",
+		xp: 50
+	}]
+}

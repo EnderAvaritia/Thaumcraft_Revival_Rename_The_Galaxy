@@ -1,0 +1,30 @@
+{
+	title: "神秘学",
+	icon: "thaumcraft:vis_resonator",
+	x: 5.0d,
+	y: 0.0d,
+	shape: "rsquare",
+	description: "解锁神秘学的研究",
+	text: [
+		"此任务解锁了新的冒险模式章节"
+	],
+	dependencies: [
+		"67730661"
+	],
+	hide: true,
+	tasks: [{
+		uid: "1dddddb6",
+		type: "item",
+		items: [{
+			item: "thaumcraft:caster_basic"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "155a4439",
+		type: "item",
+		item: "thaumcraft:curio",
+		count: 3
+	}]
+}

@@ -1,0 +1,20 @@
+{
+	x: -1.0d,
+	y: -8.5d,
+	dependencies: [
+		"f234f798"
+	],
+	tasks: [{
+		uid: "bca91fe5",
+		type: "item",
+		items: [{
+			item: "thaumadditions:zeith_fur"
+		}],
+		count: 3L
+	}],
+	rewards: [{
+		uid: "c5946f36",
+		type: "ftbmoney:money",
+		ftb_money: 3L
+	}]
+}

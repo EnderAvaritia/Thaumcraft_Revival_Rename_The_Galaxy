@@ -1,0 +1,33 @@
+{
+	title: "现在该轮到龙之研究的时代了！",
+	icon: "draconicevolution:draconic_core",
+	x: 11.5d,
+	y: -0.5d,
+	description: "进入龙之研究",
+	text: [
+		"这就想跳科技了？",
+		"在这停顿"
+	],
+	dependencies: [
+		"255eeb41"
+	],
+	tasks: [{
+		uid: "cae7ca29",
+		type: "item",
+		items: [{
+			item: "botania:manaresource 1 4"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "8a4a67b5",
+		type: "ftbmoney:money",
+		ftb_money: 100L
+	},
+	{
+		uid: "7b8d0b34",
+		type: "gamestage",
+		auto: "no_toast",
+		stage: "龙之研究"
+	}]
+}

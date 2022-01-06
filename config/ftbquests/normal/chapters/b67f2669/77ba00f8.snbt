@@ -1,0 +1,29 @@
+{
+	title: "友情毁灭者",
+	x: -3.0d,
+	y: 0.5d,
+	description: "是兄弟就让我帮忙美化一下你的家",
+	text: [
+		"我不知道为什么我会想做出这个，或许只是娱乐（认真）"
+	],
+	dependencies: [
+		"cd032e57"
+	],
+	tasks: [{
+		uid: "a4f20cee",
+		type: "item",
+		items: [{
+			item: "thaumcraft:bottle_taint"
+		}]
+	}],
+	rewards: [{
+		uid: "375e2e0b",
+		type: "ftbmoney:money",
+		ftb_money: 3L
+	},
+	{
+		uid: "725e77b9",
+		type: "xp",
+		xp: 30
+	}]
+}

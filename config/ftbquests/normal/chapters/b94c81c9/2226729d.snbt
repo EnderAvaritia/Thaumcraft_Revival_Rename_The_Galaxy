@@ -1,0 +1,37 @@
+{
+	title: "巨斧砍大树",
+	icon: {
+		id: "thaumicaugmentation:rift_seed",
+		tag: {
+			riftSize: 100,
+			grown: 1b
+		}
+	},
+	x: -21.0d,
+	y: -19.0d,
+	shape: "pentagon",
+	can_repeat: true,
+	dependencies: [
+		"789ba531"
+	],
+	tasks: [{
+		uid: "18b51cc2",
+		type: "kill",
+		icon: {
+			id: "thaumcraft:elemental_sword",
+			tag: {
+				infench: [{
+					lvl: 2s,
+					id: 5s
+				}]
+			}
+		},
+		entity: "thaumcraft:taintacle",
+		value: 50L
+	}],
+	rewards: [{
+		uid: "90e2fdd9",
+		type: "ftbmoney:money",
+		ftb_money: 7L
+	}]
+}

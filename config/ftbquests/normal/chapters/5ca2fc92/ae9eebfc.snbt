@@ -1,0 +1,22 @@
+{
+	title: "你给我下来",
+	icon: "ebwizardry:spectral_dust 1 6",
+	x: 10.0d,
+	y: 1.5d,
+	description: "击杀10只遗灵",
+	dependencies: [
+		"845207a1"
+	],
+	tasks: [{
+		uid: "f2e43705",
+		type: "kill",
+		icon: "minecraft:iron_sword",
+		entity: "ebwizardry:remnant",
+		value: 10L
+	}],
+	rewards: [{
+		uid: "0cf4dc48",
+		type: "ftbmoney:money",
+		ftb_money: 1L
+	}]
+}

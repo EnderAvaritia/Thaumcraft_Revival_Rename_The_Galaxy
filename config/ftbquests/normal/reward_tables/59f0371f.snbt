@@ -1,0 +1,19 @@
+{
+	title: "食物",
+	loot_size: 1,
+	rewards: [{
+		item: "minecraft:cooked_fish",
+		weight: 23
+	},
+	{
+		item: "minecraft:cooked_fish 1 1",
+		weight: 15
+	},
+	{
+		item: "minecraft:cooked_porkchop",
+		weight: 14
+	},
+	{
+		item: "minecraft:golden_apple"
+	}]
+}

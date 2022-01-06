@@ -1,0 +1,40 @@
+{
+	title: "炼金自动化",
+	x: -1.5d,
+	y: -5.0d,
+	text: [
+		"好的那么现在你基本可以实现炼金自动化了~"
+	],
+	dependencies: [
+		"5c81a100"
+	],
+	tasks: [{
+		uid: "59cff4d3",
+		type: "item",
+		items: [{
+			item: "thaumcraft:essentia_input"
+		}]
+	},
+	{
+		uid: "870ccdba",
+		type: "item",
+		items: [{
+			item: "thaumcraft:essentia_output"
+		}]
+	}],
+	rewards: [{
+		uid: "fc25a9ee",
+		type: "ftbmoney:money",
+		ftb_money: 4L
+	},
+	{
+		uid: "75f9fcde",
+		type: "xp",
+		xp: 40
+	},
+	{
+		uid: "879a71a5",
+		type: "random",
+		table: 4
+	}]
+}

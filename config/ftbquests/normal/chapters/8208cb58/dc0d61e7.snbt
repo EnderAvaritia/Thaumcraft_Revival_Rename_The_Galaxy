@@ -1,0 +1,20 @@
+{
+	title: "这还远远没结束...",
+	x: 9.0d,
+	y: -21.0d,
+	description: "进入最终城堡,期待着作者会将它制作完成",
+	dependencies: [
+		"3470742e"
+	],
+	tasks: [{
+		uid: "991bfaf8",
+		type: "biome",
+		icon: "twilightforest:castle_brick",
+		biome: "twilightforest:thornlands"
+	}],
+	rewards: [{
+		uid: "705f6064",
+		type: "ftbmoney:money",
+		ftb_money: 20L
+	}]
+}

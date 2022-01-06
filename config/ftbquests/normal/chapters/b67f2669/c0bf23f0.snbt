@@ -1,0 +1,20 @@
+{
+	x: 3.0d,
+	y: 4.0d,
+	dependencies: [
+		"ccb73785"
+	],
+	hide: true,
+	tasks: [{
+		uid: "004e8480",
+		type: "item",
+		items: [{
+			item: "thaumadditions:jar_thaumium"
+		}]
+	}],
+	rewards: [{
+		uid: "e1ca4668",
+		type: "ftbmoney:money",
+		ftb_money: 7L
+	}]
+}

@@ -1,0 +1,42 @@
+{
+	title: "击杀首领",
+	icon: "minecraft:golden_sword",
+	x: 15.0d,
+	y: -7.5d,
+	shape: "hexagon",
+	description: "击败外域首领,解开邪术高塔的守护",
+	text: [
+		"此章节解锁了新的邪术学任务"
+	],
+	dependencies: [
+		"c48ec962",
+		"319831fe",
+		"595726d8"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "92650200",
+		type: "item",
+		items: [{
+			item: "thaumicaugmentation:research_notes"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "b33f7621",
+		type: "item",
+		item: "thaumcraft:crimson_blade"
+	},
+	{
+		uid: "c0a298ed",
+		type: "ftbmoney:money",
+		ftb_money: 100L
+	},
+	{
+		uid: "a3694786",
+		type: "command",
+		title: "一个用于修复BUG的指令",
+		icon: "thaumicaugmentation:research_notes",
+		command: "/tc research @team ELDRITCH_SPIRE"
+	}]
+}

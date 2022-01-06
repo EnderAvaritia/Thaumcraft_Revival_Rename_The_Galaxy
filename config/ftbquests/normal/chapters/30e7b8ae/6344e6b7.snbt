@@ -1,0 +1,16 @@
+{
+	title: "融合",
+	x: 3.5d,
+	y: 3.0d,
+	description: "将三份铜粉和一份锡粉揉到一起再烧一下，制作青铜",
+	dependencies: [
+		"f5008f07"
+	],
+	tasks: [{
+		uid: "c935b305",
+		type: "item",
+		items: [{
+			item: "ic2:ingot 1 1"
+		}]
+	}]
+}

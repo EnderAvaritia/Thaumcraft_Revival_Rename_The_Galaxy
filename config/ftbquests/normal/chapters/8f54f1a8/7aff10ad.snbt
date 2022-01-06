@@ -1,0 +1,21 @@
+{
+	title: "已经不觉得贵了",
+	x: 4.0d,
+	y: -9.0d,
+	description: "制作秘金锭,游戏中处于最上位的材料",
+	dependencies: [
+		"2e0aba41"
+	],
+	tasks: [{
+		uid: "e1bc2f37",
+		type: "item",
+		items: [{
+			item: "thaumadditions:mithminite_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "abbd7ccb",
+		type: "ftbmoney:money",
+		ftb_money: 10L
+	}]
+}

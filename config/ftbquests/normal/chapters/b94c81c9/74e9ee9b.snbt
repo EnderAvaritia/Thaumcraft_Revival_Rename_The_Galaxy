@@ -1,0 +1,21 @@
+{
+	title: "骨质疏松",
+	icon: "minecraft:bone",
+	x: -24.0d,
+	y: -17.5d,
+	dependencies: [
+		"cdc04279"
+	],
+	tasks: [{
+		uid: "88ebdf0d",
+		type: "kill",
+		icon: "minecraft:bone",
+		entity: "minecraft:skeleton",
+		value: 10L
+	}],
+	rewards: [{
+		uid: "789c6003",
+		type: "xp",
+		xp: 10
+	}]
+}

@@ -1,0 +1,30 @@
+{
+	title: "火焰沼泽",
+	x: 1.5d,
+	y: -11.0d,
+	dependencies: [
+		"05220b35"
+	],
+	tasks: [{
+		uid: "12be0392",
+		type: "biome",
+		title: "前往火焰沼泽,暮色沼泽的中心",
+		icon: "twilightforest:fire_jet 1 6",
+		biome: "twilightforest:fire_swamp"
+	}],
+	rewards: [{
+		uid: "28bffa9b",
+		type: "item",
+		item: {
+			id: "minecraft:potion",
+			tag: {
+				Potion: "minecraft:long_fire_resistance"
+			}
+		}
+	},
+	{
+		uid: "6e9fd1b9",
+		type: "ftbmoney:money",
+		ftb_money: 1L
+	}]
+}

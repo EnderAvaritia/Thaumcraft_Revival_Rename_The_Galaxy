@@ -1,0 +1,22 @@
+{
+	title: "撕裂裂缝",
+	x: 12.0d,
+	y: -5.5d,
+	description: "制作维度撕裂器并灌入相应源质来使裂缝产生",
+	dependencies: [
+		"54198107"
+	],
+	tasks: [{
+		uid: "1a67328f",
+		type: "item",
+		items: [{
+			item: "thaumicwonders:dimensional_ripper"
+		}],
+		count: 2L
+	}],
+	rewards: [{
+		uid: "3e3bae09",
+		type: "ftbmoney:money",
+		ftb_money: 6L
+	}]
+}

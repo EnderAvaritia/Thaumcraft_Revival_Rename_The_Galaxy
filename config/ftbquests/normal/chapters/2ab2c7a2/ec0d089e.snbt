@@ -1,0 +1,28 @@
+{
+	title: "还是按钮",
+	x: -2.5d,
+	y: 5.0d,
+	description: "更安全的按钮",
+	dependencies: [
+		"b6a050f8",
+		"6f84ab04"
+	],
+	tasks: [{
+		uid: "7cb49234",
+		type: "item",
+		items: [{
+			item: "thaumicaugmentation:warded_button_greatwood"
+		},
+		{
+			item: "thaumicaugmentation:warded_button_silverwood"
+		},
+		{
+			item: "thaumicaugmentation:warded_button_arcane_stone"
+		}]
+	}],
+	rewards: [{
+		uid: "3ffea490",
+		type: "ftbmoney:money",
+		ftb_money: 1L
+	}]
+}

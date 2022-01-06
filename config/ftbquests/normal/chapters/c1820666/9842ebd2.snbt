@@ -1,0 +1,24 @@
+{
+	title: "还是个箱子",
+	x: 4.0d,
+	y: 0.0d,
+	description: "制作ME箱子以方便接下来发展",
+	text: [
+		"相当于只有一个格子的自带终端的ME驱动器，占用一个频道但是不提供频道也能工作"
+	],
+	dependencies: [
+		"1460ce8b"
+	],
+	tasks: [{
+		uid: "eb9a0fcf",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:chest"
+		}]
+	}],
+	rewards: [{
+		uid: "981c84c8",
+		type: "ftbmoney:money",
+		ftb_money: 10L
+	}]
+}

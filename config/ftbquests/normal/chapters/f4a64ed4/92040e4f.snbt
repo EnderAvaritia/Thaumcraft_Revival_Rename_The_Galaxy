@@ -1,0 +1,20 @@
+{
+	x: 9.5d,
+	y: -3.0d,
+	description: "我们推荐使用清洁能源",
+	dependencies: [
+		"379aa550"
+	],
+	tasks: [{
+		uid: "bd5c9619",
+		type: "item",
+		items: [{
+			item: "ic2:te 1 21"
+		}]
+	}],
+	rewards: [{
+		uid: "e975855e",
+		type: "random",
+		table: 13
+	}]
+}

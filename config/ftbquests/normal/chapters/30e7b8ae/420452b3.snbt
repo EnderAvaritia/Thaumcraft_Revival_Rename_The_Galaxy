@@ -1,0 +1,16 @@
+{
+	title: "神秘的介入",
+	x: 3.5d,
+	y: 1.0d,
+	dependencies: [
+		"67730661",
+		"36d3d9ed"
+	],
+	tasks: [{
+		uid: "98ade7a5",
+		type: "item",
+		items: [{
+			item: "ic2:resource 1 12"
+		}]
+	}]
+}

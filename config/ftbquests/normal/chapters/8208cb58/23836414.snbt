@@ -1,0 +1,28 @@
+{
+	title: "我要上天",
+	x: 5.0d,
+	y: -19.5d,
+	description: "在肥沃土壤上种植魔豆,爬上云端巨人小屋",
+	dependencies: [
+		"56dee625"
+	],
+	tasks: [{
+		uid: "6c14c195",
+		type: "kill",
+		icon: "twilightforest:giant_pickaxe",
+		entity: "twilightforest:giant_miner",
+		value: 1L
+	},
+	{
+		uid: "96309c67",
+		type: "kill",
+		icon: "twilightforest:giant_sword",
+		entity: "twilightforest:armored_giant",
+		value: 1L
+	}],
+	rewards: [{
+		uid: "2573f825",
+		type: "ftbmoney:money",
+		ftb_money: 3L
+	}]
+}

@@ -1,0 +1,24 @@
+{
+	title: "以物易物",
+	x: 6.5d,
+	y: -12.5d,
+	shape: "hexagon",
+	description: "用魔钢交易源质钢",
+	dependencies: [
+		"372d57cd",
+		"be4743eb"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "bcbfe063",
+		type: "item",
+		items: [{
+			item: "botania:manaresource 1 7"
+		}]
+	}],
+	rewards: [{
+		uid: "b4b9b804",
+		type: "ftbmoney:money",
+		ftb_money: 2L
+	}]
+}

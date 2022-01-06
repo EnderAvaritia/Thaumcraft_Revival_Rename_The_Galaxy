@@ -1,0 +1,22 @@
+{
+	icon: "minecraft:cooked_porkchop",
+	x: 5.0d,
+	y: -5.5d,
+	shape: "pentagon",
+	can_repeat: true,
+	dependencies: [
+		"f9394abf"
+	],
+	tasks: [{
+		uid: "6ad7df2a",
+		type: "kill",
+		icon: "cqrepoured:great_sword_diamond",
+		entity: "cqrepoured:boar_mage",
+		value: 1L
+	}],
+	rewards: [{
+		uid: "893c3389",
+		type: "ftbmoney:money",
+		ftb_money: 5L
+	}]
+}

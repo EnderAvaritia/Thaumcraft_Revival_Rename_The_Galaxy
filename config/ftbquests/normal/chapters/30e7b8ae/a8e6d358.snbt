@@ -1,0 +1,29 @@
+{
+	title: "解读异梦",
+	icon: "thaumcraft:thaumonomicon",
+	x: 6.0d,
+	y: -1.0d,
+	dependencies: [
+		"7f82b314"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "2f880e36",
+		type: "item",
+		items: [{
+			item: "thaumcraft:thaumonomicon"
+		}]
+	}],
+	rewards: [{
+		uid: "602a1de7",
+		type: "ftbmoney:money",
+		ftb_money: 1L
+	},
+	{
+		uid: "c5f07ec8",
+		type: "command",
+		auto: "enabled",
+		command: "thaumcraft research @p RESTORATION",
+		player_command: true
+	}]
+}

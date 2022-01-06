@@ -1,0 +1,31 @@
+{
+	title: "异界交易",
+	icon: "botania:pylon 1 1",
+	x: 5.0d,
+	y: -12.5d,
+	description: "搭建精灵门,交换特殊的精灵材料",
+	dependencies: [
+		"19d42045"
+	],
+	dependency_requirement: "one_started",
+	tasks: [{
+		uid: "012053a3",
+		type: "item",
+		items: [{
+			item: "botania:pylon 1 1"
+		}],
+		count: 2L
+	},
+	{
+		uid: "0f72fddd",
+		type: "item",
+		items: [{
+			item: "botania:alfheimportal"
+		}]
+	}],
+	rewards: [{
+		uid: "e065c466",
+		type: "ftbmoney:money",
+		ftb_money: 2L
+	}]
+}

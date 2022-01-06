@@ -1,0 +1,37 @@
+{
+	x: -3.0d,
+	y: 1.5d,
+	description: "制作一桶死亡之水",
+	text: [
+		"想要制作此物品,需解锁位于\"炼金术\"中的研究\"死亡之水\"",
+		"该研究前置研究为\"炼金杂项\"",
+		"",
+		"此物品可以用来制作刷怪塔"
+	],
+	dependencies: [
+		"cd032e57"
+	],
+	tasks: [{
+		uid: "75c528c4",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "liquid_death",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	}],
+	rewards: [{
+		uid: "7cee22c3",
+		type: "ftbmoney:money",
+		ftb_money: 3L
+	},
+	{
+		uid: "eaaaccb9",
+		type: "xp",
+		xp: 30
+	}]
+}

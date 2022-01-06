@@ -1,0 +1,20 @@
+{
+	title: "观测裂缝大小",
+	x: 11.5d,
+	y: -7.5d,
+	dependencies: [
+		"cff0af6f"
+	],
+	tasks: [{
+		uid: "5c9a1c98",
+		type: "item",
+		items: [{
+			item: "thaumicaugmentation:rift_monitor"
+		}]
+	}],
+	rewards: [{
+		uid: "00fdebc8",
+		type: "ftbmoney:money",
+		ftb_money: 4L
+	}]
+}

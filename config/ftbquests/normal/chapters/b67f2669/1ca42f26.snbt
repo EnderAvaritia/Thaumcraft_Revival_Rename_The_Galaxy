@@ -1,0 +1,22 @@
+{
+	title: "源质无限产生装置",
+	x: 7.0d,
+	y: 4.0d,
+	description: "无底罐",
+	dependencies: [
+		"0e54df4d"
+	],
+	hide: true,
+	tasks: [{
+		uid: "0605e3d1",
+		type: "item",
+		items: [{
+			item: "thaumadditions:jar_mithminite"
+		}]
+	}],
+	rewards: [{
+		uid: "eb6e9f7d",
+		type: "ftbmoney:money",
+		ftb_money: 15L
+	}]
+}

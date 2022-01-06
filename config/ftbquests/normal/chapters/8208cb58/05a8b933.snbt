@@ -1,0 +1,19 @@
+{
+	title: "沙漠之旅",
+	icon: "minecraft:sand",
+	x: -8.5d,
+	y: -6.0d,
+	description: "沙漠中不只有仙人掌,还有...",
+	text: [
+		"前往沙漠,看看有什么不对劲的地方..."
+	],
+	dependencies: [
+		"7abe729b"
+	],
+	tasks: [{
+		uid: "bfae53ff",
+		type: "biome",
+		icon: "minecraft:sand",
+		biome: "minecraft:desert"
+	}]
+}

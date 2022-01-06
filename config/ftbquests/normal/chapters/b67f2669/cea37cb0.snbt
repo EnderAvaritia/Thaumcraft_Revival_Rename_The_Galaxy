@@ -1,0 +1,20 @@
+{
+	x: 9.5d,
+	y: -1.5d,
+	dependencies: [
+		"de65d40f",
+		"7aff10ad"
+	],
+	tasks: [{
+		uid: "b8bcd176",
+		type: "item",
+		items: [{
+			item: "thaumadditions:mithminite_smelter"
+		}]
+	}],
+	rewards: [{
+		uid: "a4f8ecab",
+		type: "ftbmoney:money",
+		ftb_money: 15L
+	}]
+}

@@ -1,0 +1,30 @@
+{
+	title: "虚空信标工程师",
+	icon: "thaumicwonders:void_beacon",
+	x: 6.0d,
+	y: -8.0d,
+	description: "虚空提款机",
+	dependencies: [
+		"0b46ee46"
+	],
+	tasks: [{
+		uid: "8feb3940",
+		type: "item",
+		items: [{
+			item: "thaumicwonders:void_beacon"
+		}]
+	},
+	{
+		uid: "14a3d214",
+		type: "item",
+		items: [{
+			item: "thaumcraft:metal_void"
+		}],
+		count: 184L
+	}],
+	rewards: [{
+		uid: "7d4981ca",
+		type: "ftbmoney:money",
+		ftb_money: 100L
+	}]
+}

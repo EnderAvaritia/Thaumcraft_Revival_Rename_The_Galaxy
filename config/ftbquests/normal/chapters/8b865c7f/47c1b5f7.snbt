@@ -1,0 +1,74 @@
+{
+	title: "羊村守护者",
+	x: 0.0d,
+	y: -3.0d,
+	shape: "pentagon",
+	description: "我一定会回来的",
+	text: [
+		""
+	],
+	can_repeat: true,
+	dependencies: [
+		"3800365b"
+	],
+	hide: true,
+	tasks: [{
+		uid: "c324efea",
+		type: "kill",
+		entity: "minecraft:wolf",
+		value: 1L
+	},
+	{
+		uid: "e0349124",
+		type: "kill",
+		entity: "twilightforest:hostile_wolf",
+		value: 1L
+	},
+	{
+		uid: "36002134",
+		type: "kill",
+		entity: "twilightforest:mist_wolf",
+		value: 1L
+	},
+	{
+		uid: "20854626",
+		type: "kill",
+		entity: "twilightforest:winter_wolf",
+		value: 1L
+	},
+	{
+		uid: "9e0f0e48",
+		type: "kill",
+		entity: "thaumadditions:blue_wolf",
+		value: 1L
+	}],
+	rewards: [{
+		uid: "64b6cf0b",
+		type: "ftbmoney:money",
+		ftb_money: 50L
+	},
+	{
+		uid: "a6262492",
+		type: "item",
+		item: {
+			id: "minecraft:spawn_egg",
+			tag: {
+				EntityTag: {
+					id: "minecraft:sheep"
+				}
+			}
+		}
+	},
+	{
+		uid: "0c707706",
+		type: "item",
+		item: {
+			id: "minecraft:spawn_egg",
+			tag: {
+				EntityTag: {
+					id: "twilightforest:bighorn_sheep"
+				}
+			}
+		}
+	}]
+}

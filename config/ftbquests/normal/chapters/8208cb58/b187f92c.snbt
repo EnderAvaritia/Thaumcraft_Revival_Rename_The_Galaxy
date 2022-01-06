@@ -1,0 +1,22 @@
+{
+	title: "莱迪钩",
+	icon: "twilightforest:trophy 1 5",
+	x: -4.5d,
+	y: -18.0d,
+	dependencies: [
+		"d9144b11"
+	],
+	tasks: [{
+		uid: "6cb7bfd4",
+		type: "item",
+		items: [{
+			item: "twilightforest:trophy 1 5"
+		}],
+		consume_items: false
+	}],
+	rewards: [{
+		uid: "fe45417c",
+		type: "ftbmoney:money",
+		ftb_money: 5L
+	}]
+}

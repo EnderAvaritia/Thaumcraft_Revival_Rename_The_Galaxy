@@ -1,0 +1,37 @@
+{
+	title: "炼化学研究em",
+	icon: "thaumcraft:goggles",
+	x: 8.0d,
+	y: 2.5d,
+	shape: "rsquare",
+	description: "解锁\"炼化学相关\"",
+	dependencies: [
+		"36d3d9ed"
+	],
+	hide: true,
+	tasks: [{
+		uid: "3fe989ba",
+		type: "item",
+		items: [{
+			item: "thaumcraft:goggles"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "c2398017",
+		type: "ftbmoney:money",
+		ftb_money: 2L
+	},
+	{
+		uid: "4bfa22f2",
+		type: "item",
+		item: "thaumcraft:curio 1 5",
+		count: 3
+	},
+	{
+		uid: "0bb1ecc5",
+		type: "random",
+		table: 4
+	}]
+}

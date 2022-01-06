@@ -1,0 +1,16 @@
+{
+	x: 17.0d,
+	y: -18.0d,
+	dependencies: [
+		"bc8167e3"
+	],
+	tasks: [{
+		uid: "154b0f5d",
+		type: "item",
+		items: [{
+			item: "magicbees:frames.oblivion"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

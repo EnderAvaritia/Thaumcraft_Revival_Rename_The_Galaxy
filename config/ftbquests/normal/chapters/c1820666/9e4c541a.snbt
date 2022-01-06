@@ -1,0 +1,76 @@
+{
+	title: "加速轻而易举",
+	x: -2.0d,
+	y: 0.0d,
+	description: "制作晶体催生器以增产水晶",
+	text: [
+		"将种子投入水中等待生长，晶体催生器需放在与水相邻的六格并在上下面接入AE能源，越多加速效果越明显",
+		"非常耗电，记得及时关闭",
+		"不占用频道"
+	],
+	dependencies: [
+		"ecd50acc",
+		"055561b6"
+	],
+	tasks: [{
+		uid: "124454d3",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:quartz_growth_accelerator"
+		}]
+	},
+	{
+		uid: "219fcfd7",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 10"
+		}]
+	},
+	{
+		uid: "ca5df2b6",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 12"
+		}]
+	}],
+	rewards: [{
+		uid: "43e60fce",
+		type: "item",
+		item: {
+			id: "appliedenergistics2:crystal_seed",
+			tag: {
+				progress: 0
+			}
+		},
+		count: 8
+	},
+	{
+		uid: "831c7b96",
+		type: "item",
+		item: {
+			id: "appliedenergistics2:crystal_seed",
+			tag: {
+				progress: 1200
+			},
+			Damage: 1200s
+		},
+		count: 8
+	},
+	{
+		uid: "a272e44d",
+		type: "item",
+		item: {
+			id: "appliedenergistics2:crystal_seed",
+			tag: {
+				progress: 600
+			},
+			Damage: 600s
+		},
+		count: 8
+	},
+	{
+		uid: "ecf7c819",
+		type: "ftbmoney:money",
+		ftb_money: 5L
+	}]
+}

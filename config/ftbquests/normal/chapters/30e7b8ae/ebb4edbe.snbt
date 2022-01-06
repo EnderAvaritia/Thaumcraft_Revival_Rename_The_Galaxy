@@ -1,0 +1,40 @@
+{
+	icon: "thaumcraft:condenser_lattice_dirty",
+	x: 4.5d,
+	y: 6.0d,
+	description: "制作咒波凝结格栅来使净化器发挥作用",
+	text: [
+		"制作大量凝结格栅来增加咒波清理器的工作效率",
+		"被堵塞的凝结格栅需要使用源质滤管右击来清洗"
+	],
+	dependencies: [
+		"0aaf0866"
+	],
+	tasks: [{
+		uid: "b201b37b",
+		type: "item",
+		items: [{
+			item: "thaumcraft:condenser_lattice"
+		}],
+		count: 5L
+	},
+	{
+		uid: "bce15cb4",
+		type: "item",
+		items: [{
+			item: "thaumcraft:filter"
+		}],
+		count: 10L
+	}],
+	rewards: [{
+		uid: "4b88c4b5",
+		type: "ftbmoney:money",
+		ftb_money: 3L
+	},
+	{
+		uid: "a4913bbe",
+		type: "item",
+		item: "thaumcraft:condenser_lattice",
+		count: 20
+	}]
+}

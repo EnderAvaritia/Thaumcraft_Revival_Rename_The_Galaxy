@@ -1,0 +1,29 @@
+{
+	title: "另一种选择",
+	x: 4.0d,
+	y: 1.5d,
+	description: "制作源质存储总线以将罐子连入网络",
+	text: [
+		"当存储元件不够或忙于将源质导入网络中时，可以用存储总线连罐子的方法，方便源质统计与管理"
+	],
+	dependencies: [
+		"f6e9d84f"
+	],
+	tasks: [{
+		uid: "130b54a3",
+		type: "item",
+		items: [{
+			item: "thaumicenergistics:essentia_storage"
+		}]
+	}],
+	rewards: [{
+		uid: "dd2a7901",
+		type: "random",
+		table: 4
+	},
+	{
+		uid: "06ba456e",
+		type: "ftbmoney:money",
+		ftb_money: 5L
+	}]
+}

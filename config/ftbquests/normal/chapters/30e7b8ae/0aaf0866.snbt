@@ -1,0 +1,40 @@
+{
+	title: "咒波清理工作",
+	x: 4.5d,
+	y: 4.5d,
+	description: "制作咒波清理工具,从根源拒绝污染",
+	text: [
+		"可以收集区域内的咒波，在下方放一个要素罐子即可将收集的咒波转化为污染要素~",
+		"",
+		"要制作此物需解锁基础学的\"咒波清理\"研究",
+		"其前置研究为\"咒波\"与\"灵气电池\""
+	],
+	dependencies: [
+		"5402a2bb"
+	],
+	hide: true,
+	tasks: [{
+		uid: "19f432d4",
+		type: "item",
+		items: [{
+			item: "thaumcraft:condenser"
+		}]
+	},
+	{
+		uid: "9c218b9c",
+		type: "item",
+		items: [{
+			item: "thaumcraft:condenser_lattice"
+		}]
+	}],
+	rewards: [{
+		uid: "8657786d",
+		type: "ftbmoney:money",
+		ftb_money: 3L
+	},
+	{
+		uid: "05480df1",
+		type: "xp",
+		xp: 300
+	}]
+}

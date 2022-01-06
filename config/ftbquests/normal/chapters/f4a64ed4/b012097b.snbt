@@ -1,0 +1,27 @@
+{
+	title: "传奇 泰拉荧光棒",
+	x: 9.5d,
+	y: 4.0d,
+	description: "also try terraria",
+	text: [
+		""
+	],
+	dependencies: [
+		"8f22aec3"
+	],
+	hide: true,
+	tasks: [{
+		uid: "13b060e2",
+		type: "item",
+		items: [{
+			item: "botania:terrasword"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "e37c0b76",
+		type: "ftbmoney:money",
+		ftb_money: 5L
+	}]
+}

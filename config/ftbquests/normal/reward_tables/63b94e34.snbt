@@ -1,0 +1,23 @@
+{
+	title: "工业基础奖励箱",
+	loot_size: 1,
+	rewards: [{
+		item: "ic2:ingot 1 1",
+		count: 4
+	},
+	{
+		item: "minecraft:iron_ingot",
+		count: 4
+	},
+	{
+		item: "ic2:ingot 1 6",
+		count: 4
+	},
+	{
+		item: "ic2:ingot 1 2",
+		count: 4
+	},
+	{
+		item: "ic2:crafting 1 1"
+	}]
+}

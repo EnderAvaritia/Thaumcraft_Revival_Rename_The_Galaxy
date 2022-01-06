@@ -1,0 +1,38 @@
+{
+	title: "动感要素",
+	x: 4.0d,
+	y: 0.0d,
+	description: "制作源质输入/输出总线以实现源质流通",
+	text: [
+		"让源质在源质容器与网络间传输",
+		"可使用含有要素的罐子或安瓿进行标记",
+		"可插入各种升级卡"
+	],
+	dependencies: [
+		"adec80a8"
+	],
+	tasks: [{
+		uid: "83dbb270",
+		type: "item",
+		items: [{
+			item: "thaumicenergistics:essentia_import"
+		}]
+	},
+	{
+		uid: "b65ab689",
+		type: "item",
+		items: [{
+			item: "thaumicenergistics:essentia_export"
+		}]
+	}],
+	rewards: [{
+		uid: "efe12ccc",
+		type: "random",
+		table: 4
+	},
+	{
+		uid: "8d4f25f2",
+		type: "ftbmoney:money",
+		ftb_money: 5L
+	}]
+}

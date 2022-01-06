@@ -1,0 +1,27 @@
+{
+	title: "加速腰带",
+	x: 5.0d,
+	y: -13.5d,
+	description: "制作秘金腰带来增强秘金胸甲的效果",
+	text: [
+		"秘金腰带的效果不会让玩家特别满意",
+		"但相对的,它也是秘金四件套中最便宜的"
+	],
+	dependencies: [
+		"1a003c4e"
+	],
+	tasks: [{
+		uid: "3323e108",
+		type: "item",
+		items: [{
+			item: "thaumadditions:mithminite_belt"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "53d0e94f",
+		type: "ftbmoney:money",
+		ftb_money: 25L
+	}]
+}

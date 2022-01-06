@@ -1,0 +1,21 @@
+{
+	title: "物质超脱",
+	x: 7.0d,
+	y: -1.5d,
+	dependencies: [
+		"c413be58",
+		"2e0aba41"
+	],
+	tasks: [{
+		uid: "c20b3bc4",
+		type: "item",
+		items: [{
+			item: "thaumadditions:adaminite_smelter"
+		}]
+	}],
+	rewards: [{
+		uid: "0482d480",
+		type: "ftbmoney:money",
+		ftb_money: 6L
+	}]
+}

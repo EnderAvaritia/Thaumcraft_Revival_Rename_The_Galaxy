@@ -1,0 +1,22 @@
+{
+	title: "猪肉贩子",
+	icon: "minecraft:porkchop",
+	x: 4.0d,
+	y: -5.5d,
+	description: "击杀10只野猪法师",
+	dependencies: [
+		"c9518168"
+	],
+	tasks: [{
+		uid: "5314312f",
+		type: "kill",
+		icon: "minecraft:diamond_sword",
+		entity: "cqrepoured:boar_mage",
+		value: 10L
+	}],
+	rewards: [{
+		uid: "ea59cbde",
+		type: "ftbmoney:money",
+		ftb_money: 30L
+	}]
+}

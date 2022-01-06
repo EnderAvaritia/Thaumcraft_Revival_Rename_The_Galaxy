@@ -1,0 +1,17 @@
+{
+	title: "有氧运动",
+	x: 7.0d,
+	y: -5.5d,
+	description: "制作采矿机，更便捷?的挖掘矿物",
+	dependencies: [
+		"80698ec1"
+	],
+	hide: true,
+	tasks: [{
+		uid: "12dfbfd7",
+		type: "item",
+		items: [{
+			item: "ic2:te 1 60"
+		}]
+	}]
+}

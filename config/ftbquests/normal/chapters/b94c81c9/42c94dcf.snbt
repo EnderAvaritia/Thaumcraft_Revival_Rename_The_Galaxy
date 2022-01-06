@@ -1,0 +1,31 @@
+{
+	title: "头脑风暴",
+	icon: "thaumicaugmentation:crab_vent",
+	x: -22.0d,
+	y: -22.0d,
+	shape: "pentagon",
+	can_repeat: true,
+	dependencies: [
+		"feb63e4d"
+	],
+	tasks: [{
+		uid: "4d1da391",
+		type: "kill",
+		icon: {
+			id: "thaumcraft:elemental_sword",
+			tag: {
+				infench: [{
+					lvl: 2s,
+					id: 5s
+				}]
+			}
+		},
+		entity: "thaumcraft:eldritchcrab",
+		value: 100L
+	}],
+	rewards: [{
+		uid: "7bc0c0bd",
+		type: "ftbmoney:money",
+		ftb_money: 10L
+	}]
+}

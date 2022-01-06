@@ -1,0 +1,76 @@
+{
+	title: "事半功倍",
+	icon: "thaumicwonders:primordial_accretion_chamber",
+	x: 6.5d,
+	y: -2.0d,
+	description: "搭建再生仓,减少一半的源质消耗并增加产率",
+	text: [
+		""
+	],
+	dependencies: [
+		"48aa9432"
+	],
+	tasks: [{
+		uid: "0b488173",
+		type: "item",
+		items: [{
+			item: "thaumcraft:metal_thaumium"
+		}],
+		count: 10L
+	},
+	{
+		uid: "cb30d9b7",
+		type: "item",
+		items: [{
+			item: "thaumcraft:metal_void"
+		}],
+		count: 8L
+	},
+	{
+		uid: "c36a9e1b",
+		type: "item",
+		items: [{
+			item: "thaumcraft:metal_alchemical_advanced"
+		}],
+		count: 6L
+	},
+	{
+		uid: "502eb71b",
+		type: "item",
+		items: [{
+			item: "minecraft:iron_bars"
+		}]
+	},
+	{
+		uid: "d9b20ec5",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "fluid_quicksilver",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "9112459a",
+		type: "item",
+		items: [{
+			item: "thaumicwonders:primordial_grain"
+		}]
+	},
+	{
+		uid: "711467c1",
+		type: "item",
+		items: [{
+			item: "thaumcraft:salis_mundus"
+		}]
+	}],
+	rewards: [{
+		uid: "b6355e02",
+		type: "ftbmoney:money",
+		ftb_money: 6L
+	}]
+}

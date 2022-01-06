@@ -1,0 +1,21 @@
+{
+	title: "火山口",
+	x: 2.5d,
+	y: -11.0d,
+	dependencies: [
+		"f90522a0"
+	],
+	tasks: [{
+		uid: "828b3b16",
+		type: "item",
+		items: [{
+			item: "twilightforest:trophy 1 2"
+		}],
+		consume_items: false
+	}],
+	rewards: [{
+		uid: "a510f9b2",
+		type: "ftbmoney:money",
+		ftb_money: 5L
+	}]
+}

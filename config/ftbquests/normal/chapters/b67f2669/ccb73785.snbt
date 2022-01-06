@@ -1,0 +1,20 @@
+{
+	x: 2.0d,
+	y: 4.0d,
+	dependencies: [
+		"cbaf251d"
+	],
+	hide: true,
+	tasks: [{
+		uid: "e8403617",
+		type: "item",
+		items: [{
+			item: "thaumadditions:jar_brass"
+		}]
+	}],
+	rewards: [{
+		uid: "95da26ea",
+		type: "ftbmoney:money",
+		ftb_money: 5L
+	}]
+}

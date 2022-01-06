@@ -1,0 +1,21 @@
+{
+	title: "希望之...星!",
+	icon: "minecraft:nether_star",
+	x: -19.5d,
+	y: -17.0d,
+	description: "击杀凋灵",
+	dependencies: [
+		"deaffa22"
+	],
+	tasks: [{
+		uid: "8de6037b",
+		type: "kill",
+		entity: "minecraft:wither",
+		value: 1L
+	}],
+	rewards: [{
+		uid: "2fe6583d",
+		type: "ftbmoney:money",
+		ftb_money: 50L
+	}]
+}

@@ -1,0 +1,21 @@
+{
+	title: "有亿点贵了",
+	x: 6.0d,
+	y: 4.0d,
+	dependencies: [
+		"4100e0fa"
+	],
+	hide: true,
+	tasks: [{
+		uid: "e3fbdf38",
+		type: "item",
+		items: [{
+			item: "thaumadditions:jar_adaminite"
+		}]
+	}],
+	rewards: [{
+		uid: "a63f47bc",
+		type: "ftbmoney:money",
+		ftb_money: 13L
+	}]
+}

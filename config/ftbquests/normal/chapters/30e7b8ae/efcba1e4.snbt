@@ -1,0 +1,23 @@
+{
+	title: "随时打包",
+	x: 12.0d,
+	y: -1.0d,
+	description: "制作午餐袋，储存你的食物",
+	dependencies: [
+		"1f70ee04"
+	],
+	tasks: [{
+		uid: "db57649d",
+		type: "item",
+		items: [{
+			item: "spiceoflife:lunchbag"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "e7181c1c",
+		type: "random",
+		table: 2
+	}]
+}

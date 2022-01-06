@@ -1,0 +1,31 @@
+{
+	title: "震动",
+	x: -8.0d,
+	y: -8.0d,
+	description: "获取充能赛特斯石英水晶",
+	text: [
+		"发光冒蓝火的即充能赛特斯石英矿石"
+	],
+	dependencies: [
+		"cf34437c"
+	],
+	hide: true,
+	tasks: [{
+		uid: "4e83a0ad",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "e4b07900",
+		type: "item",
+		item: "appliedenergistics2:material",
+		count: 10
+	},
+	{
+		uid: "33b6e5f1",
+		type: "ftbmoney:money",
+		ftb_money: 3L
+	}]
+}

@@ -1,0 +1,25 @@
+{
+	title: "基础法术配置",
+	x: 7.0d,
+	y: 0.0d,
+	dependencies: [
+		"86467314"
+	],
+	hide: true,
+	tasks: [{
+		uid: "0d561cd2",
+		type: "item",
+		items: [{
+			item: "thaumcraft:focus_1"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "6c99f899",
+		type: "item",
+		items: [{
+			item: "thaumcraft:wand_workbench"
+		}]
+	}]
+}

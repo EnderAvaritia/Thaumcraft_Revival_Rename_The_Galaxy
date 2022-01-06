@@ -1,0 +1,32 @@
+{
+	title: "无限箭矢",
+	x: -2.5d,
+	y: 1.0d,
+	description: "制作奥术箭袋,充能获取可无限发射的箭矢",
+	text: [
+		"如果我是你,我就不会把它和骨弓一起使用...",
+		"因为使用骨弓发射出的灵气箭每发只有1.5❤..."
+	],
+	dependencies: [
+		"3c6b6382"
+	],
+	tasks: [{
+		uid: "8197ca04",
+		type: "item",
+		items: [{
+			item: "thaumicperiphery:magic_quiver"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "d4575a29",
+		type: "ftbmoney:money",
+		ftb_money: 3L
+	},
+	{
+		uid: "e3024b83",
+		type: "xp",
+		xp: 30
+	}]
+}

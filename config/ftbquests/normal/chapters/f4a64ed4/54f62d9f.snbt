@@ -1,0 +1,17 @@
+{
+	title: "核风旭旭",
+	x: 4.0d,
+	y: -2.5d,
+	description: "你可能暂时用不到这个",
+	dependencies: [
+		"80698ec1"
+	],
+	hide: true,
+	tasks: [{
+		uid: "95f78159",
+		type: "item",
+		items: [{
+			item: "ic2:te 1 6"
+		}]
+	}]
+}

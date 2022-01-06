@@ -1,0 +1,37 @@
+{
+	title: "晶体生长",
+	x: 4.5d,
+	y: 1.5d,
+	description: "使结晶的脱离获取石英碎片",
+	text: [
+		"想要制作该物品,需解锁位于神秘领域的研究\"结晶生长\"",
+		"该研究前置研究为\"块状水晶\""
+	],
+	dependencies: [
+		"7a698ab7"
+	],
+	tasks: [{
+		uid: "37588e9b",
+		type: "item",
+		items: [{
+			item: "thaumadditions:growth_chamber"
+		}]
+	},
+	{
+		uid: "a31c842a",
+		type: "item",
+		items: [{
+			item: "thaumcraft:tube"
+		}]
+	}],
+	rewards: [{
+		uid: "1ceb3933",
+		type: "ftbmoney:money",
+		ftb_money: 4L
+	},
+	{
+		uid: "620806fe",
+		type: "random",
+		table: 10
+	}]
+}

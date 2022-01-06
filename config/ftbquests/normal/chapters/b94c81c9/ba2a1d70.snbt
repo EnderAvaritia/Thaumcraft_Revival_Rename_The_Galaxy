@@ -1,0 +1,21 @@
+{
+	title: "守卫者",
+	icon: "thaumcraft:void_robe_helm",
+	x: -23.0d,
+	y: -21.0d,
+	dependencies: [
+		"64d36bc7"
+	],
+	tasks: [{
+		uid: "e160af32",
+		type: "kill",
+		icon: "thaumcraft:void_sword",
+		entity: "thaumicaugmentation:eldritch_guardian",
+		value: 10L
+	}],
+	rewards: [{
+		uid: "778a7aed",
+		type: "ftbmoney:money",
+		ftb_money: 4L
+	}]
+}

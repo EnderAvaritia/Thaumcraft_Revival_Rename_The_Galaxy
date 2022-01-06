@@ -1,0 +1,39 @@
+{
+	title: "虚空能量汲取",
+	icon: "thaumicaugmentation:impetus_drainer",
+	x: 9.5d,
+	y: -4.0d,
+	description: "制作一套新的元动能量收集装置",
+	dependencies: [
+		"0c16ae27"
+	],
+	tasks: [{
+		uid: "167f7191",
+		type: "item",
+		items: [{
+			item: "thaumicaugmentation:impetus_drainer"
+		}]
+	},
+	{
+		uid: "2f4b0dd0",
+		type: "item",
+		items: [{
+			item: "thaumicaugmentation:impetus_diffuser"
+		}]
+	},
+	{
+		uid: "ccb1621b",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {}
+			},
+			id: "thaumicaugmentation:impetus_linker"
+		}]
+	}],
+	rewards: [{
+		uid: "7141009c",
+		type: "ftbmoney:money",
+		ftb_money: 15L
+	}]
+}

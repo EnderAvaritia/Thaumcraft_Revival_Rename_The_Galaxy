@@ -1,0 +1,23 @@
+{
+	title: "快速回本",
+	x: 0.0d,
+	y: -7.0d,
+	description: "使用秘银制作这把巨斧,快速得到怪物的头颅",
+	dependencies: [
+		"63b0b9d6"
+	],
+	tasks: [{
+		uid: "105de71d",
+		type: "item",
+		items: [{
+			item: "thaumadditions:the_beheader"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "7089ac24",
+		type: "ftbmoney:money",
+		ftb_money: 6L
+	}]
+}

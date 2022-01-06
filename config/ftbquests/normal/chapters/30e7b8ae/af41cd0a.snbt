@@ -1,0 +1,14 @@
+{
+	title: "关于炼狱版",
+	x: -0.5d,
+	y: -3.0d,
+	description: "为什么它叫炼狱版?",
+	text: [
+		"神秘复兴炼狱版是以神秘时代为基础，并以此发展其他模组的整合包，玩家可以在这里获得原汁原味的神秘时代模组体验。"
+	],
+	tasks: [{
+		uid: "b50f7c89",
+		type: "checkmark",
+		icon: "minecraft:netherrack"
+	}]
+}

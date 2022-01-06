@@ -1,0 +1,29 @@
+{
+	title: "燥热不堪",
+	x: -1.5d,
+	y: 0.0d,
+	shape: "hexagon",
+	description: "选择适合你的热能机器，为你的高炉加热",
+	dependencies: [
+		"2cd02132"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "dc0b4399",
+		type: "item",
+		items: [{
+			item: "ic2:te 1 12"
+		},
+		{
+			item: "ic2:te 1 13"
+		},
+		{
+			item: "ic2:te 1 15"
+		}]
+	}],
+	rewards: [{
+		uid: "115a5073",
+		type: "random",
+		table: 13
+	}]
+}

@@ -1,0 +1,23 @@
+{
+	title: "检测裂缝不稳定值",
+	x: 10.5d,
+	y: -7.5d,
+	description: "制作虚空魔导透镜,使裂缝的稳定状况尽收眼底",
+	dependencies: [
+		"54198107"
+	],
+	tasks: [{
+		uid: "6b14ec5a",
+		type: "item",
+		items: [{
+			item: "thaumadditions:void_thaumometer"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "15277f39",
+		type: "ftbmoney:money",
+		ftb_money: 4L
+	}]
+}

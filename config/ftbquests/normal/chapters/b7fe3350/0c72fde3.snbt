@@ -1,0 +1,22 @@
+{
+	icon: "twilightforest:trophy 1 1",
+	x: 5.0d,
+	y: -4.0d,
+	shape: "pentagon",
+	can_repeat: true,
+	dependencies: [
+		"aeb7c82e"
+	],
+	tasks: [{
+		uid: "361f70c4",
+		type: "kill",
+		icon: "cqrepoured:great_sword_diamond",
+		entity: "cqrepoured:necromancer",
+		value: 1L
+	}],
+	rewards: [{
+		uid: "78892af8",
+		type: "ftbmoney:money",
+		ftb_money: 5L
+	}]
+}

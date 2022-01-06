@@ -1,0 +1,24 @@
+{
+	title: "虚空行者",
+	x: -6.0d,
+	y: 3.0d,
+	description: "使用虚空手镜,使你能借助魔镜在各维度之间穿梭",
+	dependencies: [
+		"be4743eb",
+		"41cfa105"
+	],
+	tasks: [{
+		uid: "cc4ff4cb",
+		type: "item",
+		items: [{
+			item: "thaumadditions:wormhole_mirror"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "9ffe86b2",
+		type: "ftbmoney:money",
+		ftb_money: 5L
+	}]
+}

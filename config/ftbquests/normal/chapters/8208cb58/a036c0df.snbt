@@ -1,0 +1,14 @@
+{
+	x: 9.5d,
+	y: -16.5d,
+	dependencies: [
+		"ab762a16"
+	],
+	tasks: [{
+		uid: "ab5e19a4",
+		type: "item",
+		items: [{
+			item: "magicbees:beecomb"
+		}]
+	}]
+}

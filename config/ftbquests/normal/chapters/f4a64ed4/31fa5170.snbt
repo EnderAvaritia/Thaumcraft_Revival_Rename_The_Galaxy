@@ -1,0 +1,30 @@
+{
+	title: "源质储存第一步",
+	x: 1.0d,
+	y: -1.5d,
+	description: "制作大量要素罐子来储存源质",
+	dependencies: [
+		"6ea9024b"
+	],
+	hide: true,
+	tasks: [{
+		uid: "3e9a0228",
+		type: "item",
+		items: [{
+			item: "thaumcraft:jar_normal"
+		}],
+		count: 15L
+	},
+	{
+		uid: "f4bede4d",
+		type: "item",
+		items: [{
+			item: "thaumcraft:jar_void"
+		}]
+	}],
+	rewards: [{
+		uid: "db907e99",
+		type: "ftbmoney:money",
+		ftb_money: 4L
+	}]
+}

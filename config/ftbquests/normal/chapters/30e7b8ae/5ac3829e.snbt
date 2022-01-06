@@ -1,0 +1,25 @@
+{
+	title: "高级照明工具",
+	x: 9.5d,
+	y: 2.5d,
+	description: "制作奥术灯来抵御尸潮的入侵,一个奥术灯能够照亮周围3x3的区块",
+	text: [
+		"想要制作此物品需要解锁位于炼化学的研究\"奥术灯\"",
+		"其前置研究为\"炼化学\""
+	],
+	dependencies: [
+		"3d123587"
+	],
+	tasks: [{
+		uid: "bcd70867",
+		type: "item",
+		items: [{
+			item: "thaumcraft:lamp_arcane"
+		}]
+	}],
+	rewards: [{
+		uid: "a9f2df8e",
+		type: "ftbmoney:money",
+		ftb_money: 3L
+	}]
+}

@@ -1,0 +1,57 @@
+{
+	title: "更强大！强大！",
+	icon: {
+		id: "draconicevolution:draconium_capacitor",
+		tag: {
+			DEUpgrades: {
+				rfCap: 4b
+			},
+			Energy: 768000000
+		},
+		Damage: 1s
+	},
+	x: 5.5d,
+	y: 1.5d,
+	shape: "diamond",
+	description: "这种力量无法言喻，似乎距离突破最后的桎梏仅有一步之遥。",
+	hide_dependency_lines: true,
+	dependencies: [
+		"c25fc91f",
+		"55f4216d",
+		"91f9c94b",
+		"936d5b93"
+	],
+	hide: true,
+	tasks: [{
+		uid: "f432a50c",
+		type: "item",
+		items: [{
+			id: "draconicevolution:draconium_capacitor",
+			tag: {
+				DEUpgrades: {
+					rfCap: 4b
+				},
+				Energy: 768000000
+			},
+			Damage: 1s
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "9cd7812a",
+		type: "gamestage",
+		auto: "no_toast",
+		stage: "无尽贪婪"
+	},
+	{
+		uid: "f77613d0",
+		type: "xp_levels",
+		xp_levels: 300
+	},
+	{
+		uid: "5d48963e",
+		type: "gamestage",
+		auto: "no_toast",
+		stage: "神秘农业"
+	}]
+}

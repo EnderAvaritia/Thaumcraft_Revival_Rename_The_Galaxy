@@ -1,0 +1,21 @@
+{
+	title: "高级织物",
+	x: 10.5d,
+	y: -1.0d,
+	dependencies: [
+		"89a9c7ed"
+	],
+	hide: true,
+	tasks: [{
+		uid: "f58dabba",
+		type: "item",
+		items: [{
+			item: "thaumcraft:fabric"
+		}]
+	}],
+	rewards: [{
+		uid: "2cc9767e",
+		type: "ftbmoney:money",
+		ftb_money: 3L
+	}]
+}

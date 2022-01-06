@@ -1,0 +1,50 @@
+{
+	title: "储存元动能量",
+	icon: "thaumicaugmentation:impetus_matrix",
+	x: 7.5d,
+	y: -6.5d,
+	description: "搭建并且激活储能装置,用它储存过量的元动能量",
+	dependencies: [
+		"8feb76e4"
+	],
+	tasks: [{
+		uid: "d61556eb",
+		type: "item",
+		items: [{
+			item: "thaumcraft:infusion_matrix"
+		}]
+	},
+	{
+		uid: "a9d24b44",
+		type: "item",
+		items: [{
+			item: "thaumcraft:salis_mundus"
+		}]
+	},
+	{
+		uid: "8ea4664b",
+		type: "item",
+		items: [{
+			item: "thaumcraft:pedestal_eldritch"
+		}],
+		count: 2L
+	},
+	{
+		uid: "bdf21860",
+		type: "item",
+		items: [{
+			item: "thaumicaugmentation:material 1 3"
+		}],
+		count: 3L
+	}],
+	rewards: [{
+		uid: "7efa3245",
+		type: "ftbmoney:money",
+		ftb_money: 6L
+	},
+	{
+		uid: "187aeeec",
+		type: "item",
+		item: "thaumicaugmentation:material 1 3"
+	}]
+}

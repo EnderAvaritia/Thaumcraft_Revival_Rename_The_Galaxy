@@ -1,0 +1,39 @@
+{
+	title: "运输裂缝",
+	x: 10.5d,
+	y: -6.5d,
+	text: [
+		"用这套装置把裂缝搬到你想搬地点"
+	],
+	dependencies: [
+		"54198107"
+	],
+	tasks: [{
+		uid: "f6cfbaaf",
+		type: "item",
+		items: [{
+			item: "thaumicaugmentation:rift_jar"
+		}],
+		count: 2L,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "9928c588",
+		type: "item",
+		items: [{
+			item: "thaumicaugmentation:rift_mover_input"
+		}]
+	},
+	{
+		uid: "0070176d",
+		type: "item",
+		items: [{
+			item: "thaumicaugmentation:rift_mover_output"
+		}]
+	}],
+	rewards: [{
+		uid: "bc6e231e",
+		type: "ftbmoney:money",
+		ftb_money: 7L
+	}]
+}

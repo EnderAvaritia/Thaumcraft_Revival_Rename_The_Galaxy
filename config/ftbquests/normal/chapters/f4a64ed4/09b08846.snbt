@@ -1,0 +1,34 @@
+{
+	title: "注魔第二步",
+	x: 7.0d,
+	y: -2.0d,
+	description: "制作纯净之花来净化灵气场中的咒波",
+	text: [
+		"想要制作此物品需解锁位于神秘领域的研究\"纯净之花\"",
+		"该研究的前置为\"图腾学\"",
+		"如果你认为这一步无关紧要，那么你可以跳过它"
+	],
+	dependencies: [
+		"40daef56"
+	],
+	hide: true,
+	tasks: [{
+		uid: "020e169c",
+		type: "item",
+		icon: "thaumadditions:puriflower",
+		items: [{
+			item: "thaumadditions:puriflower"
+		}],
+		count: 2L
+	}],
+	rewards: [{
+		uid: "b438ed51",
+		type: "ftbmoney:money",
+		ftb_money: 3L
+	},
+	{
+		uid: "95075d6b",
+		type: "random",
+		table: 5
+	}]
+}

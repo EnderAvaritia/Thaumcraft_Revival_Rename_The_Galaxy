@@ -1,0 +1,129 @@
+{
+	title: "无尽科技",
+	x: -1.5d,
+	y: 2.5d,
+	shape: "pentagon",
+	description: "这一切值得么",
+	text: [
+		""
+	],
+	can_repeat: true,
+	dependencies: [
+		"1ca42f26",
+		"3800365b"
+	],
+	hide: true,
+	tasks: [{
+		uid: "66b3bbf7",
+		type: "item",
+		items: [{
+			item: "thaumadditions:jar_brass"
+		}],
+		consume_items: true
+	},
+	{
+		uid: "5d356028",
+		type: "item",
+		items: [{
+			item: "thaumadditions:jar_thaumium"
+		}],
+		consume_items: true
+	},
+	{
+		uid: "31219a63",
+		type: "item",
+		items: [{
+			item: "thaumcraft:jar_void"
+		}],
+		consume_items: true
+	},
+	{
+		uid: "e8a36af9",
+		type: "item",
+		items: [{
+			item: "thaumadditions:jar_eldritch"
+		}],
+		consume_items: true
+	},
+	{
+		uid: "0d23a78f",
+		type: "item",
+		items: [{
+			item: "thaumadditions:jar_mithrillium"
+		}],
+		consume_items: true
+	},
+	{
+		uid: "a3e3a66d",
+		type: "item",
+		items: [{
+			item: "thaumadditions:jar_adaminite"
+		}],
+		consume_items: true
+	},
+	{
+		uid: "69727b47",
+		type: "item",
+		items: [{
+			item: "thaumadditions:jar_mithminite"
+		}],
+		consume_items: true
+	},
+	{
+		uid: "2ffc9887",
+		type: "item",
+		items: [{
+			id: "thaumicenergistics:essentia_cell_1k",
+			tag: {
+				filter: {}
+			}
+		}],
+		consume_items: true,
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "ab60df25",
+		type: "item",
+		items: [{
+			id: "thaumicenergistics:essentia_cell_4k",
+			tag: {
+				filter: {}
+			}
+		}],
+		consume_items: true,
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "0357fb1b",
+		type: "item",
+		items: [{
+			id: "thaumicenergistics:essentia_cell_16k",
+			tag: {
+				filter: {}
+			}
+		}],
+		consume_items: true,
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "3fbd1399",
+		type: "item",
+		items: [{
+			id: "thaumicenergistics:essentia_cell_64k",
+			tag: {
+				filter: {}
+			}
+		}],
+		consume_items: true,
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "48cc0d41",
+		type: "ftbmoney:money",
+		ftb_money: 2500L
+	}]
+}

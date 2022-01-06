@@ -1,0 +1,27 @@
+{
+	icon: {
+		id: "thaumadditions:crystal_block",
+		tag: {
+			Aspect: "caeles"
+		}
+	},
+	x: 13.5d,
+	y: -6.5d,
+	shape: "pentagon",
+	can_repeat: true,
+	dependencies: [
+		"80aa5106"
+	],
+	tasks: [{
+		uid: "23de2392",
+		type: "kill",
+		icon: "thaumicwonders:primal_destroyer",
+		entity: "thaumicaugmentation:primal_wisp",
+		value: 1L
+	}],
+	rewards: [{
+		uid: "9fe58590",
+		type: "ftbmoney:money",
+		ftb_money: 10L
+	}]
+}

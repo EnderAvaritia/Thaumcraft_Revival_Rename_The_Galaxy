@@ -1,0 +1,35 @@
+{
+	title: "遇事不决",
+	x: 8.0d,
+	y: 8.0d,
+	description: "量子力学",
+	text: [
+		"将一个奇点与一个末影珍珠粉扔在地上，并施加爆炸的压力，即可产生一对彼此绑定的量子缠绕态奇点",
+		"一个量子环的搭建需要中心的一个量子链接仓即环绕其的8个量子环方块，搭建好一对量子环，在两者的链接仓中放上已配对的缠绕态奇点并提供能量，两个量子环就会形成连接，一对量子环最多传输32个频道，且只有4个边量子环方块才能连接线缆",
+		"量子环可以跨越维度，前提是两者所在区块都被加载"
+	],
+	dependencies: [
+		"1e5b8964"
+	],
+	tasks: [{
+		uid: "4379c6a8",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:quantum_ring"
+		}],
+		count: 16L
+	},
+	{
+		uid: "1e55f53e",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:quantum_link"
+		}],
+		count: 2L
+	}],
+	rewards: [{
+		uid: "d8c2b397",
+		type: "ftbmoney:money",
+		ftb_money: 20L
+	}]
+}

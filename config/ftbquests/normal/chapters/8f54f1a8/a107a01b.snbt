@@ -1,0 +1,42 @@
+{
+	title: "扭曲之盾",
+	icon: "thaumicwonders:void_fortress_helm",
+	x: 3.0d,
+	y: -6.0d,
+	description: "让你的永久扭曲成为你坚固的盾牌",
+	dependencies: [
+		"2e0aba41"
+	],
+	tasks: [{
+		uid: "59c91939",
+		type: "item",
+		items: [{
+			item: "thaumicwonders:void_fortress_helm"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "239c225a",
+		type: "item",
+		items: [{
+			item: "thaumicwonders:void_fortress_chest"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "f5cc308a",
+		type: "item",
+		items: [{
+			item: "thaumicwonders:void_fortress_legs"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "c1ad8896",
+		type: "ftbmoney:money",
+		ftb_money: 20L
+	}]
+}

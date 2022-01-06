@@ -1,0 +1,21 @@
+{
+	title: "segments blue",
+	x: 4.5d,
+	y: 6.0d,
+	description: "制作合成环,有记忆功能的便携式工作台",
+	text: [
+		""
+	],
+	dependencies: [
+		"e8872b16"
+	],
+	tasks: [{
+		uid: "723796c2",
+		type: "item",
+		items: [{
+			item: "botania:craftinghalo"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

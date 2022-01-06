@@ -1,0 +1,28 @@
+{
+	title: "高级植物包",
+	loot_size: 1,
+	rewards: [{
+		item: "thaumcraft:shimmerleaf",
+		count: 5,
+		random_bonus: 10
+	},
+	{
+		item: "thaumcraft:vishroom",
+		count: 5,
+		random_bonus: 10
+	},
+	{
+		item: "thaumcraft:cinderpearl",
+		count: 5,
+		random_bonus: 10
+	}],
+	loot_crate: {
+		string_id: "_",
+		color: 16777215,
+		drops: {
+			boss: 0,
+			passive: 0,
+			monster: 0
+		}
+	}
+}

@@ -1,0 +1,25 @@
+{
+	title: "看透灵气分布",
+	x: 6.0d,
+	y: 2.5d,
+	dependencies: [
+		"7a698ab7"
+	],
+	tasks: [{
+		uid: "fa62ec18",
+		type: "item",
+		items: [{
+			item: "thaumcraft:dioptra"
+		}]
+	}],
+	rewards: [{
+		uid: "88b49939",
+		type: "ftbmoney:money",
+		ftb_money: 2L
+	},
+	{
+		uid: "51971af2",
+		type: "xp",
+		xp: 20
+	}]
+}

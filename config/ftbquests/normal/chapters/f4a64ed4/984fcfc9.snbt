@@ -1,0 +1,21 @@
+{
+	x: 0.0d,
+	y: -1.5d,
+	description: "制作更高效的源质冶炼厂来加快源质蒸馏速率并减少污染",
+	dependencies: [
+		"6ea9024b"
+	],
+	hide: true,
+	tasks: [{
+		uid: "1400e30e",
+		type: "item",
+		items: [{
+			item: "thaumcraft:smelter_thaumium"
+		}]
+	}],
+	rewards: [{
+		uid: "29e525fa",
+		type: "ftbmoney:money",
+		ftb_money: 3L
+	}]
+}

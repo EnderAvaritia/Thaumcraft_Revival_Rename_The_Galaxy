@@ -1,0 +1,37 @@
+{
+	title: "经典多线程",
+	x: -4.0d,
+	y: 8.0d,
+	description: "制作并行处理单元与合成监控器优化合成",
+	text: [
+		"并行处理单元可以提高原料发配性能，合成监控器会显示当前合成任务",
+		"两者均需置于CPU结构内"
+	],
+	dependencies: [
+		"a42e8075"
+	],
+	tasks: [{
+		uid: "87b914c1",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:crafting_accelerator"
+		}]
+	},
+	{
+		uid: "2f058438",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:crafting_monitor"
+		}]
+	}],
+	rewards: [{
+		uid: "85d62728",
+		type: "item",
+		item: "appliedenergistics2:crafting_unit"
+	},
+	{
+		uid: "eceb172a",
+		type: "ftbmoney:money",
+		ftb_money: 10L
+	}]
+}

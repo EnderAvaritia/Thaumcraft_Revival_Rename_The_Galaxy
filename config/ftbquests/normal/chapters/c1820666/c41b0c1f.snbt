@@ -1,0 +1,37 @@
+{
+	title: "往来翕忽",
+	x: 2.0d,
+	y: 4.0d,
+	description: "制作输入/输出总线以实现物品流通",
+	text: [
+		"输入/输出是相对于ME网络来说的，可设置白名单，可插入各种升级卡"
+	],
+	dependencies: [
+		"7bc1fc16"
+	],
+	tasks: [{
+		uid: "b9ae345e",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:part 1 240"
+		}]
+	},
+	{
+		uid: "3a8ac18d",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:part 1 260"
+		}]
+	}],
+	rewards: [{
+		uid: "d6736913",
+		type: "item",
+		item: "appliedenergistics2:material 1 28",
+		count: 2
+	},
+	{
+		uid: "88391b8c",
+		type: "ftbmoney:money",
+		ftb_money: 5L
+	}]
+}

@@ -1,0 +1,27 @@
+{
+	title: "功能强大",
+	x: 1.0d,
+	y: -13.5d,
+	description: "制作秘金头盔,最强大的头盔",
+	text: [
+		"一个秘金头盔价值9.5个精金锭",
+		"相当于19颗下界之星和1又1/8颗原始珍珠"
+	],
+	dependencies: [
+		"1a003c4e"
+	],
+	tasks: [{
+		uid: "c7cf4f57",
+		type: "item",
+		items: [{
+			item: "thaumadditions:mithminite_hood"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "25a3dbff",
+		type: "ftbmoney:money",
+		ftb_money: 35L
+	}]
+}

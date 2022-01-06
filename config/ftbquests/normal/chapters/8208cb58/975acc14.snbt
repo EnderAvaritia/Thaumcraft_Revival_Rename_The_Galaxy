@@ -1,0 +1,35 @@
+{
+	title: "一次\"偶遇\"",
+	icon: {
+		ForgeCaps: {
+			"thaumicaugmentation:elytra_harness_augment": {}
+		},
+		id: "thaumcraft:banner_crimson_cult"
+	},
+	x: -5.5d,
+	y: -6.0d,
+	description: "打开F3+B,寻找沙漠中可疑的实体",
+	dependencies: [
+		"05a8b933"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "f7894b7e",
+		type: "kill",
+		icon: "thaumcraft:crimson_plate_helm",
+		entity: "thaumcraft:cultistknight",
+		value: 1L
+	},
+	{
+		uid: "346c77ee",
+		type: "kill",
+		icon: "thaumcraft:crimson_robe_helm",
+		entity: "thaumcraft:cultistcleric",
+		value: 1L
+	}],
+	rewards: [{
+		uid: "7aedf417",
+		type: "ftbmoney:money",
+		ftb_money: 3L
+	}]
+}

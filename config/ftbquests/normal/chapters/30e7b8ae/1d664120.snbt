@@ -1,0 +1,39 @@
+{
+	title: "由连线到抽卡",
+	x: 8.5d,
+	y: -2.5d,
+	description: "在灵感消耗完之前保证你学要的研究处于最大百分比",
+	text: [
+		"这个研究台可以让我总结理论知识从而获得新的理论，这样的话我就可以进行别的研究了，不过我还发现，在研究台附近摆上一些物品研究台下方会有那个物品的图标，这有什么用呢？"
+	],
+	dependencies: [
+		"89a9c7ed"
+	],
+	hide: true,
+	tasks: [{
+		uid: "1f56961d",
+		type: "item",
+		items: [{
+			item: "thaumcraft:research_table"
+		}]
+	},
+	{
+		uid: "e4ba6d9b",
+		type: "item",
+		items: [{
+			item: "thaumcraft:scribing_tools"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "51e60470",
+		type: "ftbmoney:money",
+		ftb_money: 1L
+	},
+	{
+		uid: "eaa9a316",
+		type: "xp",
+		xp: 10
+	}]
+}

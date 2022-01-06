@@ -1,0 +1,20 @@
+{
+	x: -7.5d,
+	y: 6.0d,
+	dependencies: [
+		"45669532"
+	],
+	hide: true,
+	tasks: [{
+		uid: "9594774b",
+		type: "item",
+		items: [{
+			item: "ic2:upgrade"
+		}]
+	}],
+	rewards: [{
+		uid: "98cdaafa",
+		type: "loot",
+		table: 13
+	}]
+}

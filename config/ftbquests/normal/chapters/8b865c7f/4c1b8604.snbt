@@ -1,0 +1,31 @@
+{
+	title: "翻箱倒柜",
+	icon: "minecraft:chest",
+	x: -1.5d,
+	y: 8.5d,
+	description: "诶?我黑切呐?",
+	text: [
+		""
+	],
+	dependencies: [
+		"46554c96"
+	],
+	hide: true,
+	tasks: [{
+		uid: "f24706e8",
+		type: "stat",
+		icon: "minecraft:chest",
+		stat: "stat.chestOpened",
+		value: 233
+	}],
+	rewards: [{
+		uid: "e0108308",
+		type: "item",
+		item: "botania:itemfinder"
+	},
+	{
+		uid: "3d909930",
+		type: "ftbmoney:money",
+		ftb_money: 30L
+	}]
+}

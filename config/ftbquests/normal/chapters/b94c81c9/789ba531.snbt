@@ -1,0 +1,27 @@
+{
+	title: "腐化萌芽",
+	icon: {
+		id: "thaumicaugmentation:rift_seed",
+		tag: {
+			riftSize: 100,
+			grown: 1b
+		}
+	},
+	x: -22.0d,
+	y: -19.0d,
+	dependencies: [
+		"64d36bc7"
+	],
+	tasks: [{
+		uid: "1bb85bbc",
+		type: "kill",
+		icon: "thaumcraft:void_sword",
+		entity: "thaumcraft:taintacle",
+		value: 10L
+	}],
+	rewards: [{
+		uid: "dad3b81a",
+		type: "ftbmoney:money",
+		ftb_money: 3L
+	}]
+}

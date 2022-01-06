@@ -1,0 +1,50 @@
+{
+	title: "大公主同好",
+	icon: "minecraft:cake",
+	x: -1.5d,
+	y: 5.5d,
+	description: "奥术蛋糕也算哦",
+	text: [
+		""
+	],
+	dependencies: [
+		"46554c96"
+	],
+	hide: true,
+	tasks: [{
+		uid: "f2477623",
+		type: "stat",
+		icon: "minecraft:cake",
+		stat: "stat.cakeSlicesEaten",
+		value: 50
+	}],
+	rewards: [{
+		uid: "1b417c3b",
+		type: "command",
+		auto: "enabled",
+		command: "/title @a title {\"text\":\"Dear Princess Celestia~\",\"color\":\"light_purple\"}"
+	},
+	{
+		uid: "2a662470",
+		type: "command",
+		auto: "enabled",
+		command: "/title @a subtitle {\"text\":\"Friendship Is Magic!\",\"color\":\"gold\"}"
+	},
+	{
+		uid: "cf4e43c8",
+		type: "command",
+		auto: "enabled",
+		command: "/title @a actionbar {\"text\":\"小马大法好!\",\"color\":\"aqua\"}"
+	},
+	{
+		uid: "2dc61045",
+		type: "command",
+		auto: "enabled",
+		command: "/title @a times 20 100 20"
+	},
+	{
+		uid: "d25cf1b3",
+		type: "ftbmoney:money",
+		ftb_money: 100L
+	}]
+}

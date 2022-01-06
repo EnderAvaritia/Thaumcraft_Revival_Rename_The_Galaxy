@@ -1,0 +1,26 @@
+{
+	title: "无须每次打开",
+	x: 2.0d,
+	y: 4.5d,
+	description: "制作饕餮箱子,可以自动捡起掉落物的箱子",
+	dependencies: [
+		"4739dc58"
+	],
+	tasks: [{
+		uid: "ec931c9d",
+		type: "item",
+		items: [{
+			item: "thaumcraft:hungry_chest"
+		}]
+	}],
+	rewards: [{
+		uid: "abcc2e36",
+		type: "ftbmoney:money",
+		ftb_money: 1L
+	},
+	{
+		uid: "7a488853",
+		type: "xp",
+		xp: 10
+	}]
+}

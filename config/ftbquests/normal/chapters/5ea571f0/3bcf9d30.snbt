@@ -1,0 +1,24 @@
+{
+	title: "电子扩容",
+	x: -3.5d,
+	y: 1.5d,
+	description: "制作奥数充能升级卡以扩充奥术终端可使用的灵气",
+	text: [
+		"插入升级后，奥术终端可用灵气由所处区块扩充到周围9个区块，消耗均分"
+	],
+	dependencies: [
+		"bbeb6224"
+	],
+	tasks: [{
+		uid: "709fac3a",
+		type: "item",
+		items: [{
+			item: "thaumicenergistics:upgrade_arcane"
+		}]
+	}],
+	rewards: [{
+		uid: "83decb7b",
+		type: "ftbmoney:money",
+		ftb_money: 10L
+	}]
+}

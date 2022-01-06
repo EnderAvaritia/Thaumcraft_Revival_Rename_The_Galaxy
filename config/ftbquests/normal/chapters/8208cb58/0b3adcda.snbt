@@ -1,0 +1,21 @@
+{
+	title: "天空下起血雨",
+	x: 2.5d,
+	y: -14.0d,
+	dependencies: [
+		"bef19000"
+	],
+	tasks: [{
+		uid: "6dba391e",
+		type: "item",
+		items: [{
+			item: "twilightforest:trophy 1 3"
+		}],
+		consume_items: false
+	}],
+	rewards: [{
+		uid: "71ca950e",
+		type: "ftbmoney:money",
+		ftb_money: 5L
+	}]
+}

@@ -1,0 +1,20 @@
+{
+	title: "自定义附魔台",
+	x: 0.0d,
+	y: -16.5d,
+	shape: "rsquare",
+	hide_dependency_lines: true,
+	dependencies: [
+		"0b3adcda",
+		"f4dc6fc5",
+		"b187f92c"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "c4983939",
+		type: "item",
+		items: [{
+			item: "thaumictinkerer:osmotic_enchanter"
+		}]
+	}]
+}

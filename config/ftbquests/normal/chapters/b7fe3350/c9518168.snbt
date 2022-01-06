@@ -1,0 +1,19 @@
+{
+	title: "野猪骑士",
+	icon: "minecraft:porkchop",
+	x: 3.0d,
+	y: -5.5d,
+	description: "击杀一只野猪法师",
+	tasks: [{
+		uid: "759c91b0",
+		type: "kill",
+		icon: "minecraft:diamond_sword",
+		entity: "cqrepoured:boar_mage",
+		value: 1L
+	}],
+	rewards: [{
+		uid: "f1eb5940",
+		type: "ftbmoney:money",
+		ftb_money: 5L
+	}]
+}

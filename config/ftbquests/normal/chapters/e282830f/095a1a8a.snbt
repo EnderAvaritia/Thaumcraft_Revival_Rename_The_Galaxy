@@ -1,0 +1,17 @@
+{
+	title: "击杀首领",
+	icon: "botania:gaiahead",
+	x: 4.5d,
+	y: -0.5d,
+	shape: "hexagon",
+	dependencies: [
+		"054c9545"
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "a9ce3767",
+		type: "kill",
+		entity: "botania:doppleganger",
+		value: 1L
+	}]
+}

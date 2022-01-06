@@ -1,0 +1,23 @@
+{
+	title: "苍穹变换",
+	x: 2.5d,
+	y: 0.0d,
+	description: "制作天气之球来控制降雨",
+	dependencies: [
+		"088add2a"
+	],
+	hide: true,
+	dependency_requirement: "all_started",
+	tasks: [{
+		uid: "2e24eb50",
+		type: "item",
+		items: [{
+			item: "thaumicwonders:meteorb"
+		}]
+	}],
+	rewards: [{
+		uid: "2307f767",
+		type: "ftbmoney:money",
+		ftb_money: 5L
+	}]
+}

@@ -1,0 +1,21 @@
+{
+	x: 4.0d,
+	y: 4.0d,
+	dependencies: [
+		"be4743eb",
+		"c0bf23f0"
+	],
+	hide: true,
+	tasks: [{
+		uid: "bfc166ba",
+		type: "item",
+		items: [{
+			item: "thaumadditions:jar_eldritch"
+		}]
+	}],
+	rewards: [{
+		uid: "16e97009",
+		type: "ftbmoney:money",
+		ftb_money: 9L
+	}]
+}

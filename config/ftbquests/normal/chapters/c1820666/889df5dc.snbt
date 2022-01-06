@@ -1,0 +1,34 @@
+{
+	title: "Fluix生产",
+	x: -4.0d,
+	y: -4.0d,
+	description: "制作充能器以量产充能赛特斯石英水晶",
+	text: [
+		"顶部或底部接入能源或使用木制曲柄",
+		"可为本模组其他有能量缓存的物品充能",
+		"利用漏斗可以简易自动化",
+		"不占用频道，可接其他模组的能源"
+	],
+	dependencies: [
+		"59c8fc33"
+	],
+	hide: true,
+	tasks: [{
+		uid: "f97a6add",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:charger"
+		}]
+	}],
+	rewards: [{
+		uid: "9a766c1a",
+		type: "item",
+		item: "appliedenergistics2:material",
+		count: 8
+	},
+	{
+		uid: "7baa52a8",
+		type: "ftbmoney:money",
+		ftb_money: 5L
+	}]
+}

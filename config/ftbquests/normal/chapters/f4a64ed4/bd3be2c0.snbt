@@ -1,0 +1,42 @@
+{
+	title: "生命回复坠饰",
+	x: 8.0d,
+	y: -4.5d,
+	description: "制作翠心指环",
+	text: [
+		"出想要制作此物品,需解锁位于\"注魔\"的研究\"翠心指环\"",
+		"",
+		"与书上介绍的不同,它无法帮你抵抗扭曲的侵蚀"
+	],
+	dependencies: [
+		"80698ec1"
+	],
+	tasks: [{
+		uid: "690983ae",
+		type: "item",
+		items: [{
+			id: "thaumcraft:verdant_charm",
+			tag: {
+				type: 2b
+			}
+		},
+		{
+			id: "thaumcraft:verdant_charm",
+			tag: {
+				type: 1b
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "218a156b",
+		type: "ftbmoney:money",
+		ftb_money: 3L
+	},
+	{
+		uid: "3aa062f0",
+		type: "xp",
+		xp: 30
+	}]
+}

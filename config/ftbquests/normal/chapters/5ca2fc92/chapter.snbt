@@ -1,0 +1,10 @@
+{
+	title: "巫术学",
+	icon: "ebwizardry:wizard_robe",
+	description: [
+		"巫术学新手引导"
+	],
+	always_invisible: false,
+	group: -1290611499,
+	default_quest_shape: ""
+}

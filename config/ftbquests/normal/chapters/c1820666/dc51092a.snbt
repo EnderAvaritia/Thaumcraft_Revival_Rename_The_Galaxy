@@ -1,0 +1,35 @@
+{
+	title: "Wi-Fi",
+	x: 8.0d,
+	y: -4.0d,
+	description: "制作无线终端及无线访问点以实现远程网络访问",
+	text: [
+		"将无线终端在安全终端中绑定后，且网络中存在有效的无线访问点，即可在一定范围内通过无线终端访问网络中的物品",
+		"无线访问点占用一个频道"
+	],
+	dependencies: [
+		"d2af84ef"
+	],
+	tasks: [{
+		uid: "ef14851f",
+		type: "item",
+		items: [{
+			id: "appliedenergistics2:wireless_terminal",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "6b058da6",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:wireless_access_point"
+		}]
+	}],
+	rewards: [{
+		uid: "ee900b99",
+		type: "ftbmoney:money",
+		ftb_money: 10L
+	}]
+}

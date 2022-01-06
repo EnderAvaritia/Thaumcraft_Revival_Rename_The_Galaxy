@@ -1,0 +1,20 @@
+{
+	title: "拜访\"自由\"森林",
+	x: -3.5d,
+	y: -14.0d,
+	dependencies: [
+		"523a9ba1"
+	],
+	tasks: [{
+		uid: "19322cd1",
+		type: "biome",
+		title: "前往黑森林,找到哥布林要塞入口",
+		icon: "twilightforest:twilight_sapling 1 3",
+		biome: "twilightforest:dark_forest"
+	}],
+	rewards: [{
+		uid: "15b842bd",
+		type: "ftbmoney:money",
+		ftb_money: 1L
+	}]
+}

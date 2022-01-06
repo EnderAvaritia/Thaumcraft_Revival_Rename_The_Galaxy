@@ -1,0 +1,24 @@
+{
+	title: "照亮星空",
+	x: -6.5d,
+	y: -11.0d,
+	description: "寻找月光蠕虫女王,从此照明不用插火把",
+	dependencies: [
+		"b6f0da98"
+	],
+	hide: true,
+	tasks: [{
+		uid: "4bf72d6c",
+		type: "item",
+		items: [{
+			item: "twilightforest:moonworm_queen"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "0b86abeb",
+		type: "ftbmoney:money",
+		ftb_money: 7L
+	}]
+}

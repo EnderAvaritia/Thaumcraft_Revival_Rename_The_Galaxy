@@ -1,0 +1,60 @@
+{
+	title: "可无限使用的工具",
+	x: 5.0d,
+	y: -4.5d,
+	description: "制作可自动再生的虚空武器",
+	dependencies: [
+		"be4743eb"
+	],
+	hide: true,
+	tasks: [{
+		uid: "de4aa022",
+		type: "item",
+		items: [{
+			item: "thaumcraft:void_axe"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "a2806166",
+		type: "item",
+		items: [{
+			item: "thaumcraft:void_sword"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "e8064f85",
+		type: "item",
+		items: [{
+			item: "thaumcraft:void_pick"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "e17f2045",
+		type: "item",
+		items: [{
+			item: "thaumcraft:void_shovel"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "a23fc307",
+		type: "item",
+		items: [{
+			item: "thaumcraft:void_hoe"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "4af5038c",
+		type: "ftbmoney:money",
+		ftb_money: 7L
+	}]
+}

@@ -1,0 +1,15 @@
+{
+	x: 6.5d,
+	y: -16.5d,
+	dependencies: [
+		"d72be43f"
+	],
+	hide: true,
+	tasks: [{
+		uid: "a99d0668",
+		type: "item",
+		items: [{
+			item: "forestry:bee_chest"
+		}]
+	}]
+}

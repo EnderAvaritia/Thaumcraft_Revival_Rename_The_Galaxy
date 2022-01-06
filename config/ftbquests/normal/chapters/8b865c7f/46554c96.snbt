@@ -1,0 +1,12 @@
+{
+	title: "骨灰级成就",
+	x: 0.0d,
+	y: 7.0d,
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "fb6bb134",
+		type: "checkmark"
+	}]
+}

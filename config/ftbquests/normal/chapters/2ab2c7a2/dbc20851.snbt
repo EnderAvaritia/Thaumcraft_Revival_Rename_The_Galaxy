@@ -1,0 +1,25 @@
+{
+	x: 2.5d,
+	y: 0.5d,
+	dependencies: [
+		"35cc05e1"
+	],
+	tasks: [{
+		uid: "5cff587b",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					slots: 2
+				}
+			},
+			id: "thaumicaugmentation:elytra_harness"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "631866aa",
+		type: "ftbmoney:money",
+		ftb_money: 4L
+	}]
+}

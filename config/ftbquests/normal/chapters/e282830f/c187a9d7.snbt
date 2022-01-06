@@ -1,0 +1,20 @@
+{
+	x: -8.5d,
+	y: 0.5d,
+	description: "合金对敌",
+	dependencies: [
+		"2030f415"
+	],
+	tasks: [{
+		uid: "6bbbfca3",
+		type: "item",
+		items: [{
+			item: "enderio:block_simple_alloy_smelter"
+		}]
+	}],
+	rewards: [{
+		uid: "dc9bccf1",
+		type: "random",
+		table: 14
+	}]
+}

@@ -1,0 +1,16 @@
+{
+	x: 14.0d,
+	y: -17.0d,
+	dependencies: [
+		"3ad9d057"
+	],
+	tasks: [{
+		uid: "d7420e4e",
+		type: "item",
+		items: [{
+			item: "magicbees:frames.metabolic"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

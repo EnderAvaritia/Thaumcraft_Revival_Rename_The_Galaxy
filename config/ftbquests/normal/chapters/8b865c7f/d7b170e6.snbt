@@ -1,0 +1,23 @@
+{
+	title: "千骑亦虚还",
+	x: 0.0d,
+	y: 11.5d,
+	description: "众妃无复叹，千骑亦虚还",
+	text: [
+		""
+	],
+	dependencies: [
+		"e4dc1413"
+	],
+	tasks: [{
+		uid: "efb74f45",
+		type: "stat",
+		stat: "stat.mobKills",
+		value: 1000
+	}],
+	rewards: [{
+		uid: "bfe0850b",
+		type: "ftbmoney:money",
+		ftb_money: 10L
+	}]
+}

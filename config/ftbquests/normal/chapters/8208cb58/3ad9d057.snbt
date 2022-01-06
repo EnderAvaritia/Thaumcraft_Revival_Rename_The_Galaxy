@@ -1,0 +1,16 @@
+{
+	x: 15.0d,
+	y: -15.5d,
+	dependencies: [
+		"52587f2f"
+	],
+	tasks: [{
+		uid: "11ea826e",
+		type: "item",
+		items: [{
+			item: "magicbees:frames.magic"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

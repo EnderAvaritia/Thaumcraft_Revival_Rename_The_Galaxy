@@ -1,0 +1,21 @@
+{
+	title: "亲密接触",
+	x: 2.5d,
+	y: 1.5d,
+	description: "压缩三种合金锭",
+	dependencies: [
+		"3bb1f84f"
+	],
+	tasks: [{
+		uid: "dd504179",
+		type: "item",
+		items: [{
+			item: "ic2:ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "246e26fd",
+		type: "random",
+		table: 13
+	}]
+}

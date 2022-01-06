@@ -1,0 +1,26 @@
+{
+	title: "要素拆解",
+	x: 1.5d,
+	y: -3.5d,
+	description: "制作离心机,用它来获取基础的要素",
+	dependencies: [
+		"c367e17d"
+	],
+	tasks: [{
+		uid: "49b1138a",
+		type: "item",
+		items: [{
+			item: "thaumcraft:centrifuge"
+		}]
+	}],
+	rewards: [{
+		uid: "bf754ded",
+		type: "ftbmoney:money",
+		ftb_money: 3L
+	},
+	{
+		uid: "859f14fd",
+		type: "random",
+		table: 3
+	}]
+}

@@ -1,0 +1,24 @@
+{
+	title: "狂热者",
+	icon: "thaumadditions:adaminite_hood",
+	x: -23.0d,
+	y: -23.0d,
+	shape: "pentagon",
+	can_repeat: true,
+	dependencies: [
+		"5948d53d"
+	],
+	hide: true,
+	tasks: [{
+		uid: "5f4948ab",
+		type: "kill",
+		icon: "thaumadditions:adaminite_sword",
+		entity: "thaumicaugmentation:eldritch_guardian",
+		value: 200L
+	}],
+	rewards: [{
+		uid: "65ced243",
+		type: "ftbmoney:money",
+		ftb_money: 30L
+	}]
+}

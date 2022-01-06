@@ -1,0 +1,21 @@
+{
+	title: "世界商店",
+	x: -2.5d,
+	y: 3.75d,
+	shape: "gear",
+	description: "到这里来兑换金币",
+	can_repeat: true,
+	size: 1.25d,
+	tasks: [{
+		uid: "8da42e64",
+		type: "item",
+		items: [{
+			item: "minecraft:gold_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "29a7910b",
+		type: "ftbmoney:money",
+		ftb_money: 4L
+	}]
+}

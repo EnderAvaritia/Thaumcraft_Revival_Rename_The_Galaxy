@@ -1,0 +1,20 @@
+{
+	title: "当魔法遇见科技",
+	x: 0.0d,
+	y: 0.0d,
+	shape: "hexagon",
+	description: "由此开启神秘能源之旅",
+	text: [
+		"相比于神秘4的神秘能源来说，这个版本少了自动化源质的功能以及一些细节，略有遗憾"
+	],
+	dependencies: [
+		"93b7ac03"
+	],
+	hide: true,
+	size: 1.25d,
+	tasks: [{
+		uid: "c853329b",
+		type: "checkmark",
+		icon: "thaumicenergistics:arcane_terminal"
+	}]
+}

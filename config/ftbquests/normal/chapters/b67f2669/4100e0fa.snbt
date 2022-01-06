@@ -1,0 +1,21 @@
+{
+	title: "有一点贵了",
+	x: 5.0d,
+	y: 4.0d,
+	dependencies: [
+		"95688ffe"
+	],
+	hide: true,
+	tasks: [{
+		uid: "02c9150b",
+		type: "item",
+		items: [{
+			item: "thaumadditions:jar_mithrillium"
+		}]
+	}],
+	rewards: [{
+		uid: "efe2db0f",
+		type: "ftbmoney:money",
+		ftb_money: 11L
+	}]
+}

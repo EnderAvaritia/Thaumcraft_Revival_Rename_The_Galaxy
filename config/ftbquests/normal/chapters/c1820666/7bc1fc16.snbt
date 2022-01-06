@@ -1,0 +1,55 @@
+{
+	title: "动态网络",
+	x: 0.0d,
+	y: 6.0d,
+	description: "制作ME接口，样板终端，接口终端与若干空白样板，为接下来的自动化做准备",
+	text: [
+		"将空白样板放入样板终端进行合成/处理编码，然后放入ME接口中，即可在网络中请求物品合成/处理",
+		"发出请求后ME接口会向相邻的机器/容器传输原料，接收成品后再传回网络",
+		"接口终端可以对网络中所有接口的样板进行管理",
+		"接口占用一个频道",
+		"ME接口的其他功能可前往mcmod百科自行查询"
+	],
+	dependencies: [
+		"163188df"
+	],
+	tasks: [{
+		uid: "1ac0b2ee",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:interface"
+		}]
+	},
+	{
+		uid: "d5b95768",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:part 1 340"
+		}]
+	},
+	{
+		uid: "d2fd39d2",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 52"
+		}]
+	},
+	{
+		uid: "14490410",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:part 1 480"
+		}]
+	}],
+	rewards: [{
+		uid: "86f3c2c4",
+		type: "item",
+		item: "appliedenergistics2:material 1 52",
+		count: 5
+	},
+	{
+		uid: "4ba1692e",
+		type: "ftbmoney:money",
+		ftb_money: 5L
+	}]
+}

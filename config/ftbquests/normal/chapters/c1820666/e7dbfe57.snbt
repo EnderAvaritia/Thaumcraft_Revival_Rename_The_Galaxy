@@ -1,0 +1,51 @@
+{
+	title: "比箱子更好",
+	x: 0.0d,
+	y: 2.0d,
+	description: "合成ME驱动器，ME终端及存储元件以储存大量物品",
+	text: [
+		"一个驱动器最多容纳10个存储元件，一个元件可储存63种物品",
+		"终端可对网络中的物品进行存取",
+		"驱动器和终端各占用一个频道"
+	],
+	dependencies: [
+		"93b7ac03"
+	],
+	tasks: [{
+		uid: "db582db7",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:drive"
+		}]
+	},
+	{
+		uid: "9b3d2b89",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:part 1 380"
+		}]
+	},
+	{
+		uid: "92cdcd09",
+		type: "item",
+		items: [{
+			id: "appliedenergistics2:storage_cell_1k",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "07e5e3b6",
+		type: "item",
+		item: {
+			id: "appliedenergistics2:storage_cell_1k",
+			tag: {}
+		}
+	},
+	{
+		uid: "57bd2a4d",
+		type: "ftbmoney:money",
+		ftb_money: 5L
+	}]
+}

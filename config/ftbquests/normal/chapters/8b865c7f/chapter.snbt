@@ -1,0 +1,7 @@
+{
+	title: "史诗级任务",
+	icon: "avaritia:block_resource 1 1",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

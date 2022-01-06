@@ -1,0 +1,32 @@
+{
+	title: "飞身一跃",
+	x: 8.0d,
+	y: -5.5d,
+	description: "制作云霄指环,提高玩家的跳跃能力",
+	text: [
+		"云霄指环可以让你拥有2段跳的能力，不过会摔一下~"
+	],
+	dependencies: [
+		"80698ec1"
+	],
+	hide: true,
+	tasks: [{
+		uid: "30dcf0f6",
+		type: "item",
+		items: [{
+			item: "thaumcraft:cloud_ring"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "e55ddc14",
+		type: "ftbmoney:money",
+		ftb_money: 2L
+	},
+	{
+		uid: "798feba7",
+		type: "xp",
+		xp: 20
+	}]
+}

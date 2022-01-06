@@ -1,0 +1,29 @@
+{
+	title: "关闭腐化裂隙",
+	x: -0.5d,
+	y: -6.0d,
+	description: "制作悖论物质,并用它关闭裂缝",
+	text: [
+		"右键向裂缝投掷，记得离远点~"
+	],
+	dependencies: [
+		"be709a99"
+	],
+	tasks: [{
+		uid: "405d31eb",
+		type: "item",
+		items: [{
+			item: "thaumcraft:causality_collapser"
+		}]
+	}],
+	rewards: [{
+		uid: "a4bd1ccd",
+		type: "random",
+		table: 3
+	},
+	{
+		uid: "2f89c79e",
+		type: "random",
+		table: 4
+	}]
+}

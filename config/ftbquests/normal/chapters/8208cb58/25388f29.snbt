@@ -1,0 +1,21 @@
+{
+	title: "天寒地冻",
+	x: -4.5d,
+	y: -15.0d,
+	description: "前往雪原,击杀雪怪洞穴中的雪怪首领,并用它的毛皮制作强力装备",
+	dependencies: [
+		"483cabfc"
+	],
+	tasks: [{
+		uid: "ae749f9c",
+		type: "kill",
+		icon: "twilightforest:alpha_fur",
+		entity: "twilightforest:yeti_alpha",
+		value: 1L
+	}],
+	rewards: [{
+		uid: "664ae0c2",
+		type: "ftbmoney:money",
+		ftb_money: 2L
+	}]
+}

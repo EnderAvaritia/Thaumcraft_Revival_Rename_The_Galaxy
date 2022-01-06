@@ -1,0 +1,13 @@
+{
+	title: "涮一下",
+	x: -1.5d,
+	y: -4.0d,
+	dependencies: [
+		"66f485d8"
+	],
+	tasks: [{
+		uid: "04402305",
+		type: "checkmark",
+		icon: "ic2:te 1 3"
+	}]
+}

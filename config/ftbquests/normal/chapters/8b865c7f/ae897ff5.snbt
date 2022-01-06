@@ -1,0 +1,84 @@
+{
+	title: "手有百指",
+	x: 2.5d,
+	y: -1.5d,
+	shape: "pentagon",
+	description: "一人，一桌，一椅，一扇，一扶尺而已",
+	text: [
+		""
+	],
+	can_repeat: true,
+	dependencies: [
+		"3800365b"
+	],
+	hide: true,
+	tasks: [{
+		uid: "1005a523",
+		type: "item",
+		items: [{
+			item: "ic2:wrench_new"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "b51a49cf",
+		type: "item",
+		items: [{
+			id: "ic2:electric_wrench",
+			tag: {},
+			Damage: 26s
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "c7b0488c",
+		type: "item",
+		items: [{
+			item: "forestry:wrench"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "c29287d8",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:certus_quartz_wrench"
+		},
+		{
+			item: "appliedenergistics2:nether_quartz_wrench"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "fb341418",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:network_tool"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "0cfd9ab0",
+		type: "item",
+		items: [{
+			item: "enderio:item_yeta_wrench"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "bcf49f32",
+		type: "ftbmoney:money",
+		ftb_money: 50L
+	},
+	{
+		uid: "75e4ff74",
+		type: "xp_levels",
+		xp_levels: 5
+	}]
+}

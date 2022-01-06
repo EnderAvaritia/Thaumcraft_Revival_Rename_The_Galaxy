@@ -1,0 +1,31 @@
+{
+	title: "实体捕捉",
+	x: 1.5d,
+	y: 0.0d,
+	description: "制作一个生物球来方便玩家转移实体",
+	text: [
+		"要制作此物必须解锁神秘领域的\"生物重构\"研究",
+		"其前置研究为\"秘银金属\"",
+		"",
+		"当你看到这个任务时,很有可能距离制作此物品还很远..."
+	],
+	dependencies: [
+		"63b0b9d6",
+		"2efda47a"
+	],
+	hide: true,
+	tasks: [{
+		uid: "74b65613",
+		type: "item",
+		items: [{
+			item: "thaumadditions:dna_sample"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "90ca98f3",
+		type: "ftbmoney:money",
+		ftb_money: 3L
+	}]
+}

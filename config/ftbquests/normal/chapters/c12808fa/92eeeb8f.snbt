@@ -1,0 +1,26 @@
+{
+	x: 2.5d,
+	y: 0.0d,
+	description: "制作奥术刷怪笼,为玩家提供大量所需的实体",
+	text: [
+		"想要制作此物品,需解锁位于\"神秘领域\"中的研究\"生物重构\"",
+		"该研究前置研究为\"秘银锭\"",
+		"",
+		"然而,你在获得秘银之前就能得到制作它所需的全部材料..."
+	],
+	dependencies: [
+		"6e344c07"
+	],
+	tasks: [{
+		uid: "416144ca",
+		type: "item",
+		items: [{
+			item: "thaumadditions:entity_summoner"
+		}]
+	}],
+	rewards: [{
+		uid: "eabeab48",
+		type: "ftbmoney:money",
+		ftb_money: 4L
+	}]
+}

@@ -1,0 +1,24 @@
+{
+	x: 3.0d,
+	y: -0.5d,
+	shape: "gear",
+	hide_dependency_lines: true,
+	dependencies: [
+		"a1a86b39"
+	],
+	hide: true,
+	tasks: [{
+		uid: "936d5b93",
+		type: "item",
+		items: [{
+			item: "draconicevolution:draconic_helm"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "714dd5fd",
+		type: "ftbmoney:money",
+		ftb_money: 50L
+	}]
+}

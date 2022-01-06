@@ -1,0 +1,30 @@
+{
+	title: "绿色护眼",
+	x: -2.0d,
+	y: 0.0d,
+	description: "制作奥术合成终端以使用网络中物品进行奥术合成",
+	text: [
+		"确保灵气及所需对应水晶足够，水晶需放在格子中"
+	],
+	dependencies: [
+		"ce041701"
+	],
+	tasks: [{
+		uid: "84abe362",
+		type: "item",
+		items: [{
+			item: "thaumicenergistics:arcane_terminal"
+		}]
+	}],
+	rewards: [{
+		uid: "3219ccec",
+		type: "item",
+		item: "thaumcraft:salis_mundus",
+		count: 3
+	},
+	{
+		uid: "d21468a2",
+		type: "ftbmoney:money",
+		ftb_money: 5L
+	}]
+}

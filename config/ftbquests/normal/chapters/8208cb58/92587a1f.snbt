@@ -1,0 +1,21 @@
+{
+	title: "X科技",
+	x: -0.5d,
+	y: -9.5d,
+	dependencies: [
+		"0afdd71c"
+	],
+	hide: true,
+	tasks: [{
+		uid: "dda9f72b",
+		type: "item",
+		items: [{
+			item: "twilightforest:ore_map_empty"
+		}]
+	}],
+	rewards: [{
+		uid: "099dcb47",
+		type: "ftbmoney:money",
+		ftb_money: 3L
+	}]
+}

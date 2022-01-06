@@ -1,0 +1,25 @@
+{
+	title: "无损铁砧",
+	x: 8.0d,
+	y: -4.5d,
+	description: "制作虚空砧来无限使用",
+	text: [
+		"想要制作该物品需解锁位于神秘进阶的\"虚空砧\""
+	],
+	dependencies: [
+		"be4743eb"
+	],
+	hide: true,
+	tasks: [{
+		uid: "b6cdaf38",
+		type: "item",
+		items: [{
+			item: "thaumadditions:void_anvil"
+		}]
+	}],
+	rewards: [{
+		uid: "0bce47b9",
+		type: "ftbmoney:money",
+		ftb_money: 5L
+	}]
+}

@@ -1,0 +1,22 @@
+{
+	title: "风起云涌",
+	x: 8.0d,
+	y: -2.5d,
+	description: "制作动能发电机，一台效率极高的发电机",
+	dependencies: [
+		"80698ec1"
+	],
+	hide: true,
+	tasks: [{
+		uid: "ad772b51",
+		type: "item",
+		items: [{
+			item: "ic2:te 1 5"
+		}]
+	}],
+	rewards: [{
+		uid: "dd2aca70",
+		type: "random",
+		table: 13
+	}]
+}

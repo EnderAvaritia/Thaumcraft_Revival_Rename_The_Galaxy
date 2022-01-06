@@ -1,0 +1,21 @@
+{
+	title: "稳定裂缝",
+	x: 12.0d,
+	y: -4.5d,
+	description: "制作裂缝稳定器并为其充能，使裂缝更加稳定",
+	dependencies: [
+		"cdd78115"
+	],
+	tasks: [{
+		uid: "10911489",
+		type: "item",
+		items: [{
+			item: "thaumicaugmentation:stability_field_generator"
+		}]
+	}],
+	rewards: [{
+		uid: "43636f5e",
+		type: "ftbmoney:money",
+		ftb_money: 4L
+	}]
+}

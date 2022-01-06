@@ -1,0 +1,23 @@
+{
+	title: "精金大剑",
+	x: 4.0d,
+	y: -8.0d,
+	description: "制作精金剑,可能它的效果不会令你非常满意",
+	dependencies: [
+		"2e0aba41"
+	],
+	tasks: [{
+		uid: "04969480",
+		type: "item",
+		items: [{
+			item: "thaumadditions:adaminite_sword"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "977f2b2f",
+		type: "ftbmoney:money",
+		ftb_money: 10L
+	}]
+}

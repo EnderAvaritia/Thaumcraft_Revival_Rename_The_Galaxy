@@ -1,0 +1,99 @@
+{
+	title: "注魔准备第一步",
+	icon: "thaumcraft:candle_white",
+	tags: [
+		""
+	],
+	x: 7.0d,
+	y: -0.5d,
+	description: "制作多彩蜡烛以维持注魔祭坛的稳定性",
+	text: [
+		"神秘时代6中,单一颜色的蜡烛最多只能提供0.4的稳定性",
+		"但不同颜色的蜡烛稳定性计算完全独立",
+		"所以想要达到最稳定,需要摆放多对不同颜色的蜡烛"
+	],
+	dependencies: [
+		"d264cf19"
+	],
+	hide: true,
+	tasks: [{
+		uid: "2f9fbde0",
+		type: "item",
+		items: [{
+			item: "thaumcraft:candle_white"
+		},
+		{
+			item: "thaumcraft:candle_orange"
+		},
+		{
+			item: "thaumcraft:candle_pink"
+		}],
+		count: 12L
+	},
+	{
+		uid: "5104b7fc",
+		type: "item",
+		items: [{
+			item: "thaumcraft:candle_yellow"
+		},
+		{
+			item: "thaumcraft:candle_lime"
+		},
+		{
+			item: "thaumcraft:candle_purple"
+		}],
+		count: 12L
+	},
+	{
+		uid: "eb94fca2",
+		type: "item",
+		items: [{
+			item: "thaumcraft:candle_silver"
+		},
+		{
+			item: "thaumcraft:candle_cyan"
+		},
+		{
+			item: "thaumcraft:candle_red"
+		}],
+		count: 12L
+	},
+	{
+		uid: "fff0addd",
+		type: "item",
+		items: [{
+			item: "thaumcraft:candle_brown"
+		},
+		{
+			item: "thaumcraft:candle_green"
+		},
+		{
+			item: "thaumcraft:candle_magenta"
+		}],
+		count: 12L
+	},
+	{
+		uid: "20e45395",
+		type: "item",
+		items: [{
+			item: "thaumcraft:candle_lightblue"
+		},
+		{
+			item: "thaumcraft:candle_gray"
+		},
+		{
+			item: "thaumcraft:candle_black"
+		}],
+		count: 12L
+	}],
+	rewards: [{
+		uid: "e64fd847",
+		type: "ftbmoney:money",
+		ftb_money: 4L
+	},
+	{
+		uid: "6c52d4ce",
+		type: "random",
+		table: 4
+	}]
+}

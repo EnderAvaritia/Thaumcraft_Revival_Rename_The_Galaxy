@@ -1,0 +1,37 @@
+{
+	title: "探索者",
+	x: 4.0d,
+	y: -5.5d,
+	description: "制作旅行者之靴使玩家的探索变得更有效率",
+	dependencies: [
+		"80698ec1"
+	],
+	hide: true,
+	tasks: [{
+		uid: "cb994fef",
+		type: "item",
+		items: [{
+			id: "thaumcraft:traveller_boots",
+			tag: {
+				energy: 0
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "12c20fcd",
+		type: "ftbmoney:money",
+		ftb_money: 2L
+	},
+	{
+		uid: "052e324e",
+		type: "xp",
+		xp: 20
+	},
+	{
+		uid: "00f18867",
+		type: "random",
+		table: 3
+	}]
+}

@@ -1,0 +1,22 @@
+{
+	x: 0.5d,
+	y: 1.0d,
+	dependencies: [
+		"501723b8"
+	],
+	tasks: [{
+		uid: "39b23f09",
+		type: "item",
+		items: [{
+			item: "ic2:te 1 22"
+		}]
+	},
+	{
+		uid: "3db6b291",
+		type: "item",
+		items: [{
+			item: "ic2:te 1 24"
+		}],
+		count: 6L
+	}]
+}

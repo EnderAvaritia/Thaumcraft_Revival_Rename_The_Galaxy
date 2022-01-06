@@ -1,0 +1,21 @@
+{
+	x: -7.5d,
+	y: 4.0d,
+	dependencies: [
+		"8f44b90e"
+	],
+	tasks: [{
+		uid: "6306aeb6",
+		type: "item",
+		items: [{
+			item: "draconicevolution:wyvern_boots"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "91ed366f",
+		type: "ftbmoney:money",
+		ftb_money: 30L
+	}]
+}
