@@ -1,4 +1,4 @@
-# Thaumcraft_revival_reappear_the_galaxy
+# Thaumcraft Revival Rename The Galaxy
 ## 介绍
   该仓库用作 ***神秘复兴：星瀚再临*** 的魔改与资源存储
 ## 文件名命名规则
