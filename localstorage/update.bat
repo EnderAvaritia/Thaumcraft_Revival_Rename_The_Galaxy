@@ -1,50 +1,50 @@
 @echo off
-REM Õâ¶Î¼òµ¥£¬ÅäÖÃ²Ö¿âµØÖ·ºÍ·ÖÖ§£¬Õâ¸öÒ²¾ÍÊÇÇø·Ö²»Í¬ÖÜÄ¿µÄ·½·¨ÁË
-set branch=test
+REM è¿™æ®µç®€å•ï¼Œé…ç½®ä»“åº“åœ°å€å’Œåˆ†æ”¯ï¼Œè¿™ä¸ªä¹Ÿå°±æ˜¯åŒºåˆ†ä¸åŒå‘¨ç›®çš„æ–¹æ³•äº†
+set branch=cilent
 set origin=https://gitee.com/EnderAvaritia/Thaumcraft_Revival_Rename_The_Galaxy.git
-set packname=ÉñÃØ¸´ÐË¡¤ÐÇå«ÔÙÁÙ
-REM Õâ´ÎÖ»ÓÃµ½ÁËgitºÍxcopy£¬¹ÊÖ»ÉèÖÃÕâÁ½¸ö»·¾³±äÁ¿¹»ÁË
+set packname=ç¥žç§˜å¤å…´Â·æ˜Ÿç€šå†ä¸´
+REM è¿™æ¬¡åªç”¨åˆ°äº†gitå’Œxcopyï¼Œæ•…åªè®¾ç½®è¿™ä¸¤ä¸ªçŽ¯å¢ƒå˜é‡å¤Ÿäº†
 set PATH=%WINDIR%\system32;%~dp0%git-mini
 
-title %packname% ÕýÔÚ¸üÐÂ
+title %packname% æ­£åœ¨æ›´æ–°
 
-REM ¼ì²â»¥ÁªÍøÁ¬½Ó
+REM æ£€æµ‹äº’è”ç½‘è¿žæŽ¥
 ping gitee.com -n 1 > nul
 if errorlevel 1 (
-	echo GiteeÃ»pingÍ¨£¬ÄãµÄ»¥ÁªÍøÁ¬½Ó´ó¸ÅÓÐÎÊÌâ£¬·ÅÆú¸üÐÂ
+	echo Giteeæ²¡pingé€šï¼Œä½ çš„äº’è”ç½‘è¿žæŽ¥å¤§æ¦‚æœ‰é—®é¢˜ï¼Œæ”¾å¼ƒæ›´æ–°
 	exit 1
 )
 
-REM Õ¹Ê¾ÔËÐÐÊ±¼ä£¬ÒÔÈ·¶¨Õâ¸öÈÕÖ¾ÊÇ×îÐÂÒ»´ÎÆô¶¯µÄÊ±ºòÉú³ÉµÄ¡£ÕâÀïµÄ±äÁ¿ÔÚºóÃæ±¸·ÝµÄÊ±ºòÒ²ÓÐÓÃµ½
+REM å±•ç¤ºè¿è¡Œæ—¶é—´ï¼Œä»¥ç¡®å®šè¿™ä¸ªæ—¥å¿—æ˜¯æœ€æ–°ä¸€æ¬¡å¯åŠ¨çš„æ—¶å€™ç”Ÿæˆçš„ã€‚è¿™é‡Œçš„å˜é‡åœ¨åŽé¢å¤‡ä»½çš„æ—¶å€™ä¹Ÿæœ‰ç”¨åˆ°
 FOR /F "tokens=1-4 delims=/ " %%i in ('date/t') do set localdate=%%i-%%j-%%k
 FOR /F "tokens=*" %%t in ('time/t') do set localtime=%%t
 echo %localdate% %localtime%
 
-REM ÎÞÊÓ¾ßÌåÎ»ÖÃ£¬Ê¼ÖÕÌø×ªµ½ÕýÈ·µÄ.minecraftÄ¿Â¼
+REM æ— è§†å…·ä½“ä½ç½®ï¼Œå§‹ç»ˆè·³è½¬åˆ°æ­£ç¡®çš„.minecraftç›®å½•
 cd /d %~dp0
 cd ..\.minecraft
 
-REM Èô.minecraftÒòÎªÒì±ä°Ñ.gitÄ¿Â¼Ïû³ýÁË£¬¾Í±¨´í£»ÈôÃ»ÓÐ³õÊ¼»¯flag£¬Ôò½øÐÐÆÕÍ¨¸üÐÂ
-REM ¾¯¸æ£ºÇÐÎð½«ÏÂÃæµÄflagÎÄ¼þ·Å½ø.minecraftÄ¿Â¼£¬ºó¹û×Ô¸º¡£
+REM è‹¥.minecraftå› ä¸ºå¼‚å˜æŠŠ.gitç›®å½•æ¶ˆé™¤äº†ï¼Œå°±æŠ¥é”™ï¼›è‹¥æ²¡æœ‰åˆå§‹åŒ–flagï¼Œåˆ™è¿›è¡Œæ™®é€šæ›´æ–°
+REM è­¦å‘Šï¼šåˆ‡å‹¿å°†ä¸‹é¢çš„flagæ–‡ä»¶æ”¾è¿›.minecraftç›®å½•ï¼ŒåŽæžœè‡ªè´Ÿã€‚
 if not exist .git exit 1
 
-REM ÔÚ²ÎÊýÀï¼ÓfirstupdateÒÔÖ±½Ó½øÈëdofirstupdate²¿·Ö£¬ÕâÊÇÎªÁËÅäºÏÏàÓ¦vbs½Å±¾Ê¹ÓÃ£¬ÒÔÔÚÊ×´Î¸üÐÂµÄ½Ï³¤Ê±¼äÀïÏÔÊ¾¸üÐÂÏà¹ØµÄ´°¿Ú£¬±ÜÃâÓÃ»§²úÉúÒÉ»ó
+REM åœ¨å‚æ•°é‡ŒåŠ firstupdateä»¥ç›´æŽ¥è¿›å…¥dofirstupdateéƒ¨åˆ†ï¼Œè¿™æ˜¯ä¸ºäº†é…åˆç›¸åº”vbsè„šæœ¬ä½¿ç”¨ï¼Œä»¥åœ¨é¦–æ¬¡æ›´æ–°çš„è¾ƒé•¿æ—¶é—´é‡Œæ˜¾ç¤ºæ›´æ–°ç›¸å…³çš„çª—å£ï¼Œé¿å…ç”¨æˆ·äº§ç”Ÿç–‘æƒ‘
 if "%~1" equ "firstupdate" (goto dofirstupdate)
-REM Èô²»Ö¸¶¨²ÎÊý£¨Õý³£Çé¿ö£©£¬Ôò¸ù¾ÝÊÇ·ñ´æÔÚflagÎÄ¼þÀ´È·¶¨ºóÐøÁ÷³Ì
+REM è‹¥ä¸æŒ‡å®šå‚æ•°ï¼ˆæ­£å¸¸æƒ…å†µï¼‰ï¼Œåˆ™æ ¹æ®æ˜¯å¦å­˜åœ¨flagæ–‡ä»¶æ¥ç¡®å®šåŽç»­æµç¨‹
 if exist I_WANT_TO_RESET_WORLD (goto firstupdatehandler) else (goto normalupdate)
 
 :dofirstupdate
-echo ÕýÔÚ½øÐÐÊ×´ÎÅäÖÃ£¯Intializing local copy
+echo æ­£åœ¨è¿›è¡Œé¦–æ¬¡é…ç½®ï¼Intializing local copy
 
-REM ÔÙ´Î¼ì²éÒ»ÏÂ£¬ÒÔÃâ³öÎÊÌâ
+REM å†æ¬¡æ£€æŸ¥ä¸€ä¸‹ï¼Œä»¥å…å‡ºé—®é¢˜
 if not exist I_WANT_TO_RESET_WORLD (exit 1)
 
-REM ÔÚlocalstorageÄ¿Â¼´´½¨¸üÐÂÖ¸Ê¾ÎÄ¼þ£¨ÁíÒ»°æ±¾ÖÐÔÚ¸ùÄ¿Â¼´´½¨£¬²»¹ýÓÃ»§ÓÐ¿ÉÄÜ¸øÊÖ¶¯É¾µôÕâ¸öÎÄ¼þ£¬ÄÇ¾ÍºÜÞÏÞÎ£©
+REM åœ¨localstorageç›®å½•åˆ›å»ºæ›´æ–°æŒ‡ç¤ºæ–‡ä»¶ï¼ˆå¦ä¸€ç‰ˆæœ¬ä¸­åœ¨æ ¹ç›®å½•åˆ›å»ºï¼Œä¸è¿‡ç”¨æˆ·æœ‰å¯èƒ½ç»™æ‰‹åŠ¨åˆ æŽ‰è¿™ä¸ªæ–‡ä»¶ï¼Œé‚£å°±å¾ˆå°´å°¬ï¼‰
 type nul > ..\localstorage\UPDATE_IN_PROGRESS.txt
 
-echo ÕýÔÚ´´½¨¹Ø¼ü±¾µØÊý¾Ý±¸·Ý£¯Creating a partial backup for less grief
+echo æ­£åœ¨åˆ›å»ºå…³é”®æœ¬åœ°æ•°æ®å¤‡ä»½ï¼Creating a partial backup for less grief
 if not exist saves (
-	echo Î´·¢ÏÖsavesÄ¿Â¼£¬ÕûºÏ°üÓ¦µ±ÊÇÈ«ÐÂµÄ£¬Ìø¹ý±¸·Ý
+	echo æœªå‘çŽ°savesç›®å½•ï¼Œæ•´åˆåŒ…åº”å½“æ˜¯å…¨æ–°çš„ï¼Œè·³è¿‡å¤‡ä»½
 	goto firstupdatepart2
 	)
 for %%f in (config, journeymap, saves) do xcopy /s /q /i /r /y %%f ..\localstorage\Backup-LocalReset-%localdate%\%%f
@@ -52,35 +52,35 @@ xcopy /r /y /q options.txt ..\localstorage\Backup-LocalReset-%localdate%\
 xcopy /r /y /q optionsof.txt ..\localstorage\Backup-LocalReset-%localdate%\
 
 :firstupdatepart2
-echo ÕýÔÚ½«×ÊÔ´ÎÄ¼þ¸´ÖÆµ½±¾µØ´æ´¢£¯Copying first-served files to local storage
+echo æ­£åœ¨å°†èµ„æºæ–‡ä»¶å¤åˆ¶åˆ°æœ¬åœ°å­˜å‚¨ï¼Copying first-served files to local storage
 for %%g in (assets, libraries, versions) do xcopy /s /q /i /r /y %%g ..\localstorage\rootdir\%%g
 xcopy /r /y /q launcher_profiles.json ..\localstorage\rootdir\
 
-echo ÕýÔÚÉèÖÃ²Ö¿âÉÏÓÎ£¯Setting local repo origin
+echo æ­£åœ¨è®¾ç½®ä»“åº“ä¸Šæ¸¸ï¼Setting local repo origin
 git.exe remote remove origin
 git.exe remote add origin %origin%
 
-echo ÕýÔÚÉèÖÃÎÄ±¾»»ÐÐ·ûÊÊÓ¦£¯Setting local EOL policy
+echo æ­£åœ¨è®¾ç½®æ–‡æœ¬æ¢è¡Œç¬¦é€‚åº”ï¼Setting local EOL policy
 git.exe config core.autocrlf true
 
-echo ÕýÔÚÉèÖÃ±¾µØGitÉí·Ý£¯Setting dummy local identity
+echo æ­£åœ¨è®¾ç½®æœ¬åœ°Gitèº«ä»½ï¼Setting dummy local identity
 git.exe config user.name "localuser"
 git.exe config user.email "localuser@localhost"
 
-echo ÕýÔÚÅäÖÃSSLÈÏÖ¤£¯Disabling SSL cert verification
+echo æ­£åœ¨é…ç½®SSLè®¤è¯ï¼Disabling SSL cert verification
 git.exe config http.sslVerify false
 
-echo ÕýÔÚ´ÓÔ¶¶ËÀ­È¡Êý¾Ý£¯Fetching branch data from remote
+echo æ­£åœ¨ä»Žè¿œç«¯æ‹‰å–æ•°æ®ï¼Fetching branch data from remote
 git.exe fetch origin %branch%
 
-echo ÕýÔÚÓ²ÖØÖÃ±¾µØÄ¿Â¼£¯Hard resetting local world
+echo æ­£åœ¨ç¡¬é‡ç½®æœ¬åœ°ç›®å½•ï¼Hard resetting local world
 git.exe reset --hard origin/%branch%
 
-echo Ò»µãµãÇåÀí¹¤×÷¡­¡­£¯A little cleanup...
+echo ä¸€ç‚¹ç‚¹æ¸…ç†å·¥ä½œâ€¦â€¦ï¼A little cleanup...
 git.exe clean -d -x -f
 
 xcopy /s /q ..\localstorage\rootdir\* .
-echo ÒÑ¸´ÖÆ±¾µØ×ÊÔ´ÎÄ¼þ£¬ÕûºÏ°üÏÖÒÑÍêÕû£¯Copied local storage data for a full modpack
+echo å·²å¤åˆ¶æœ¬åœ°èµ„æºæ–‡ä»¶ï¼Œæ•´åˆåŒ…çŽ°å·²å®Œæ•´ï¼Copied local storage data for a full modpack
 
 del ..\localstorage\UPDATE_IN_PROGRESS.txt
 
@@ -88,31 +88,31 @@ cd ..
 exit 0
 
 :normalupdate
-echo ÕýÔÚ¼ì²é¸üÐÂ£¯Checking for updates
+echo æ­£åœ¨æ£€æŸ¥æ›´æ–°ï¼Checking for updates
 set POLICY=ours
 
-echo ÕýÔÚÌá½»±¾µØ¸ü¸Ä£¯Commiting local changes
+echo æ­£åœ¨æäº¤æœ¬åœ°æ›´æ”¹ï¼Commiting local changes
 git.exe commit --quiet --all -m local_autocommit
 
-echo ÕýÔÚÀ­È¡Ô¶¶Ë¸üÐÂ£¯Fetching remote changes
+echo æ­£åœ¨æ‹‰å–è¿œç«¯æ›´æ–°ï¼Fetching remote changes
 git.exe fetch origin %branch%
 
 git.exe merge -s recursive -X %POLICY% origin/%branch%
-echo ÒÑÓ¦ÓÃÔ¶¶Ë¸üÐÂ£¯Applied remote changes
+echo å·²åº”ç”¨è¿œç«¯æ›´æ–°ï¼Applied remote changes
 
 cd ..
 exit 0
 
 :firstupdatehandler
-REM ½øÐÐÊ×´Î¸üÐÂµÄÇé¿ö£¬´ËÊ±ÐèÒªÏÔÊ¾cmd´°¿ÚÒÔÕ¹Ê¾¸üÐÂ½ø¶È¡£
-REM ÕâÀïµÄ×ö·¨ÊÇÓÃvbsÖØÐÂÆô¶¯Ò»¸öcmdÊµÀý£¬È»ºóÓÃ²ÎÊýÖ±½ÓÖ¸¶¨×ßfirstupdateÁ÷³Ì¡£Ã»ÓÐÔÙÐ´Ò»¸öÎÄ¼þÀ´µ÷ÓÃ£¬ÊÇÎªÁË¾¡Á¿¼õÉÙÎÄ¼þÊýÁ¿
+REM è¿›è¡Œé¦–æ¬¡æ›´æ–°çš„æƒ…å†µï¼Œæ­¤æ—¶éœ€è¦æ˜¾ç¤ºcmdçª—å£ä»¥å±•ç¤ºæ›´æ–°è¿›åº¦ã€‚
+REM è¿™é‡Œçš„åšæ³•æ˜¯ç”¨vbsé‡æ–°å¯åŠ¨ä¸€ä¸ªcmdå®žä¾‹ï¼Œç„¶åŽç”¨å‚æ•°ç›´æŽ¥æŒ‡å®šèµ°firstupdateæµç¨‹ã€‚æ²¡æœ‰å†å†™ä¸€ä¸ªæ–‡ä»¶æ¥è°ƒç”¨ï¼Œæ˜¯ä¸ºäº†å°½é‡å‡å°‘æ–‡ä»¶æ•°é‡
 xcopy /r /y /q .\I_WANT_TO_RESET_WORLD ..\
 cmd.exe /C "..\localstorage\update.vbs"
 
 :checkfile
-REM hmclÅÐ¶ÏÆô¶¯Ç°Ö´ÐÐÃüÁîµÄ·½·¨¾ÍÊÇ¿´ËüÖ´ÐÐµÄµÚÒ»¸öÃüÁîÊÇ·ñ½áÊø¡£Òò´Ë£¬ÔÚÇ°Ì¨¸üÐÂµÄÊµÀý½áÊøÖ®Ç°£¬ÕâÀïµÄÊµÀýÒ²±ØÐë±£³ÖÔËÐÐ¡£
-REM ÕâÀïÓÃµÈ´ý²¢¼ì²éµÄÑ­»·£¬À´ÅÐ¶Ï¸üÐÂ¹ý³ÌÊÇ·ñÒÑ½áÊø¡£
-echo ÕýÔÚµÈ´ý¸üÐÂÍê³É...
+REM hmclåˆ¤æ–­å¯åŠ¨å‰æ‰§è¡Œå‘½ä»¤çš„æ–¹æ³•å°±æ˜¯çœ‹å®ƒæ‰§è¡Œçš„ç¬¬ä¸€ä¸ªå‘½ä»¤æ˜¯å¦ç»“æŸã€‚å› æ­¤ï¼Œåœ¨å‰å°æ›´æ–°çš„å®žä¾‹ç»“æŸä¹‹å‰ï¼Œè¿™é‡Œçš„å®žä¾‹ä¹Ÿå¿…é¡»ä¿æŒè¿è¡Œã€‚
+REM è¿™é‡Œç”¨ç­‰å¾…å¹¶æ£€æŸ¥çš„å¾ªçŽ¯ï¼Œæ¥åˆ¤æ–­æ›´æ–°è¿‡ç¨‹æ˜¯å¦å·²ç»“æŸã€‚
+echo æ­£åœ¨ç­‰å¾…æ›´æ–°å®Œæˆ...
 ping localhost -n 4 > nul
 if exist "..\localstorage\UPDATE_IN_PROGRESS.txt" (
 goto checkfile
