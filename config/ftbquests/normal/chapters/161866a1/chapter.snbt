@@ -1,7 +1,0 @@
-{
-	title: "神秘时代：更多研究内容",
-	icon: "thaumcraft:infusion_matrix",
-	always_invisible: false,
-	group: 0,
-	default_quest_shape: ""
-}

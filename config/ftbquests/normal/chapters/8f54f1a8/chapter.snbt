@@ -1,7 +1,0 @@
-{
-	title: "邪术学",
-	icon: "thaumcraft:curio 1 6",
-	always_invisible: false,
-	group: 370697889,
-	default_quest_shape: ""
-}
