@@ -1,7 +1,7 @@
 @ECHO OFF
 
 :: server core
-SET SERVER_CORE=forge-1.12.2-14.23.5.2847-universal.jar
+SET SERVER_CORE=forge-1.12.2-14.23.5.2860.jar
 
 SET JAVA_PARAMETERS=
 
