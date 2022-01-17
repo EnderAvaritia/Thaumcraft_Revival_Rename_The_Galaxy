@@ -1,12 +1,14 @@
 @ECHO OFF
 
+cmd /c ..\update.bat
+
 :: server core
 SET SERVER_CORE=forge-1.12.2-14.23.5.2860.jar
 
 SET JAVA_PARAMETERS=
 
 ::java path
-set JAVA_PATH=java
+set JAVA_PATH="C:\Program Files\Java\jre1.8.0_311\bin\java.exe"
 
 :: RAM
 SET MIN_RAM=6144M
