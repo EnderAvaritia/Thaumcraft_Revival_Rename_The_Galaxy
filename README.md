@@ -6,9 +6,9 @@
 
 **准备部分**
 
-- [ ] 配置YggdrasilOfficialProxy.conf中的api
+- [ ] 配置server 中的 YggdrasilOfficialProxy.conf 中的 api **（不会就别改）** 默认皮肤站：<<https://littleskin.cn/>>
 
-- [ ] 修改2 start server.bat中的变量，主要修改**服务器核心名称**，**内存**，**Java路径**
+- [ ] 修改server 中的 2 start server.bat中的变量，主要修改**服务器核心名称**，**内存**，**Java路径**
 
 **开始运行**
 
