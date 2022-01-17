@@ -1,93 +1,97 @@
 @echo off
 set branch=test
 set origin=https://gitee.com/EnderAvaritia/Thaumcraft_Revival_Rename_The_Galaxy.git
-set packname=ÉñÃØ¸´ĞË¡¤ĞÇå«ÔÙÁÙ
+set packname=ç¥ç§˜å¤å…´Â·æ˜Ÿç€šå†ä¸´
 
-REM Õâ´ÎÖ»ÓÃµ½ÁËgitºÍxcopy£¬¹ÊÖ»ÉèÖÃÕâÁ½¸ö»·¾³±äÁ¿¹»ÁË
+REM è¿™æ¬¡åªç”¨åˆ°äº†gitå’Œxcopyï¼Œæ•…åªè®¾ç½®è¿™ä¸¤ä¸ªç¯å¢ƒå˜é‡å¤Ÿäº†
 set PATH=%WINDIR%\system32;%~dp0%git-mini
 
-title %packname% ·şÎñÆ÷ ÕıÔÚ¸üĞÂ
+title %packname% æœåŠ¡å™¨ æ­£åœ¨æ›´æ–°
 
-REM Õ¹Ê¾ÔËĞĞÊ±¼ä£¬ÒÔÈ·¶¨Õâ¸öÈÕÖ¾ÊÇ×îĞÂÒ»´ÎÆô¶¯µÄÊ±ºòÉú³ÉµÄ¡£ÕâÀïµÄ±äÁ¿ÔÚºóÃæ±¸·İµÄÊ±ºòÒ²ÓĞÓÃµ½
+REM å±•ç¤ºè¿è¡Œæ—¶é—´ï¼Œä»¥ç¡®å®šè¿™ä¸ªæ—¥å¿—æ˜¯æœ€æ–°ä¸€æ¬¡å¯åŠ¨çš„æ—¶å€™ç”Ÿæˆçš„ã€‚è¿™é‡Œçš„å˜é‡åœ¨åé¢å¤‡ä»½çš„æ—¶å€™ä¹Ÿæœ‰ç”¨åˆ°
 FOR /F "tokens=1-4 delims=/ " %%i in ('date/t') do set localdate=%%i-%%j-%%k
 FOR /F "tokens=*" %%t in ('time/t') do set localtime=%%t
 echo %localdate% %localtime%
 
-REM ÎŞÊÓ¾ßÌåÎ»ÖÃ£¬Ê¼ÖÕÌø×ªµ½ÕıÈ·µÄ.minecraftÄ¿Â¼
+REM æ— è§†å…·ä½“ä½ç½®ï¼Œå§‹ç»ˆè·³è½¬åˆ°æ­£ç¡®çš„.minecraftç›®å½•
 cd /d %~dp0
 if not exist server (
 	mkdir server
+	cd server
+	git init
+	cd ..
+	xcopy /r /y /q .\I_WANT_TO_RESET_WORLD .\server
 )
 if not exist localstorage (
 	mkdir localstorage
 )
 cd .\server
 
-REM Èô.minecraftÒòÎªÒì±ä°Ñ.gitÄ¿Â¼Ïû³ıÁË£¬¾Í±¨´í£»ÈôÃ»ÓĞ³õÊ¼»¯flag£¬Ôò½øĞĞÆÕÍ¨¸üĞÂ
-REM ¾¯¸æ£ºÇĞÎğ½«ÏÂÃæµÄflagÎÄ¼ş·Å½øserverÄ¿Â¼£¬ºó¹û×Ô¸º¡£
+REM è‹¥.minecraftå› ä¸ºå¼‚å˜æŠŠ.gitç›®å½•æ¶ˆé™¤äº†ï¼Œå°±æŠ¥é”™ï¼›è‹¥æ²¡æœ‰åˆå§‹åŒ–flagï¼Œåˆ™è¿›è¡Œæ™®é€šæ›´æ–°
+REM è­¦å‘Šï¼šåˆ‡å‹¿å°†ä¸‹é¢çš„flagæ–‡ä»¶æ”¾è¿›serverç›®å½•ï¼Œåæœè‡ªè´Ÿã€‚
 if not exist .git (
-	echo ·şÎñÆ÷ÔËĞĞÄ¿Â¼²»ÊÇgit¹¤×÷Ä¿Â¼
+	echo æœåŠ¡å™¨è¿è¡Œç›®å½•ä¸æ˜¯gitå·¥ä½œç›®å½•
 	exit 1)
 if exist I_WANT_TO_RESET_WORLD (goto firstupdate) else (goto normalupdate)
 
 :firstupdate
-echo ÕıÔÚ½øĞĞÊ×´ÎÅäÖÃ£¯Intializing local server copy
+echo æ­£åœ¨è¿›è¡Œé¦–æ¬¡é…ç½®ï¼Intializing local server copy
 
-REM ÔÚ¸ùÄ¿Â¼´´½¨¸üĞÂÖ¸Ê¾ÎÄ¼ş
-type nul > ..\%packname%ÕıÔÚ¸üĞÂ£¬ÇëÄÍĞÄµÈ´ı.txt
+REM åœ¨æ ¹ç›®å½•åˆ›å»ºæ›´æ–°æŒ‡ç¤ºæ–‡ä»¶
+type nul > ..\%packname%æ­£åœ¨æ›´æ–°ï¼Œè¯·è€å¿ƒç­‰å¾….txt
 
-echo ÕıÔÚÉèÖÃ²Ö¿âÉÏÓÎ£¯Setting local repo origin
+echo æ­£åœ¨è®¾ç½®ä»“åº“ä¸Šæ¸¸ï¼Setting local repo origin
 git.exe remote remove origin
 git.exe remote add origin %origin%
 
-echo ÕıÔÚÉèÖÃÎÄ±¾»»ĞĞ·ûÊÊÓ¦£¯Setting local EOL policy
+echo æ­£åœ¨è®¾ç½®æ–‡æœ¬æ¢è¡Œç¬¦é€‚åº”ï¼Setting local EOL policy
 git.exe config core.autocrlf true
 
-echo ÕıÔÚÉèÖÃ±¾µØGitÉí·İ£¯Setting dummy local identity
+echo æ­£åœ¨è®¾ç½®æœ¬åœ°Gitèº«ä»½ï¼Setting dummy local identity
 git.exe config user.name "localuser"
 git.exe config user.email "localuser@localhost"
 
-echo ÕıÔÚÅäÖÃSSLÈÏÖ¤£¯Disabling SSL cert verification
+echo æ­£åœ¨é…ç½®SSLè®¤è¯ï¼Disabling SSL cert verification
 git.exe config http.sslVerify false
 
-echo ÕıÔÚ´ÓÔ¶¶ËÀ­È¡Êı¾İ£¯Fetching branch data from remote
+echo æ­£åœ¨ä»è¿œç«¯æ‹‰å–æ•°æ®ï¼Fetching branch data from remote
 git.exe fetch origin %branch%
 
 if not exist world (
-	echo ÕıÔÚÓ²ÖØÖÃ±¾µØÄ¿Â¼£¯Hard resetting local world
+	echo æ­£åœ¨ç¡¬é‡ç½®æœ¬åœ°ç›®å½•ï¼Hard resetting local world
 	git.exe reset --hard origin/%branch%
 
-	echo Ò»µãµãÇåÀí¹¤×÷¡­¡­£¯A little cleanup...
+	echo ä¸€ç‚¹ç‚¹æ¸…ç†å·¥ä½œâ€¦â€¦ï¼A little cleanup...
 	git.exe clean -d -x -f
 
 	xcopy /s /q ..\localstorage\* .
-	echo ÒÑ¸´ÖÆ±¾µØ×ÊÔ´ÎÄ¼ş£¬ÕûºÏ°üÏÖÒÑÍêÕû£¯Copied local storage data for a full modpack
+	echo å·²å¤åˆ¶æœ¬åœ°èµ„æºæ–‡ä»¶ï¼Œæ•´åˆåŒ…ç°å·²å®Œæ•´ï¼Copied local storage data for a full modpack
 )
 
-del ..\%packname%ÕıÔÚ¸üĞÂ£¬ÇëÄÍĞÄµÈ´ı.txt
+del ..\%packname%æ­£åœ¨æ›´æ–°ï¼Œè¯·è€å¿ƒç­‰å¾….txt
 
 cd ..
 exit /b
 
 :normalupdate
-echo ÕıÔÚ¼ì²é¸üĞÂ£¯Checking for updates
+echo æ­£åœ¨æ£€æŸ¥æ›´æ–°ï¼Checking for updates
 set POLICY=ours
 
-REM ¼ì²â»¥ÁªÍøÁ¬½Ó
+REM æ£€æµ‹äº’è”ç½‘è¿æ¥
 ping gitee.com -n 1 > nul
 if errorlevel 1 (
-	echo GiteeÃ»pingÍ¨£¬ÄãµÄ»¥ÁªÍøÁ¬½Ó´ó¸ÅÓĞÎÊÌâ£¬·ÅÆú¸üĞÂ
+	echo Giteeæ²¡pingé€šï¼Œä½ çš„äº’è”ç½‘è¿æ¥å¤§æ¦‚æœ‰é—®é¢˜ï¼Œæ”¾å¼ƒæ›´æ–°
 	exit 1
 )
 
-echo ÕıÔÚÌá½»±¾µØ¸ü¸Ä£¯Commiting local changes
+echo æ­£åœ¨æäº¤æœ¬åœ°æ›´æ”¹ï¼Commiting local changes
 git.exe commit --quiet --all -m local_autocommit
 
-echo ÕıÔÚÀ­È¡Ô¶¶Ë¸üĞÂ£¯Fetching remote changes
+echo æ­£åœ¨æ‹‰å–è¿œç«¯æ›´æ–°ï¼Fetching remote changes
 git.exe fetch origin %branch%
 
 git.exe merge -s recursive -X %POLICY% origin/%branch%
-echo ÒÑÓ¦ÓÃÔ¶¶Ë¸üĞÂ£¯Applied remote changes
+echo å·²åº”ç”¨è¿œç«¯æ›´æ–°ï¼Applied remote changes
 
 cd ..
 exit /b
