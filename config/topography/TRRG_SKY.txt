@@ -1,0 +1,16 @@
+setSpawnStructure("base",100)
+
+layers = new LayerGenerator()
+layers.addLayer(0~0, <minecraft:bedrock>)
+layers.addLayer(1~60, <minecraft:air>)
+addGenerator(layers)
+
+setSingleBiome("minecraft:mutated_ice_flats")
+
+animals = new VanillaAnimalGenerator()
+addGenerator(animals)
+
+ice = new IceAndSnowGenerator()
+addGenerator(ice)
+
+captureTeleports()

@@ -1,0 +1,11 @@
+//If this file is deleted, a new set of default configs will be generated.
+
+//Sets if the mod should print documentation.
+printDocumentation(false)
+
+//Sets the Topography WorldType as default
+setAsDefaultWorldType()
+
+//Registers a preset. First argument is name, second is the image name, third is a description, fourth is WorldType, fifth is generator options Json.
+TRRG = registerPreset("Thaumcraft Revival Rename The Galaxy", "images/Sky_Islands", "")
+TRRG.registerDimension(0, "TRRG_SKY")
