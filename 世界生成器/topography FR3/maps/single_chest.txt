@@ -1,0 +1,4 @@
+setSpawnStructure("single_chest", 75)
+addBiomes("minecraft:plains")
+
+disableNetherPortal()

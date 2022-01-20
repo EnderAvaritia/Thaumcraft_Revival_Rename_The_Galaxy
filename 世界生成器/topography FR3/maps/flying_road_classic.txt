@@ -1,0 +1,4 @@
+setSpawnStructure("flying_road_classic", 75)
+addBiomes("minecraft:plains")
+
+disableNetherPortal()

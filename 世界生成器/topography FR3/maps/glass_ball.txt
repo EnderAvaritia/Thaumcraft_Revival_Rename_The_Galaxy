@@ -1,0 +1,4 @@
+setSpawnStructure("glass_ball", 75)
+addBiomes("minecraft:taiga")
+
+disableNetherPortal()
