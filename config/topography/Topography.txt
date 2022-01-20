@@ -7,5 +7,5 @@ printDocumentation(false)
 setAsDefaultWorldType()
 
 //Registers a preset. First argument is name, second is the image name, third is a description, fourth is WorldType, fifth is generator options Json.
-TRRG = registerPreset("Thaumcraft Revival Rename The Galaxy", "images/Sky_Islands", "")
+TRRG = registerPreset("Thaumcraft Revival Rename The Galaxy", "images/TRRG", "")
 TRRG.registerDimension(0, "TRRG_SKY")
