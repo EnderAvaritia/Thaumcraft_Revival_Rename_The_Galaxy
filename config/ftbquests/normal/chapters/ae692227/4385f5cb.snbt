@@ -1,9 +1,0 @@
-{
-	title: "这不进入无尽贪婪肝个毕业？",
-	icon: "eternalsingularity:eternal_singularity",
-	x: -3.5d,
-	y: 2.5d,
-	dependencies: [
-		"8f44b90e"
-	]
-}

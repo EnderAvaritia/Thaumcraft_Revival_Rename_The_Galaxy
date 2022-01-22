@@ -1,7 +1,0 @@
-{
-	title: "stage 2",
-	icon: "botania:rfgenerator",
-	always_invisible: false,
-	group: 0,
-	default_quest_shape: ""
-}

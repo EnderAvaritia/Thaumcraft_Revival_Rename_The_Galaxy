@@ -1,7 +1,0 @@
-{
-	title: "注意事项 & stage 1",
-	icon: "minecraft:blaze_powder",
-	always_invisible: false,
-	group: 0,
-	default_quest_shape: ""
-}

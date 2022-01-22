@@ -1,7 +1,0 @@
-{
-	title: "炼化学",
-	icon: "thaumcraft:goggles",
-	always_invisible: false,
-	group: 370697889,
-	default_quest_shape: ""
-}

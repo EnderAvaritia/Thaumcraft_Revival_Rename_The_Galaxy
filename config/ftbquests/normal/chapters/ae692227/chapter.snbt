@@ -1,7 +1,0 @@
-{
-	title: "龙之研究",
-	icon: "draconicevolution:draconic_core",
-	always_invisible: false,
-	group: 0,
-	default_quest_shape: ""
-}
