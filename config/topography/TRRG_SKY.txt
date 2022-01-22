@@ -14,3 +14,5 @@ ice = new IceAndSnowGenerator()
 addGenerator(ice)
 
 captureTeleports()
+
+disableClouds()
