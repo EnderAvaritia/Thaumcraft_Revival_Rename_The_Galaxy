@@ -1,0 +1,37 @@
+{
+	"block_pools" :
+	[
+		{
+			"name": "quartz_nugget",
+			"type": 
+			{
+				"type": "block",
+				"name": "minecraft:quartz_block"
+			},
+			"clicktype": "left",
+			"properties": [
+				{
+					"type": "require_left"
+				},
+				{
+					"type": "drop_items"
+				},
+				{
+					"type": "swing_hand"
+				},
+				{
+					"type": "add_hunger",
+					"exhaustion": "true",
+					"amount": "0.1f"
+				}
+			],
+			"drops": [
+				{
+					"name": "thaumcraft:nugget",
+					"meta": 9,
+					"amount": 64
+				}
+			]
+		}
+	]
+}
