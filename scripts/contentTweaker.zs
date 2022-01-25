@@ -8,6 +8,6 @@ val TRRG_Tab as CreativeTab = VanillaFactory.createCreativeTab("Thaumcraft_Reviv
 TRRG_Tab.register();
 
 val gravel as Item = VanillaFactory.createItem("gravel");
-gravel.creativeTab = <creativetab:misc>;
+gravel.creativeTab = <creativetab:Thaumcraft_Revival_Rename_The_Galaxy>;
 gravel.maxStackSize = 64;
 gravel.register();
