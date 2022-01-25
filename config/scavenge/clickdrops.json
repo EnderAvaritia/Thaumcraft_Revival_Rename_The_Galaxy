@@ -11,25 +11,121 @@
 			"clicktype": "left",
 			"properties": [
 				{
-					"type": "require_left"
+					"type": "drop_items"
 				},
 				{
-					"type": "drop_items"
+					"type": "play_sound",
+					"name": "block.quartz.hit"
 				},
 				{
 					"type": "swing_hand"
 				},
 				{
+					"type": "player_cooldown",
+					"time": "20"
+				},
+				{
+					"type": "require_hunger",
+					"value": 1
+				},
+				{
 					"type": "add_hunger",
 					"exhaustion": "true",
-					"amount": "0.1f"
+					"amount": "1f"
+				},
+				{
+					"type": "require_item_list",
+					"items": [
+						{"name": "minecraft:flint"}
+					]
 				}
 			],
 			"drops": [
 				{
 					"name": "thaumcraft:nugget",
 					"meta": 9,
-					"amount": 64
+					"amount": 1
+				}
+			],
+			"messages": [
+				{
+					"id": "require_hunger",
+					"message": "You are too hungrary to do this :("
+				}
+			]
+		},
+		{
+			"name": "flint",
+			"type": 
+			{
+				"type": "block",
+				"name": "minecraft:stone"
+			},
+			"clicktype": "left",
+			"properties": [
+				{
+					"type": "drop_items"
+				},
+				{
+					"type": "play_sound",
+					"name": "block.stone.hit"
+				},
+				{
+					"type": "swing_hand"
+				},
+				{
+					"type": "player_cooldown",
+					"time": "20"
+				},
+				{
+					"type": "require_hunger",
+					"value": 1
+				},
+				{
+					"type": "add_hunger",
+					"exhaustion": "true",
+					"amount": "5f"
+				},
+				{
+					"type": "require_empty_hand",
+					"value": 1
+				},
+				{
+					"type": "require_health",
+					"value": 1
+				},
+				{
+					"type": "change_health",
+					"increase": "false",
+					"amount": "10f"
+				},
+				{
+					"type": "require_sneak",
+					"sneak": "true"
+				}
+			],
+			"drops": [
+				{
+					"name": "minecraft:flint",
+					"amount": 1
+				}
+			],
+			"messages": [
+				{
+					"id": "require_health",
+					"message": "You are too bruised up to hit the block any further :("
+				},
+				{
+					"id": "require_sneak",
+					"message": "Sneak and left click to the block manually :("
+				},
+				{
+					"id": "require_empty_hand",
+					"message": "It need your both hands :("
+				},
+				{
+					"id": "require_hunger",
+					"message": "You are too hungrary to do this :("
 				}
 			]
 		}
