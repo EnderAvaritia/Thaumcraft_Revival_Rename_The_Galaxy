@@ -50,7 +50,7 @@
 			"messages": [
 				{
 					"id": "require_hunger",
-					"message": "You are too hungrary to do this :("
+					"message": "你太饿了，挖不动它 :("
 				}
 			]
 		},
@@ -61,7 +61,7 @@
 				"type": "block",
 				"name": "minecraft:stone"
 			},
-			"clicktype": "left",
+			"clicktype": "right",
 			"properties": [
 				{
 					"type": "drop_items"
@@ -113,19 +113,279 @@
 			"messages": [
 				{
 					"id": "require_health",
-					"message": "You are too bruised up to hit the block any further :("
-				},
-				{
-					"id": "require_sneak",
-					"message": "Sneak and left click to the block manually :("
+					"message": "你满身是伤，最好不要 :("
 				},
 				{
 					"id": "require_empty_hand",
-					"message": "It need your both hands :("
+					"message": "你要两只手才能掰动他 :("
 				},
 				{
 					"id": "require_hunger",
-					"message": "You are too hungrary to do this :("
+					"message": "你太饿了，掰不动它 :("
+				}
+			]
+		},
+		{
+			"name": "gravel",
+			"type": 
+			{
+				"type": "block_list",
+				"blocks":[{"name": "minecraft:stone"},{"name":"minecraft:cobblestone"}]
+			},
+			"clicktype": "left",
+			"properties": [
+				{
+					"type": "drop_items"
+				},
+				{
+					"type": "play_sound",
+					"name": "block.stone.hit"
+				},
+				{
+					"type": "swing_hand"
+				},
+				{
+					"type": "player_cooldown",
+					"time": "5"
+				},
+				{
+					"type": "require_hunger",
+					"value": 1
+				},
+				{
+					"type": "add_hunger",
+					"exhaustion": "true",
+					"amount": "0.5f"
+				},
+				{
+					"type": "require_item_list",
+					"items": [
+						{"name": "minecraft:flint"}
+					]
+				}
+			],
+			"drops": [
+				{
+					"name": "contenttweaker:gravel",
+					"amount": 1
+				}
+			],
+			"messages": [
+				{
+					"id": "require_hunger",
+					"message": "你太饿了，砸不动它 :("
+				}
+			]
+		},
+		{
+			"name": "GrassDropsEmptyHandRight",
+			"type": 
+			{
+				"type": "block",
+				"name": "minecraft:grass"
+			},
+			"clicktype": "right",
+			"properties": [
+				{
+					"type": "drop_items"
+				},
+				{
+					"type": "swing_hand"
+				},
+				{
+					"type": "player_cooldown",
+					"time": "50"
+				},
+				{
+					"type": "require_hunger",
+					"value": 1
+				},
+				{
+					"type": "add_hunger",
+					"exhaustion": "true",
+					"amount": "5f"
+				},
+				{
+					"type": "consume_block",
+					"chance": 50,
+					"name": "minecraft:farmland"
+				},
+				{
+					"type": "require_empty_hand",
+					"value": 1
+				},
+				{
+					"type": "require_sneak",
+					"sneak": "true"
+				}
+			],
+			"drops": [
+				{
+					"name": "minecraft:wheat_seeds",
+					"meta": 0,
+					"amount": 1,
+					"weight": 50
+				},
+				{
+					"name": "minecraft:pumpkin_seeds",
+					"meta": 0,
+					"amount": 1,
+					"weight": 30
+				},
+				{
+					"name": "minecraft:melon_seeds",
+					"meta": 0,
+					"amount": 1,
+					"weight": 30
+				},
+				{
+					"name": "minecraft:beetroot_seeds",
+					"meta": 0,
+					"amount": 1,
+					"weight": 30
+				},
+				{
+					"name": "minecraft:dye",
+					"meta": 3,
+					"amount": 1,
+					"weight": 15
+				},
+				{
+					"name": "quark:root_flower",
+					"meta": 0,
+					"amount": 1,
+					"weight": 5
+				},
+				{
+					"name": "quark:root_flower",
+					"meta": 1,
+					"amount": 1,
+					"weight": 5
+				},
+				{
+					"name": "quark:root_flower",
+					"meta": 2,
+					"amount": 1,
+					"weight": 5
+				},
+				{
+					"name": "minecraft:beetroot",
+					"meta": 0,
+					"amount": 1,
+					"weight": 2
+				},
+				{
+					"name": "minecraft:carrot",
+					"meta": 0,
+					"amount": 1,
+					"weight": 2
+				},
+				{
+					"name": "minecraft:potato",
+					"meta": 0,
+					"amount": 1,
+					"weight": 2
+				}
+			],
+			"messages": [
+				{
+					"id": "require_hunger",
+					"message": "你太饿了，砸不动它 :("
+				},
+				{
+					"id": "require_empty_hand",
+					"message": "你要用双手翻动泥土 :("
+				}
+			]
+		},
+		{
+			"name": "DirtDropsEmptyHandRight",
+			"type": 
+			{
+				"type": "block",
+				"name": "minecraft:dirt"
+			},
+			"clicktype": "right",
+			"properties": [
+				{
+					"type": "drop_items"
+				},
+				{
+					"type": "swing_hand"
+				},
+				{
+					"type": "player_cooldown",
+					"time": "100"
+				},
+				{
+					"type": "require_hunger",
+					"value": 1
+				},
+				{
+					"type": "add_hunger",
+					"exhaustion": "true",
+					"amount": "10f"
+				},
+				{
+					"type": "consume_block",
+					"chance": 90,
+					"name": "minecraft:farmland"
+				},
+				{
+					"type": "require_empty_hand",
+					"value": 1
+				},
+				{
+					"type": "require_sneak",
+					"sneak": "true"
+				}
+			],
+			"drops": [
+				{
+					"name": "quark:root_flower",
+					"meta": 0,
+					"amount": 1,
+					"chance": 15
+				},
+				{
+					"name": "quark:root_flower",
+					"meta": 1,
+					"amount": 1,
+					"chance": 15
+				},
+				{
+					"name": "quark:root_flower",
+					"meta": 2,
+					"amount": 1,
+					"chance": 15
+				},
+				{
+					"name": "minecraft:beetroot",
+					"meta": 0,
+					"amount": 1,
+					"chance": 60
+				},
+				{
+					"name": "minecraft:carrot",
+					"meta": 0,
+					"amount": 1,
+					"chance": 60
+				},
+				{
+					"name": "minecraft:potato",
+					"meta": 0,
+					"amount": 1,
+					"chance": 60
+				}
+			],
+			"messages": [
+				{
+					"id": "require_hunger",
+					"message": "你太饿了，砸不动它 :("
+				},
+				{
+					"id": "require_empty_hand",
+					"message": "你要用双手翻动泥土 :("
 				}
 			]
 		}
