@@ -11,3 +11,8 @@ val gravel as Item = VanillaFactory.createItem("gravel");
 gravel.creativeTab = <creativetab:Thaumcraft_Revival_Rename_The_Galaxy>;
 gravel.maxStackSize = 64;
 gravel.register();
+
+val stoneStrick as Item = VanillaFactory.createItem("stone_strick");
+stoneStrick.creativeTab = <creativetab:Thaumcraft_Revival_Rename_The_Galaxy>;
+stoneStrick.maxStackSize = 64;
+stoneStrick.register();
