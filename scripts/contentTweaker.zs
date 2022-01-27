@@ -16,3 +16,8 @@ val stoneStick as Item = VanillaFactory.createItem("stone_stick");
 stoneStick.creativeTab = <creativetab:Thaumcraft_Revival_Rename_The_Galaxy>;
 stoneStick.maxStackSize = 64;
 stoneStick.register();
+
+val straw as Item = VanillaFactory.createItem("straw");
+straw.creativeTab = <creativetab:Thaumcraft_Revival_Rename_The_Galaxy>;
+straw.maxStackSize = 64;
+straw.register();

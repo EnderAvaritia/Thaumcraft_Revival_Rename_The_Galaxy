@@ -290,7 +290,7 @@
 			"messages": [
 				{
 					"id": "require_hunger",
-					"message": "你太饿了，砸不动它 :("
+					"message": "你太饿了，挖不动它 :("
 				},
 				{
 					"id": "require_empty_hand",
@@ -381,11 +381,84 @@
 			"messages": [
 				{
 					"id": "require_hunger",
-					"message": "你太饿了，砸不动它 :("
+					"message": "你太饿了，挖不动它 :("
 				},
 				{
 					"id": "require_empty_hand",
 					"message": "你要用双手翻动泥土 :("
+				}
+			]
+		},
+		{
+			"name": "fire",
+			"type": 
+			{
+				"type": "block",
+				"name": "minecraft:hay_block"
+			},
+			"clicktype": "right",
+			"properties": [
+				{
+					"type": "drop_items"
+				},
+				{
+					"type": "play_sound",
+					"name": "block.stone.hit"
+				},
+				{
+					"type": "swing_hand"
+				},
+				{
+					"type": "player_cooldown",
+					"time": "5"
+				},
+				{
+					"type": "require_hunger",
+					"value": 1
+				},
+				{
+					"type": "add_hunger",
+					"exhaustion": "true",
+					"amount": "1f"
+				},
+				{
+					"type": "require_item_list",
+					"items": [
+						{"name": "minecraft:flint"}
+					]
+				},
+				{
+					"type": "require_item_list",
+					"offHand": "true",
+					"items": [
+						{"name": "minecraft:flint"}
+					]
+				},
+				{
+					"type": "consume_block",
+					"chance": 5,
+					"name": "minecraft:fire"
+				},
+				{
+					"type": "require_sneak",
+					"sneak": "true"
+				}
+			],
+			"drops": [
+				{
+					"name": "contenttweaker:straw",
+					"chance":60,
+					"amount": 1
+				}
+			],
+			"messages": [
+				{
+					"id": "require_hunger",
+					"message": "你太饿了，没力气 :("
+				},
+				{
+					"id": "require_sneak",
+					"message": "火苗需要呵护 :("
 				}
 			]
 		}
