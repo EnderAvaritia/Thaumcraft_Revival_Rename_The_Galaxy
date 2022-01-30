@@ -20,3 +20,4 @@ FireCrafting.addRecipe(<minecraft:coal:1>,<minecraft:log:1>);
 FireCrafting.addRecipe(<minecraft:coal:1>,<minecraft:log:2>);
 FireCrafting.addRecipe(<minecraft:coal:1>,<minecraft:log:3>);
 
+FireCrafting.addRecipe(<minecraft:dye:15>,<contenttweaker:straw>);

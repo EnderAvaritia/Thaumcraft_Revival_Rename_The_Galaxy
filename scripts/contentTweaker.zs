@@ -21,3 +21,8 @@ val straw as Item = VanillaFactory.createItem("straw");
 straw.creativeTab = <creativetab:Thaumcraft_Revival_Rename_The_Galaxy>;
 straw.maxStackSize = 64;
 straw.register();
+
+val iceCube as Item = VanillaFactory.createItem("ice_cube");
+iceCube.creativeTab = <creativetab:Thaumcraft_Revival_Rename_The_Galaxy>;
+iceCube.maxStackSize = 64;
+iceCube.register();

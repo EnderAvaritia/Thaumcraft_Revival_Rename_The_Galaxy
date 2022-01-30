@@ -1,0 +1,1 @@
+recipes.removeShaped(<minecraft:quartz>, [[<ore:nuggetQuartz>, <ore:nuggetQuartz>, <ore:nuggetQuartz>], [<ore:nuggetQuartz>, <ore:nuggetQuartz>, <ore:nuggetQuartz>], [<ore:nuggetQuartz>, <ore:nuggetQuartz>, <ore:nuggetQuartz>]]);
