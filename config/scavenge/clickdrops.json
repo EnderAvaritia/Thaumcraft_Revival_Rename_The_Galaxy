@@ -15,7 +15,8 @@
 				},
 				{
 					"type": "play_sound",
-					"name": "block.quartz.hit"
+					"name": "block.stone.hit",
+					"volume": 5
 				},
 				{
 					"type": "swing_hand"
@@ -68,7 +69,8 @@
 				},
 				{
 					"type": "play_sound",
-					"name": "block.stone.hit"
+					"name": "block.stone.hit",
+					"volume": 5
 				},
 				{
 					"type": "swing_hand"
@@ -139,7 +141,8 @@
 				},
 				{
 					"type": "play_sound",
-					"name": "block.stone.hit"
+					"name": "block.stone.hit",
+					"volume": 5
 				},
 				{
 					"type": "swing_hand"
@@ -191,6 +194,11 @@
 				},
 				{
 					"type": "swing_hand"
+				},
+				{
+					"type": "play_sound",
+					"name": "block.grass.hit",
+					"volume": 5
 				},
 				{
 					"type": "player_cooldown",
@@ -311,6 +319,11 @@
 					"type": "drop_items"
 				},
 				{
+					"type": "play_sound",
+					"name": "block.grass.hit",
+					"volume": 5
+				},
+				{
 					"type": "swing_hand"
 				},
 				{
@@ -400,6 +413,10 @@
 			"properties": [
 				{
 					"type": "drop_items"
+				},
+				{
+					"type": "play_sound",
+					"name": "item.flintandsteel.use"
 				},
 				{
 					"type": "play_sound",
