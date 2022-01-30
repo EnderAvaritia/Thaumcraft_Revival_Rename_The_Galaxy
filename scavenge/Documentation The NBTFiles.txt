@@ -1,0 +1,19 @@
+The NBTFiles were introduced since 1.3. Sadly nobody really took effect of them since they were not really thought out, documentation was missing and the implementation was horrible.
+With 1.7 that changes.
+So how do NBTFiles work and how can i use them with my scavenge scripts?
+
+The NBTFiles work very simple they have a very strict loading rule but other then that nothing to worry about.
+
+Its as simple as this:
+
+myid={testing:1b,value:32321L}
+customID={testing:23b,value:34221L}
+ Once you start a NBTFile this is the rule:
+
+you start with the ID of that NBT entry add a = and directly after that you put in the NBTString.
+No spaces between or new lines each id has 1 line and the NBTData has to be in there too.
+Using // before a line will make the loader ignore the Line. Empty lines will also be ignored.
+
+Now how can you reference the NBTFiles.
+Whenever a "nbt" is a option or it says: "reference the NBTFile" or something close to that. It means it will ask for the ID that is provided inside NBTFile. In our case "myid" or "customID", Scavenge automatically knows this id is a reference of the NBT and will automatically pull it from the storage that is being loaded before the scripts. This keeps the Scavenge Scripts clean and allows complex NBTData to be used multiple times at once. (It will clone the NBTData)
+That is the NBTFiles.

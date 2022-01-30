@@ -1,0 +1,183 @@
+ Scavenge is a Mod that loads JsonFiles via a Forge Config from its config folder and loads them.
+These Files get turned into a scriptlike language where you can define certain things and they get excecuted in a certain way.
+
+To start at the beginning when a file gets loaded there has to be a certain format provided.
+Every single file starts with a Object with an value inside of it that is called "block_pools".
+Example:
+
+{
+	"block_pools":
+	[
+		
+	]
+}
+Inside the "block_pools" Array you put in Objects that define which blocks should be effected.
+Every Block Pool can either affect 1 or more blocks depending on the Type. Block Pools can also have duplicated Blocks defined in them as long the conditions are not 100% Equal.
+Now there are a couple options inside the Block Pool that you can define:
+
+
+"name": (Defines the Name of the BlockPool. Some Conditions/Effects rely on that name. It has to stay Unique.) String,
+"type": (Defines If the BlockPool is just a Single Block, a BlockList, or a OreDictionary Entry.) Object
+"clicktype": (If the BlockPool is left or rightclick or both) String,
+"blockRightClick" & "blockLeftClick" (Checks if the click is being blockt. Can be ignored but it defaults to blocking the interaction after the BlockPool is being processed. Is only asked for if clicktype was added) Boolean
+"disableJEI": (Allows to hide this entry from the JEI plugin thats intigrated. Default: Visible) Boolean.
+"properties": (The Conditions/Effect that the BlockPool should have when being clicked) ObjectArray or Object
+"drops": (The Loot that should be added or dropped when the all the conditions were met) ObjectArray or Object
+"messages": (The Error and Success Messages that should be printed when something was successfull or something wasn't working because of a user error.) ObjectArray or Object
+After this basic explaining of how the things work lets go into a bit of bigger detail of the more complex ones.
+
+
+The "type" Object defines very simply what blocks to check for this can be defined by ["block", "ore" or "block_list"].   
+Here are a couple examples:
+
+"block" Defines 1 Block that you want to effect. Meta can be either defined through 3 ways:
+Either "meta" which allows you to effect 1 Block Metadata.
+"metas" which allows you to effect multiple Block Metadatas.
+Or leave it away. If no metadata is defined any Metadata that the block has will be automatically counted as valid.
+Example:
+"type":
+{
+	"type": "block",
+	"name": "minecraft:dirt",
+	"meta": 5
+}
+or
+"type":
+{
+	"type": "block",
+	"name": "minecraft:dirt",
+	"metas": [5, 3, 2, 12]
+}
+
+"ore" looks up the OreDictionary for Blocks and builds the list from there.
+"oreCopper" for example gathers all the Copper ores together and applies the same effect to them.
+Example:
+"type":
+{
+	"type": "ore",
+	"name": "oreCopper"
+}
+"block_list" allows you to define Multiple Blocks at once.
+For each Object entry in this type of addition you also can apply the same meta rules as in the "block" type. So meta, metas or ignore meta.
+Example:
+"type":
+{
+	"type": "block_list",
+	"blocks":
+	[
+		{
+			"name": "minecraft:dirt",
+			"meta": 5
+		},
+		{
+			"name": "minecraft:dirt",
+			"metas": [5, 3, 2, 12]
+		},
+		{
+			"name": "minecraft:dirt"
+		}
+	]
+}
+ 
+
+Next to "properties". Properties allow you to define Block Condition & Effects for the Block Pool.
+That can range from "player has to sneak" all the way to "a Player has to have achievements and to be at y level 55" or also "player gains 5 heath and loses 2 XP levels".
+The Block Properties can be found below in a seperate tab since its very large.
+Some Block Conditions can not work with each other or with effects but all these are defined.
+A basic layout of a Block Property can be summed up by that: "id", "description", "parameters", "Incompatible With", "type",
+
+No need to explain those names since they are selfexplaining.
+
+"drops" Allows you to define what loot will be dropped when a Condition set is fulfilled.
+These are entirely optional and not required. But a "Block Pool" either requires at least 1 Effect or at least 1 loot drop.
+When creating a loot drop you have the following things to add.
+
+"name": (The ItemName that should drop) String,
+"meta": (The Metadata the item should have. Defaults to 0) IntNumber,
+"amount": (How many items it should be. Defaults to 1) IntNumber,
+"nbt": (What NBTData the item should have. This is a reference to the NBTFiles. Defaults to None), String
+"chance" or "weight": (Decides if it is a Chance based drop or a weight base drop. Difference being chance is a single drop while all weight drops combine to 1 list and 1 gets randomly pickt. Defaults to chance with 100% chance) FloatNumber for "chance" or IntNumber for "weight",
+"rolls": (Only checkt for if "chance" is selected and defines how often the loot is allowed to be collected for in 1 Click. That can be modified by a block property, defaults 2Billion times) IntNumber,
+"disableJEI": (Allows to decide if the loot is shown in JEI or not. Defaults to show in JEI) Boolean.
+"properties": (Properties define the effects that either get applied passivly or actively on the Item. Passivly means when the loot is created in the Script and activly means when the loot is gathered. These can range from setDamage to very complex condition based ones that apply only effects if a BlockProperty send data over they needed.) ObjectArray or Object.
+"conditions": (Allows to add BlockConditions to the Loot Itself which then causes the loot only to drop when all conditions are set. These are implemented like normal blockConditions in this conditionsArray. It works also to non Weight based loot.) ObjectArray or Object
+Lets provide an Example for all but properties:
+
+a "weight" based example:
+{
+	"name": "minecraft:iron_ingot",
+	"meta": "0",
+	"amount": "54",
+	"nbt": "customNBT",
+	"disableJEI": false,
+	"weight": 423
+}
+a "chance" based example:
+{
+	"name": "minecraft:iron_ingot",
+	"meta": "0",
+	"amount": "54",
+	"nbt": "customNBT",
+	"disableJEI": false,
+	"chance": 99,
+	"rolls": 255
+}
+a "chance condition" based example:
+{
+	"name": "minecraft:iron_ingot",
+	"meta": "0",
+	"amount": "54",
+	"nbt": "customNBT",
+	"disableJEI": false,
+	"chance": 99,
+	"rolls": 255,
+	"conditions":
+	[
+		{
+			"type": "require_sneak"
+		},
+		{
+			"type": "require_item",
+			"name": "minecraft:stick"
+		}
+	]
+}
+Ok now "properties" applied to the loot is done the same way as properties are applied to Blocks.
+Its the same way but with different ids. All the Loot Properties are inside a seperate tab because there is still a big amount of them present.
+
+
+Now lets go to the "messages" for the Block Pool.
+Messages allow to inform the player about certain situations that can happen.
+A condition that may have failed, a special effect that has worked or if the pool was executed in general.
+This is based on a "id" and "message" system. The ID represents the condition/effect that has triggered a message print while the message is the message thats being send  to the player.
+
+Example:
+"messages":
+[
+      {
+          "id": "require_empty_Hand",
+          "message": "You require a Empty Hand to use this effect"
+     }
+]
+ There are also special "ids" for the if any condition has failed message and the the pool was executed message.
+These are called "global" and "success" and are called when an condition has failed ("global") or if the block pool was successfully executed ("success")
+
+On top of that if you have duplicated entries of a Property these can be also captured by adding a _1 or _2.
+Example:
+
+"messages":
+[
+     {
+          "id": "require_block",
+          "message": "You require a dirt Block"
+     },
+     {
+          "id": "require_block_1",
+          "message": "You require a stone Block"
+     },
+     {
+          "id": "require_block_2",
+          "message": "You require a wood Block"
+     }
+]
+ This is done base on how the conditions are written. From top to down. So 2 will catch the 3rd "require_block" condition while the first message will catch the first one.     

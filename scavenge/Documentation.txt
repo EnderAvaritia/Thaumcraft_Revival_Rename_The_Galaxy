@@ -1,0 +1,92 @@
+1.10.2-1.12.2 Documentation:
+
+ 
+
+General Documentation: Link
+
+NBT Files: Link
+
+Math Operations/Modifiers: Link
+
+Loot Properties: Link
+
+Block Properties: Link
+
+ 
+
+To that you can apply multiple loottables to 1 block as long the conditions do not collide.
+
+There is a lot more customizablity which can be found in the documentation.
+
+Info. 1.6 or older scripts will not load in 1.7 because of the core rewirte!
+
+Side Info: 1.10.2-1.11.x are now frozen on updates because of nobody using it at all. (If usage comes up patches will be made, but it increases update speed drastically)
+
+ 
+
+How to install a JsonFile:
+
+You put the file into the scavenge config folder and go into the config file. In there is a list of files you can put in, in there you put your file name + expression.
+
+    S:LoadingFiles <
+        testing.json
+     >
+Side note: The mod has a JEI Plugin which can be customized how you want.
+
+ 
+
+Here is an example file for a more complex usage. If you still have questions. Ask or try things out.
+
+Example file:
+
+{
+	"block_pools" :
+	[
+		{
+			"name": "Netherrack",
+			"type":
+			{
+				"type": "block",
+				"name": "minecraft:nether_brick"
+			},
+			"clicktype": "both",
+			"properties":
+			[
+				{
+					"type": "require_sneak"
+				}
+			],
+			"drops":
+			[
+				{
+					"name": "minecraft:iron_ingot"
+				}
+			],
+			"messages":
+			[
+				{
+					"id": "require_sneak",
+					"message": "Player requires to sneak"
+				}
+			]
+		}
+	]
+}
+ 
+
+Commands:
+
+/scavenge reload, reloads the Configs & Scripts.(it will also fire the /scavenge printErrors command automatically)
+/scavenge printErrors prints the errors of the scripts
+ Known issues:
+
+ TileEntities stuff does not work properly
+
+How to make a Scavenge ModAddon: Link
+
+
+
+
+
+
+

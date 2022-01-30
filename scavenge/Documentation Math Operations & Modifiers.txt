@@ -1,0 +1,172 @@
+Math Operations and Modifiers are the new thing with Scavenge 1.7.
+
+Why is it a thing and what does it do.
+First lets do the Why.
+There are a lot of Conditions that depend on a Number. And instead of programming in a fixed 2 option set of options to compare the number i wanted to make it very customizable.
+Thats why mathoperation became a thing. It allows you make >= < != and other operations on a single number based condition expanding the possibilities hugely.
+
+So how can you implement the MathOperations into some of the condition.
+First of all not all conditions can do that. Its not possible.
+Those who are able to use MathOperations give you most likey 2 options. Either use a limited version of the condition (bigger or smaller then number) or you choose MathOperations,
+When that is a choice you have 3 ways to implement these:
+Here are the examples with the "require_Height":
+
+Implement it directly into the condition
+{
+	"type": "require_Height",
+	"operations": "equals",
+	"value": 32
+}
+or make it their own object
+{
+	"type": "require_Height",
+	"operations": 
+	{
+		"type": "equals",
+		"value": 32
+	}
+}
+or make it an object array for multible conditions.
+When this is done it makes turns all the conditions into 1 array condition.
+{
+	"type": "require_Height",
+	"operations": 
+	[
+		{
+			"type": "equals",
+			"value": 32
+		}
+	]
+}
+These are supported by all conditions that are made by scavenge or the scavenge Author.
+"Moddevs who want to support this feature its 1 function call in the API."
+It allows for a simple implentation of number based conditions that support every need.
+On top of that moddevs can also add MathOperations if needed.
+
+
+So next to the MathModifiers.
+Math Modifiers are modifiers that you can add into the MathOperations to mutate the number that the Operation gets.
+For example you want to make that every 10 Blocks of Y Level the Operation should be true
+You can either add 25 Conditions with each 1 MathOperation or you can add 1 MathOperation with 1 MathModifier that applies a modulo on the Number Injected that makes it only count from 0-9 which makes it only validate on every 10th Y level.
+
+Here is an Example of how that would look like:
+{
+	"type": "require_Height",
+	"operations": "equals",
+	"value": 0
+	"modifiers":
+	{
+		"type": "Modulo",
+		"value": 10
+	}
+}
+ this makes a lot of things possible and a lot of coding on the devs side much easier since he can provide easy and simple methodes and then a MathOperation for very complex things.
+And thanks to the Operation Merging it can also look very clean.
+
+Ok that is about everything about the Math Operations and the Math Modifiers.
+Side note: a Math Condition can have as many modifiers as needed you use just an ObjectArray instead of an Object that.
+
+
+Now a list of all the Math Operations:
+
+
+default:
+Description: A Default MathOperation that just returns true or false
+Parameters:
+"value": (Which value should be returned) Boolean,
+
+array:
+Description: Allows to combine Math Operations together.
+Parameters:
+"operations": (It can be either a Object or a ObjectArray) OptionalObjectArray,
+     - "type": (RegistryName for the Math Operation) Registry Element,
+
+equals:
+Description: Checks if the Input Value equals the Selected Value
+Parameters:
+"modifiers": (It can be either a Object or a ObjectArray) OptionalObjectArray,
+     - "type": (RegistryName for the Math Modifier) Registry Element,
+"value": (The Value the Operation should compare with) LongNumber,
+
+equalsNot:
+Description: Checks if the InputValue doesn't match with selected Value
+Parameters:
+"modifiers": (It can be either a Object or a ObjectArray) OptionalObjectArray,
+   - "type": (RegistryName for the Math Modifier) Registry Element,
+"value": (The Value the Operation should compare with) LongNumber,
+
+bigger:
+Description: Checks if the Input Value is bigger then the selected Value
+Parameters:
+"modifiers": (It can be either a Object or a ObjectArray) OptionalObjectArray,
+   - "type": (RegistryName for the Math Modifier) Registry Element,
+"value": (The Value the Operation should compare with) LongNumber,
+
+biggerEquals:
+Description: Checks if the Input Value is bigger or equals the selected Value
+Parameters:
+"modifiers": (It can be either a Object or a ObjectArray) OptionalObjectArray,
+   - "type": (RegistryName for the Math Modifier) Registry Element,
+"value": (The Value the Operation should compare with) LongNumber,
+
+smaller:
+Description: Checks if the Input Value is smaller then the Selected Value
+Parameters:
+"modifiers": (It can be either a Object or a ObjectArray) OptionalObjectArray,
+   - "type": (RegistryName for the Math Modifier) Registry Element,
+"value": (The Value the Operation should compare with) LongNumber,
+
+smallerEquals:
+Description: Checks if the Input Values is smaller then or equals the Selected Value
+Parameters:
+"modifiers": (It can be either a Object or a ObjectArray) OptionalObjectArray,
+   - "type": (RegistryName for the Math Modifier) Registry Element,
+"value": (The Value the Operation should compare with) LongNumber,
+
+inRange:
+Description: Checks if the Input Value is in range of the Input Values
+Parameters:
+"modifiers": (It can be either a Object or a ObjectArray) OptionalObjectArray,
+   - "type": (RegistryName for the Math Modifier) Registry Element,
+"minValue": (The Minimum Value the Operation should compare with) LongNumber,
+"maxValue": (The Maximum Value the Operation should compare with) LongNumber,
+
+notInRange:
+Description: Checks if the Input Value is outside of the Range of the Selected Values
+Parameters:
+"modifiers": (It can be either a Object or a ObjectArray) OptionalObjectArray,
+   - "type": (RegistryName for the Math Modifier) Registry Element,
+"minValue": (The Minimum Value the Operation should compare with) LongNumber,
+"maxValue": (The Maximum Value the Operation should compare with) LongNumber,
+Now since that is done here are the MathModifiers:
+
+
+add:
+Description: Adds a Selected Value to the Input Value
+Parameters:
+"value": (The Value that should be added) LongNumber,
+
+remove:
+Description: Removes a Selected Value from the Input Value
+Parameters:
+"value": (The Value that should be removed) LongNumber,
+
+multiply:
+Description: Multiplies the Input Value with a Selected Value
+Parameters:
+"value": (The Value that should be Multiplied with) LongNumber,
+
+divide:
+Description: Divides the Input Value by a Selected Value
+Parameters:
+"value": (The Value that should be divide with) LongNumber,
+
+pow:
+Description: Pows the Input Value with the Selected Value
+Parameters:
+"value": (The Value that should be pow with) LongNumber,
+
+Modulo:
+Description: Applies the Selected Modulo to the Input Value
+Parameters:
+"value": (The Value that should be Modulo with) LongNumber,
