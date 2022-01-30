@@ -1,3 +1,5 @@
+import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
 import mods.inworldcrafting.FireCrafting;
 
 // FireCrafting.addRecipe(IItemStack output, IIngredient inputItem, @Optional int ticks);
