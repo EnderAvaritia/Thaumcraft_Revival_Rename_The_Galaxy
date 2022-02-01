@@ -3,6 +3,8 @@
 import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.CreativeTab;
 import mods.contenttweaker.Item;
+import mods.contenttweaker.ActionResult;
+import mods.contenttweaker.IItemUse;
 
 val TRRG_Tab as CreativeTab = VanillaFactory.createCreativeTab("Thaumcraft_Revival_Rename_The_Galaxy",<item:avaritia:resource>);
 TRRG_Tab.register();
@@ -26,3 +28,20 @@ val iceCube as Item = VanillaFactory.createItem("ice_cube");
 iceCube.creativeTab = <creativetab:Thaumcraft_Revival_Rename_The_Galaxy>;
 iceCube.maxStackSize = 64;
 iceCube.register();
+
+val crystalEssenceLux as Item = VanillaFactory.createItem("crystal_essence_lux");
+crystalEssenceLux.creativeTab = <creativetab:Thaumcraft_Revival_Rename_The_Galaxy>;
+crystalEssenceLux.maxStackSize = 64;
+item.maxDamage = 63;
+crystalEssenceLux.onItemUse = function(player, world, pos, hand, facing, blockHit) 
+{
+    var lightPos = pos.getOffset(facing, 1);
+    if (world.getBlockState(lightPos).isReplaceable(world, lightPos)) 
+		{
+			world.setBlockState(<block:botania:manaflame>, lightPos);
+			player.getHeldItem(hand).shrink(1);
+			return ActionResult.success();
+		}
+    return ActionResult.pass();
+};
+crystalEssenceLux.register();
