@@ -4,5 +4,5 @@ import mods.inworldcrafting.ExplosionCrafting;
 
 // Explosion
 
-//ExplosionCrafting.explodeItemRecipe(<thermalfoundation:material:16>, <immersiveengineering:material:19>, 20);
-//ExplosionCrafting.explodeBlockRecipe(<immersiveengineering:metal:17>*6, <minecraft:iron_block>, 75);
+//ExplosionCrafting.explodeItemRecipe(IItemStack output, IIngredient inputItem, @Optional int survicechance);
+//ExplosionCrafting.explodeBlockRecipe(IItemStack output, IItemStack blockStack, @Optional int itemSpawnChance);
