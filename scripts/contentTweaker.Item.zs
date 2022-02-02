@@ -32,7 +32,7 @@ iceCube.register();
 val crystalEssenceLux as Item = VanillaFactory.createItem("crystal_essence_lux");
 crystalEssenceLux.creativeTab = <creativetab:Thaumcraft_Revival_Rename_The_Galaxy>;
 crystalEssenceLux.maxStackSize = 64;
-item.maxDamage = 63;
+crystalEssenceLux.maxDamage = 63;
 crystalEssenceLux.onItemUse = function(player, world, pos, hand, facing, blockHit) 
 {
     var lightPos = pos.getOffset(facing, 1);
