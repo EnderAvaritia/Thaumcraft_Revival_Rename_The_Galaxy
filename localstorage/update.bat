@@ -47,7 +47,7 @@ if not exist saves (
 	echo 未发现saves目录，整合包应当是全新的，跳过备份
 	goto firstupdatepart2
 	)
-for %%f in (config, journeymap, saves) do xcopy /s /q /i /r /y %%f ..\localstorage\Backup-LocalReset-%localdate%\%%f
+for %%f in (config, journeymap, saves, resources, scripts) do xcopy /s /q /i /r /y %%f ..\localstorage\Backup-LocalReset-%localdate%\%%f
 xcopy /r /y /q options.txt ..\localstorage\Backup-LocalReset-%localdate%\
 xcopy /r /y /q optionsof.txt ..\localstorage\Backup-LocalReset-%localdate%\
 
