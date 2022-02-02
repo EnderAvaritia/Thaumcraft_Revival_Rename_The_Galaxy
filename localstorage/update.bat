@@ -1,6 +1,6 @@
 @echo off
 REM 这段简单，配置仓库地址和分支，这个也就是区分不同周目的方法了
-set branch=cilent
+set branch=test
 set origin=https://gitee.com/EnderAvaritia/Thaumcraft_Revival_Rename_The_Galaxy.git
 set packname=神秘复兴·星瀚再临
 REM 这次只用到了git和xcopy，故只设置这两个环境变量够了
@@ -89,7 +89,7 @@ exit 0
 
 :normalupdate
 echo 正在检查更新／Checking for updates
-set POLICY=ours
+set POLICY=t
 
 echo 正在提交本地更改／Commiting local changes
 git.exe commit --quiet --all -m local_autocommit
