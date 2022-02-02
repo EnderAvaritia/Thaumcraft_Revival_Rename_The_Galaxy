@@ -5,6 +5,7 @@ import mods.contenttweaker.CreativeTab;
 import mods.contenttweaker.Item;
 import mods.contenttweaker.ActionResult;
 import mods.contenttweaker.IItemUse;
+import crafttweaker.world.IExplosion;
 
 val TRRG_Tab as CreativeTab = VanillaFactory.createCreativeTab("Thaumcraft_Revival_Rename_The_Galaxy",<item:avaritia:resource>);
 TRRG_Tab.register();
@@ -45,3 +46,14 @@ crystalEssenceLux.onItemUse = function(player, world, pos, hand, facing, blockHi
     return ActionResult.pass();
 };
 crystalEssenceLux.register();
+
+val crystalEssenceExplosion as Item = VanillaFactory.createItem("crystal_essence_explosion");
+crystalEssenceExplosion.creativeTab = <creativetab:Thaumcraft_Revival_Rename_The_Galaxy>;
+crystalEssenceExplosion.maxStackSize = 64;
+crystalEssenceExplosion.onItemUse = function(player, world, pos, hand, facing, blockHit) 
+{
+	world.performExplosion(null, pos.x, pos.y, pos.z, 5, false, true);
+	player.getHeldItem(hand).shrink(1);
+	return ActionResult.success();
+};
+crystalEssenceExplosion.register();

@@ -6,3 +6,5 @@ import mods.inworldcrafting.ExplosionCrafting;
 
 //ExplosionCrafting.explodeItemRecipe(IItemStack output, IIngredient inputItem, @Optional int survicechance);
 //ExplosionCrafting.explodeBlockRecipe(IItemStack output, IItemStack blockStack, @Optional int itemSpawnChance);
+
+ExplosionCrafting.explodeItemRecipe(<contenttweaker:crystal_essence_explosion>, <thaumcraft:nugget:9>, 10);

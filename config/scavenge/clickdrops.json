@@ -478,6 +478,59 @@
 					"message": "火苗需要呵护 :("
 				}
 			]
+		},
+		{
+			"name": "ice_cube",
+			"type": 
+			{
+				"type": "block_list",
+				"blocks":[{"name": "minecraft:ice"},{"name":"minecraft:packed_ice"}]
+			},
+			"clicktype": "left",
+			"properties": [
+				{
+					"type": "drop_items"
+				},
+				{
+					"type": "play_sound",
+					"name": "block.stone.hit",
+					"volume": 5
+				},
+				{
+					"type": "swing_hand"
+				},
+				{
+					"type": "player_cooldown",
+					"time": "5"
+				},
+				{
+					"type": "require_hunger",
+					"value": 1
+				},
+				{
+					"type": "add_hunger",
+					"exhaustion": "true",
+					"amount": "1f"
+				},
+				{
+					"type": "require_item_list",
+					"items": [
+						{"name": "minecraft:flint"}
+					]
+				}
+			],
+			"drops": [
+				{
+					"name": "contenttweaker:ice_cube",
+					"amount": 1
+				}
+			],
+			"messages": [
+				{
+					"id": "require_hunger",
+					"message": "你太饿了，砸不动它 :("
+				}
+			]
 		}
 	]
 }
